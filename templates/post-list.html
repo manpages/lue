@@ -1,7 +1,27 @@
-<ul>
-    $for(posts)$
-        <li>
-            <a href="$url$">$title$</a> - $date$
-        </li>
-    $endfor$
-</ul>
+$if(universe)$
+  <ul>
+      $for(universe)$
+          <li>
+              <a href="$url$">$title$</a> - $date$
+          </li>
+      $endfor$
+  </ul>
+$endif$
+$if(life)$
+  <ul>
+  $for(life)$
+      <li>
+          <a href="$url$">$title$</a> - $date$
+      </li>
+  $endfor$
+  </ul>
+$endif$
+$if(ru)$
+  <ul>
+  $for(ru)$
+      <li>
+          <a href="$url$">$title$</a> - $date$
+      </li>
+  $endfor$
+  </ul>
+$endif$
