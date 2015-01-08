@@ -1,6 +1,12 @@
 body {
-    max-width: 600px;
-    text-align: justify;
+  max-width: 600px;
+  text-align: justify;
+  margin: 0 auto;
+  margin-top: 0.5em;
+}
+
+div#footer {
+  text-align: center;
 }
 
 a {

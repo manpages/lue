@@ -12,7 +12,8 @@ It is partitioned into three disjoint blocks, each with its own RSS feed —
 
  + “[Life](/life.html)”, where I write about life and non-technical stuff. À la social network feed.
  + “[Universe](/universe.html)”, posts about computer programming and techincal literature go here.
- + “[In Russian](/ru.html)”, random posts in my native language. À la micro-blogging feed.
+ + “[In Russian](/ru.html)”, random posts in my native language. À la micro-blogging feed, plus 
+   staging technical posts.
 
 If for some reason you want to read everything, there's a feed called “[Everything](/archive.html)” 
 just for that.
