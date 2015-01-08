@@ -8,6 +8,10 @@ import           Control.Monad (forM_)
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
+    match "favicon.ico" $ do
+      route   idRoute
+      compile copyFileCompiler
+
     match "images/*" $ do
         route   idRoute
         compile copyFileCompiler
@@ -16,7 +20,7 @@ main = hakyll $ do
         route   idRoute
         compile compressCssCompiler
 
-    match (fromList ["about.rst", "contact.markdown", "index.markdown"]) $ do
+    match (fromList ["me.html", "index.markdown"]) $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext

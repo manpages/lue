@@ -12,6 +12,7 @@ div#footer a, div#navigation > a {
   text-decoration: none;
 }
 
-div#logo {
+div#logo, .right {
+  margin-left: 20px;
   float: right;
 }
