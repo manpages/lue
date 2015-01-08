@@ -1,6 +1,7 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.Monoid (mappend)
+import           Control.Applicative ((<$>))
+import           Data.Monoid (mappend, mconcat)
 import           Hakyll
 import           Control.Monad (forM_)
 
@@ -26,23 +27,23 @@ main = hakyll $ do
           route $ setExtension "html"
           compile $ pandocCompiler
               >>= loadAndApplyTemplate "templates/post.html"    postCtx
+              >>= saveSnapshot "content"
               >>= loadAndApplyTemplate "templates/default.html" postCtx
               >>= relativizeUrls
 
-    forM_ [ "ru", "life", "universe" ] $ \x ->
+    forM_ [ "ru", "life", "universe" ] $ \x -> do
       create [x] $ do
         route $ setExtension "html"
         compile $ do
-            posts <- recentFirst =<< loadAll (fromGlob $ "posts/" ++ (show x) ++ "/*")
+            posts <- recentFirst =<< loadAll (fromGlob $ "posts/" ++ (toFilePath x) ++ "/*")
             let archiveCtx =
-                    listField  (show x) postCtx (return posts)    `mappend`
-                    constField "title"  (title $ show x)          `mappend`
+                    listField  (toFilePath x) postCtx (return posts)    `mappend`
+                    constField "title"  (title $ toFilePath x)          `mappend`
                     defaultContext
             makeItem ""
-                >>= loadAndApplyTemplate "templates/archive.html"   archiveCtx
+                >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
-
 
     create ["archive.html"] $ do
         route idRoute
@@ -61,6 +62,29 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
 
+    create ["atom.xml"] $ do
+        route idRoute
+        compile $ do
+          posts <- recentFirst =<< loadAllSnapshots "posts/*/*" "content"
+          renderRss feedConfig feedCtx posts
+
+    create ["universe.xml"] $ do
+        route idRoute
+        compile $ do
+          posts <- (take 50) <$> (recentFirst =<< loadAllSnapshots "posts/universe/*" "content")
+          renderRss feedConfig feedCtx posts
+
+    create ["ru.xml"] $ do
+        route idRoute
+        compile $ do
+          posts <- (take 50) <$> (recentFirst =<< loadAllSnapshots "posts/ru/*" "content")
+          renderRss feedConfig feedCtx posts
+
+    create ["life.xml"] $ do
+        route idRoute
+        compile $ do
+          posts <- (take 50) <$> (recentFirst =<< loadAllSnapshots "posts/life/*" "content")
+          renderRss feedConfig feedCtx posts
 
     match "templates/*" $ compile templateCompiler
 
@@ -71,6 +95,18 @@ postCtx =
     dateField "date" "%B %e, %Y" `mappend`
     defaultContext
 
-title "ru" = "Посты на русском языке"
+feedCtx =
+    bodyField "description" `mappend`
+    postCtx
+
+title "ru" = "Публикации на русском"
 title "life" = "Life"
 title "universe" = "Universe"
+
+feedConfig = FeedConfiguration { 
+     feedTitle       = "Life, Universe and Everything"
+    ,feedDescription = "A personal blog about functional programming, information security, operating systems, literature and other (less interesting) topcis."
+    ,feedAuthorName  = "Jonn Mostovoy"
+    ,feedAuthorEmail = "jm at this domain"
+    ,feedRoot        = "http://memorici.de"
+}

@@ -7,7 +7,11 @@ a {
   color: black;
 }
 
-div#footer > a, div#navigation > a {
+div#footer a, div#navigation > a {
   font-variant: small-caps;
   text-decoration: none;
+}
+
+div#logo {
+  float: right;
 }
