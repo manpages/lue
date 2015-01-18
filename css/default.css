@@ -22,3 +22,7 @@ div#logo, .right {
   margin-left: 20px;
   float: right;
 }
+
+h1, h2, h3, h4 {
+  text-align: left;
+}

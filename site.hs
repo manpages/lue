@@ -52,13 +52,9 @@ main = hakyll $ do
     create ["archive.html"] $ do
         route idRoute
         compile $ do
-            life     <- recentFirst =<< loadAll "posts/life/*"
-            universe <- recentFirst =<< loadAll "posts/universe/*"
-            russian  <- recentFirst =<< loadAll "posts/ru/*"
+            universe <- recentFirst =<< loadAll "posts/*/*"
             let archiveCtx =
-                    listField  "life"     postCtx (return life)     `mappend`
                     listField  "universe" postCtx (return universe) `mappend`
-                    listField  "ru"       postCtx (return russian)  `mappend`
                     constField "title"    "Everything"              `mappend`
                     defaultContext
             makeItem ""
