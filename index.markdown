@@ -6,12 +6,12 @@ date: January 7ᵗʰ, 2015
 ##A man without a country
 
 This is a personal blog about functional programming, information security, operating systems,
-literature and other (less interesting) topcis.
+literature and other (less interesting) topics.
 
 It is partitioned into three disjoint blocks, each with its own RSS feed —
 
  + “[Life](/life.html)”, where I write about life and non-technical stuff. À la social network feed.
- + “[Universe](/universe.html)”, posts about computer programming and techincal literature go here.
+ + “[Universe](/universe.html)”, posts about computer programming and technical literature go here.
  + “[In Russian](/ru.html)”, random posts in my native language. À la micro-blogging feed, plus 
    staging technical posts.
 
