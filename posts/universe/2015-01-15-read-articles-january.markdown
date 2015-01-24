@@ -104,9 +104,20 @@ stuff that doesn't build as broken (at least).
 Good article to read, to get a perspective of Haskell NG development.
 
 #### [Simons, P. 2015. A Journey into the Haskell NG infrastructure: Part I](http://lists.science.uu.nl/pipermail/nix-dev/2015-January/015591.html)
+#### [Simons, P. 2015. A Journey into the Haskell NG infrastructure: Part II](http://lists.science.uu.nl/pipermail/nix-dev/2015-January/015608.html)
 
-FAQ about state of the art of Haskell NG and why should we care. Explains ``provideOldHaskellAttributeNames``, explains why did ``ghc-wrapper`` disappear for good.
+FAQ about state of the art of Haskell NG and why should we care. Explains ``provideOldHaskellAttributeNames``, explains why did ``ghc-wrapper`` disappear for good
+and much more. Prototype for new Nix Haskell documentation.
 
 *Even though at the moment of writing I'm not sure if I
 can successfully build yesod and yi on my computer with nix, I have a clear picture of what I should do next.
 When I accomplish that, be sure that I'll write a blog post about it.*
+
+*Added, Jan 25th —
+turns out, haskellng is great for libraries that aren't inherently broken (read: for major Haskell libraries and applications that don't follow Yesod's distribution
+pattern). Besides, Pete Simons is really fast on fixing bugs in haskellng expressions. I'm a little bit shy to send PRs myself yet though.*
+
+### [Zovic, L. 2013. Wai Without Yesod - Simple Example of Haskell Web Development](http://langnostic.blogspot.de/2013/02/wai-without-yesod-simple-example-of_10.html)
+
+In this post, Leo rolls out a Yesod-less grocery shopping listing application. What I love about this blog-post (and most of his blog-posts) is that
+it has this “get things done” attitude. Don't expect production-grade code there, however it's a very nice and gentle introduction into the world of WAI.
