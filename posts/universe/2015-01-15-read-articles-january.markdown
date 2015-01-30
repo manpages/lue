@@ -121,3 +121,24 @@ pattern). Besides, Pete Simons is really fast on fixing bugs in haskellng expres
 
 In this post, Leo rolls out a Yesod-less grocery shopping listing application. What I love about this blog-post (and most of his blog-posts) is that
 it has this “get things done” attitude. Don't expect production-grade code there, however it's a very nice and gentle introduction into the world of WAI.
+
+### [Simmons, B. 2014. Announcing Unagi-chan](http://brandon.si/code/announcing-unagi-chan/)
+
+<img src="../../images/unagi.png" style="max-width: 200px;" alt="Unagi (Friends)" />
+
+I found this article somewhat related to [the talk](http://vimeo.com/69885785), given by Paolini-Subramanya, M.
+at Erlang User Conference in 2013 (that I had an honour to witness in person).
+There Mahesh was talking about the practical sides of queue management and why
+in real high-load systems it's absolutely critical to get less wrong. In that
+sense, some of theoretical insights given by Brandon.
+
+The [source code](https://github.com/jberryman/unagi-chan) of this library is a nice study in queues, definitely worth
+looking at.
+
+### Miscellaneous Links
+
+[Hoare's Quotes](http://en.wikiquote.org/wiki/C._A._R._Hoare#The_Emperor.27s_Old_Clothes)
+(through [AkkaRaceSample README](https://github.com/sumerman/AkkaRaceSample)).
+
+[Two](http://amzn.com/1400033462)
+[books](http://amzn.com/0307474259) about food and dietology (thanks, [mkaito](http://mkaito.com)).
