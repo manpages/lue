@@ -135,10 +135,14 @@ sense, some of theoretical insights given by Brandon.
 The [source code](https://github.com/jberryman/unagi-chan) of this library is a nice study in queues, definitely worth
 looking at.
 
-### Miscellaneous Links
+### Miscellaneous and revisited links
 
-[Hoare's Quotes](http://en.wikiquote.org/wiki/C._A._R._Hoare#The_Emperor.27s_Old_Clothes)
-(through [AkkaRaceSample README](https://github.com/sumerman/AkkaRaceSample)).
-
-[Two](http://amzn.com/1400033462)
-[books](http://amzn.com/0307474259) about food and dietology (thanks, [mkaito](http://mkaito.com)).
+ - [Hoare's Quotes](http://en.wikiquote.org/wiki/C._A._R._Hoare#The_Emperor.27s_Old_Clothes)
+   (through [AkkaRaceSample README](https://github.com/sumerman/AkkaRaceSample)).
+ - [Two](http://amzn.com/1400033462)
+   [books](http://amzn.com/0307474259) about food and dietology (thanks, [mkaito](http://mkaito.com)).
+ - [Probability monad](https://slawekk.wordpress.com/2009/05/31/probability-monad/)
+ - [31C3](http://media.ccc.de/browse/congress/2014/)
+    + [Why are computers so fucked and what to do about that](http://media.ccc.de/browse/congress/2014/31c3_-_6574_-_en_-_saal_1_-_201412301245_-_why_are_computers_so_and_what_can_we_do_about_it_-_peter_sewell.html)
+    + [Let's build a quantum computer!](http://media.ccc.de/browse/congress/2014/31c3_-_6261_-_en_-_saal_2_-_201412291245_-_let_s_build_a_quantum_computer_-_andreas_dewes.html)
+    + [Diamonds are a quantum computer's best friend](http://media.ccc.de/browse/congress/2014/31c3_-_6157_-_en_-_saal_6_-_201412301245_-_diamonds_are_a_quantum_computer_s_best_friend_-_nicolas_wohrl.html)
