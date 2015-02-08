@@ -39,6 +39,24 @@ Ugly optimizations, however, oftentimes break the idiomaticness of the code, hen
 the whole discussion retards to a simple pair of non-contradicting statements not
 worth the holy war.
 
+### Leeming C. 2014/15. On Docker
+#### [Let's review.. Docker (again)](http://iops.io/blog/docker-hype/)
+#### [LXC containers are awesome, but Docker.io sucks](http://iops.io/blog/lxc-application-containers-docker-initial-thoughts/)
+
+Docker is the most famous LXC/AUFS wrapper. I didn't care enough to dig it
+even though we were using it in production with one of the companies I was
+working for.
+
+In the linked posts is pretty reasonable critique of this library. Looks like my gut feeling about
+projects in Go is yet to fail me.
+
+### [Dolstra E., Visser E. 2008. The Nix Build Farm: A Declarative Approach to Continuous Integration.](http://nixos.org/~eelco/pubs/buildfarm-wasdett2008-final.pdf)
+A [later version](http://nixos.org/~eelco/pubs/hydra-scp-submitted.pdf) of this
+paper is available as well.  
+This paper describes Hydra, the current CI system used to test Nix expressions.
+A perfect thing to read before you make your first Hydra deployment.
+
 ### Miscellaneous and revisited links
 
 - [Inkscape 0.91 release notes](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.91)
+    + [10 most exciting features in Inkscape 0.91](http://vimeo.com/118352978)

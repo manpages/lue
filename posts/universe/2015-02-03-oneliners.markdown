@@ -18,10 +18,10 @@ to get the videos. Consider putting up a mirror if you do so, to give back the t
 
 ```
 # Download CCC talks in English
-m="http://mirror.netcologne.de/CCC/congress/2014/h264-hd"
+m="http://mirror.netcologne.de/CCC/congress/2014/h264-hd/"
 for x in \
  $(curl $m \
   | grep -oE 'href="[^"]*"' \
-  | grep -oE '31c3.*-en[^"]*'); do wget "$m/$x"
+  | grep -oE '31c3.*-en[^"]*'); do wget "$m$x"
 done
 ```
