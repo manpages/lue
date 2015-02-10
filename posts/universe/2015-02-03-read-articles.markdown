@@ -4,6 +4,8 @@ tags: links, technical, haskell
 arrows: → ⇒ ⇄ ↑ ↩ ⤢ ↱ ↷ ↻ ☛
 ---
 
+<a name="silverBulltes"></a>
+
 ### [tedu. 2015. Heartbleed in Rust](http://www.tedunangst.com/flak/post/heartbleed-in-rust)
 
 Even though I do think that this post is pretty pointless, I found it entertaining.
@@ -39,6 +41,8 @@ Ugly optimizations, however, oftentimes break the idiomaticness of the code, hen
 the whole discussion retards to a simple pair of non-contradicting statements not
 worth the holy war.
 
+<a name="antiDocker"></a>
+
 ### Leeming C. 2014/15. On Docker
 #### [Let's review.. Docker (again)](http://iops.io/blog/docker-hype/)
 #### [LXC containers are awesome, but Docker.io sucks](http://iops.io/blog/lxc-application-containers-docker-initial-thoughts/)
@@ -50,11 +54,32 @@ working for.
 In the linked posts is pretty reasonable critique of this library. Looks like my gut feeling about
 projects in Go is yet to fail me.
 
+<a name="hydra"></a>
+
 ### [Dolstra E., Visser E. 2008. The Nix Build Farm: A Declarative Approach to Continuous Integration.](http://nixos.org/~eelco/pubs/buildfarm-wasdett2008-final.pdf)
-A [later version](http://nixos.org/~eelco/pubs/hydra-scp-submitted.pdf) of this
+A [later, more complete version](http://nixos.org/~eelco/pubs/hydra-scp-submitted.pdf) of this
 paper is available as well.  
 This paper describes Hydra, the current CI system used to test Nix expressions.
 A perfect thing to read before you make your first Hydra deployment.
+
+<a name="shHaskell"></a>
+
+### [Gonzalez G. 2015. Use Haskell for shell scripting](http://www.haskellforall.com/2015/01/use-haskell-for-shell-scripting.html)
+
+Interesting project, use case of which is limited to one thing — simple shell-scripting
+for teams of Haskell programmers/dev-ops. I really hope that someone will either write a
+translator from Turtle to Shell, or nobody will going to ever use this library for writing
+user-facing scripts.
+
+<a name="robotsOnHaskell"></a>
+
+### [Cowley A. 2015. Robots on Haskell](https://www.youtube.com/watch?v=2-JFkv9-JOQ)
+
+Mirror: 
+
+<video src="../../images/robotsOnHaskell.mp4"
+       style="text-align: center; width: 100%"
+       controls="controls" />
 
 ### Miscellaneous and revisited links
 

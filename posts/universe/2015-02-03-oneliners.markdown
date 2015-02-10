@@ -25,3 +25,7 @@ for x in \
   | grep -oE '31c3.*-en[^"]*'); do wget "$m$x"
 done
 ```
+
+### Build environment for hydra
+
+https://github.com/manpages/dotfiles/blob/master/nixos/hydra.nix#L8-L26
