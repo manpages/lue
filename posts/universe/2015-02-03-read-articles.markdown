@@ -81,6 +81,18 @@ Mirror:
        style="text-align: center; width: 100%"
        controls="controls" />
 
+### [Barbour D. 2014. VCache, an Acid-State Killer](https://awelonblue.wordpress.com/2014/12/19/vcache-an-acid-state-killer/)
+
+Ambitious library that is designed to perform well with large amounts of data, address larger-than-RAM 
+scenario and compose better than acid-state.
+
+I will definitely give it a try and put demos on Github.
+
+It should be noted though that I think of acid-state as a library best suited for prototyping in Haskell.
+It provides reasonable (run-time) correctness guarantees that we persist the types we want to persist
+and bootstraps development of a Haskell application. VCache, on the other hand, aims to be a production-
+grade persistent library for non-cyclic data.
+
 ### Miscellaneous and revisited links
 
 - [Inkscape 0.91 release notes](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.91)
