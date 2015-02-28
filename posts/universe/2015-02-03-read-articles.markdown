@@ -4,9 +4,9 @@ tags: links, technical, haskell
 arrows: → ⇒ ⇄ ↑ ↩ ⤢ ↱ ↷ ↻ ☛
 ---
 
-<a name="silverBulltes"></a>
 
-### [tedu. 2015. Heartbleed in Rust](http://www.tedunangst.com/flak/post/heartbleed-in-rust)
+
+### [tedu. 2015. Heartbleed in Rust](http://www.tedunangst.com/flak/post/heartbleed-in-rust) <a href="#silverBulltes" name="silverBulltes">¶</a>
 
 Even though I do think that this post is pretty pointless, I found it entertaining.
 Besides, I do agree with tedu when he says
@@ -41,9 +41,9 @@ Ugly optimizations, however, oftentimes break the idiomaticness of the code, hen
 the whole discussion retards to a simple pair of non-contradicting statements not
 worth the holy war.
 
-<a name="antiDocker"></a>
 
-### Leeming C. 2014/15. On Docker
+
+### Leeming C. 2014/15. On Docker <a href="#antiDocker" name="antiDocker">¶</a>
 #### [Let's review.. Docker (again)](http://iops.io/blog/docker-hype/)
 #### [LXC containers are awesome, but Docker.io sucks](http://iops.io/blog/lxc-application-containers-docker-initial-thoughts/)
 
@@ -54,26 +54,26 @@ working for.
 In the linked posts is pretty reasonable critique of this library. Looks like my gut feeling about
 projects in Go is yet to fail me.
 
-<a name="hydra"></a>
 
-### [Dolstra E., Visser E. 2008. The Nix Build Farm: A Declarative Approach to Continuous Integration.](http://nixos.org/~eelco/pubs/buildfarm-wasdett2008-final.pdf)
+
+### [Dolstra E., Visser E. 2008. The Nix Build Farm: A Declarative Approach to Continuous Integration.](http://nixos.org/~eelco/pubs/buildfarm-wasdett2008-final.pdf) <a href="#hydra" name="hydra">¶</a>
 A [later, more complete version](http://nixos.org/~eelco/pubs/hydra-scp-submitted.pdf) of this
 paper is available as well.  
 This paper describes Hydra, the current CI system used to test Nix expressions.
 A perfect thing to read before you make your first Hydra deployment.
 
-<a name="shHaskell"></a>
 
-### [Gonzalez G. 2015. Use Haskell for shell scripting](http://www.haskellforall.com/2015/01/use-haskell-for-shell-scripting.html)
+
+### [Gonzalez G. 2015. Use Haskell for shell scripting](http://www.haskellforall.com/2015/01/use-haskell-for-shell-scripting.html) <a href="#shHaskell" name="shHaskell">¶</a>
 
 Interesting project, use case of which is limited to one thing — simple shell-scripting
 for teams of Haskell programmers/dev-ops. I really hope that someone will either write a
 translator from Turtle to Shell, or nobody will going to ever use this library for writing
 user-facing scripts.
 
-<a name="robotsOnHaskell"></a>
 
-### [Cowley A. 2015. Robots on Haskell](https://www.youtube.com/watch?v=2-JFkv9-JOQ)
+
+### [Cowley A. 2015. Robots on Haskell](https://www.youtube.com/watch?v=2-JFkv9-JOQ) <a href="#robotsOnHaskell" name="robotsOnHaskell">¶</a>
 
 Mirror: 
 
@@ -81,7 +81,7 @@ Mirror:
        style="text-align: center; width: 100%"
        controls="controls" />
 
-### [Barbour D. 2014. VCache, an Acid-State Killer](https://awelonblue.wordpress.com/2014/12/19/vcache-an-acid-state-killer/)
+### [Barbour D. 2014. VCache, an Acid-State Killer](https://awelonblue.wordpress.com/2014/12/19/vcache-an-acid-state-killer/) <a href="#acidHaskell" name="acidHaskell">¶</a>
 
 Ambitious library that is designed to perform well with large amounts of data, address larger-than-RAM 
 scenario and compose better than acid-state.
@@ -93,7 +93,21 @@ It provides reasonable (run-time) correctness guarantees that we persist the typ
 and bootstraps development of a Haskell application. VCache, on the other hand, aims to be a production-
 grade persistent library for non-cyclic data.
 
-### Miscellaneous and revisited links
+### [Piponi D. 2014. Cofree meets Free](http://blog.sigfpe.com/2014/05/cofree-meets-free.html) <a href="#cofree" name="cofree">¶</a>
+
+This article and the talk referenced touches co-things in algebraic systems.
+It gives pretty concise metaphor for machines with state and buttons being analogous to
+comonads, for instance. In some way, this is a codescription of cothings to the one 
+given by someone on [Haskellcast](http://www.haskellcast.com/)<sup>c.n.</sup>.
+
+### [Conal E. 2014. On FRP and Denotational Design](http://www.haskellcast.com/episode/009-conal-elliott-on-frp-and-denotational-design) <a href="#conalElliott" name="conalElliott">¶</a>
+
+Insightful episode of Haskellcast.
+
+### Miscellaneous and revisited links <a href="#misc" name="misc">¶</a>
 
 - [Inkscape 0.91 release notes](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.91)
     + [10 most exciting features in Inkscape 0.91](http://vimeo.com/118352978)
+- [NixOS UEFI installation USB](http://nixaid.com/usb-bootable-nixos-uefi/)
+- [NixOS installation USB](http://nixaid.com/usb-bootable-nixos/)
+- [Pull request “nixos: iso-image: use syslinux bootloader for USB booting support”](https://github.com/NixOS/nixpkgs/pull/4678)
