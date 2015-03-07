@@ -111,3 +111,7 @@ Insightful episode of Haskellcast.
 - [NixOS UEFI installation USB](http://nixaid.com/usb-bootable-nixos-uefi/)
 - [NixOS installation USB](http://nixaid.com/usb-bootable-nixos/)
 - [Pull request “nixos: iso-image: use syslinux bootloader for USB booting support”](https://github.com/NixOS/nixpkgs/pull/4678)
+- Interesting nixpkgs forks
+    + [ryantrinkle's ghcjs branch](https://github.com/ryantrinkle/nixpkgs/tree/ghcjs-ng)
+    + [arseny](https://github.com/jagajaga/nixpkgs)
+    + [nixos (duh)](https://github.com/nixos/nixpkgs)
