@@ -4,3 +4,4 @@ hakyll
 *.o
 _site
 _cache
+dist
