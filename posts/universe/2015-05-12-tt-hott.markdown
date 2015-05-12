@@ -1,0 +1,25 @@
+---
+title: Type Theory and Homotopy Type Theory Study Group: Zagreb
+tags: links, technical, haskell
+arrows: → ⇒ ⇄ ↑ ↩ ⤢ ↱ ↷ ↻ ☛
+---
+
+Boys, girls, humans.
+
+Recently I've devoured a Soviet book in Category theory and [want something more](https://medium.com/@podmostom/fear-and-loathing-b02ce21074a5).
+
+That being said, I'm glad to announce that I'm starting a HoTT study
+group in Zagreb. Going from functional programming to type theory
+to topology and all the way back sounds like an awesome trip.
+
+I'll coordinate with functional programming user group (did you know we have
+one in Zg?) [Here is a talk](https://www.youtube.com/watch?v=OupcXmLER7I) 
+that may motivate such a study group.
+
+We will, of course, eventually dig through
+“Homotopy Type Theory: Univalent Foundations of Mathematics”.
+
+Before that we want to organize the first meeting to get acquainted with each other and see how 
+do we want to approach this SG.
+
+May the types be with us. [To get included into a mail thread, contact me](http://memorici.de/me.html).

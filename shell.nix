@@ -1,5 +1,5 @@
-with (import <nixpkgs> {}).pkgs;
-let pkg = haskellngPackages.callPackage
+with (import <peti> {}).pkgs;
+let pkg = haskell-ng.packages.ghc784.callPackage
             ({ mkDerivation, base, hakyll, stdenv }:
              mkDerivation {
                pname = "life";
