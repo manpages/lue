@@ -2,7 +2,9 @@
 {-# LANGUAGE OverloadedStrings #-}
 import           Control.Applicative ((<$>))
 import           Data.Monoid (mappend, mconcat)
+import           Data.Set (insert)
 import           Hakyll
+import           Text.Pandoc.Options
 import           Control.Monad (forM_)
 
 --------------------------------------------------------------------------------
@@ -22,14 +24,14 @@ main = hakyll $ do
 
     match (fromList ["me.html", "index.markdown"]) $ do
         route   $ setExtension "html"
-        compile $ pandocCompiler
+        compile $ pandocMathCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
     forM_ [ "ru", "life", "universe" ] $ \x ->
       match (fromGlob $ "posts/" ++ x ++ "/*") $ do
           route $ setExtension "html"
-          compile $ pandocCompiler
+          compile $ pandocMathCompiler
               >>= loadAndApplyTemplate "templates/post.html"    postCtx
               >>= saveSnapshot "content"
               >>= loadAndApplyTemplate "templates/default.html" postCtx
@@ -110,3 +112,17 @@ feedConfig = FeedConfiguration {
     ,feedAuthorEmail = "jm at this domain"
     ,feedRoot        = "http://memorici.de"
 }
+
+--------------------------------------------------------------------------------
+
+pandocMathCompiler :: Compiler (Item String)
+pandocMathCompiler =
+  let mathExtensions = [Ext_tex_math_dollars, Ext_tex_math_double_backslash,
+                        Ext_latex_macros]
+      defaultExtensions = writerExtensions defaultHakyllWriterOptions
+      newExtensions = foldr Data.Set.insert defaultExtensions mathExtensions
+      writerOptions = defaultHakyllWriterOptions {
+                        writerExtensions = newExtensions,
+                        writerHTMLMathMethod = MathJax ""
+                      }
+  in pandocCompilerWith defaultHakyllReaderOptions writerOptions
