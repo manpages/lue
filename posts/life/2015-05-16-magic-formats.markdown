@@ -78,14 +78,17 @@ Soft locks are great, but you can often draft around those. In the end, often,
 beatdown has to pick up some high-range control cards to unlock the table, while
 control has to pick up some low-cost cards to trade 1-for-1 with beatdown.
 
-Format is pretty interesting, yet it has a major flow — flood!
+Format is pretty interesting, yet it has a major flaw — flood!
 
 That being said, Mike Strashun offered an interesting twist to this format (which
 can actually be used in a bunch of other formats as well) which I call "Eliminating Lands"
 so, here it is —
 
-Land cards have "As you play this card you may choose to exile it. If you do,
-search your library for a card with the same name and put it onto the battlefield".
+All land cards have “Exile this card from your hand: search your library for a
+card with the same name and exile it, then shuffle your library. You may play
+it this turn. This ability can't be countered.”
+
+## <a href="#threeBoosterWar" name="threeBoosterWar">Rochester 1.5-Booster War</a>
 
 We'll run another playtest with Fate, Dragons, Dragons tomorrow which will actually
 involve three boosters!
@@ -95,3 +98,20 @@ minimum deck size: 27, up to two Utopias, Eliminating Lands. Player, who picks
 second in the first booster makes two first picks in the second one instead of one.
 That means that second player will get all three second-picks and an extra (good) card,
 which should balance out the fact that first player has two first picks.
+
+## <a href="#update1" name="update1">Another playtest update</a>
+
+Playtest went great, being able to eliminate few off-color cards/unplayables make
+decks better and weenie viable. Bombs still need to be played around cautiously,
+as they appear almost guaranteed, but outracing those isn't impossible if you
+mulligan correctly.
+
+## <a href="#threeBoosterWar" name="threeBoosterWar">Threeway Booster War</a>
+
+Post-factum documenting three player rochester booster war — rules are the
+same as in Rochester Booster War, except three players draft three packs.
+
+This was actually the most entertaining way to play super-small formats listed
+card pool is large enough to split some colors and make very stable decks,
+manabase-wise. Besides, it was still possible for WG player to hate 
+Necromaster Dragon as a first pick in third pack and get to play it effectively.

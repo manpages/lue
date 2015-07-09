@@ -25,3 +25,12 @@ $if(ru)$
   $endfor$
   </ul>
 $endif$
+$if(drafts)$
+  <ul>
+  $for(drafts)$
+      <li>
+          <a href="$url$">$title$</a> - $date$
+      </li>
+  $endfor$
+  </ul>
+$endif$

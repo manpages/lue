@@ -1,13 +1,27 @@
---------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
+--------------------------------------------------------------------------------
 import           Control.Applicative ((<$>))
 import           Data.Monoid (mappend, mconcat)
+import           Data.Binary                    (Binary)
 import           Data.Set (insert)
+import           Data.Typeable
 import           Hakyll
+import           Hakyll.Core.Identifier (fromFilePath)
 import           Text.Pandoc.Options
 import           Control.Monad (forM_)
 
 --------------------------------------------------------------------------------
+siteCat :: [String]
+siteCat = [ "ru", "life", "universe", "drafts" ]
+
+matcher :: String -> Rules () -> Rules ()
+matcher "drafts" = match (fromGlob "drafts/*")
+matcher x        = match (fromGlob $ "posts/" ++ x ++ "/*")
+
+loader  :: (Binary a, Typeable a) => String -> Compiler [Item a]
+loader "drafts"  = loadAll (fromGlob "drafts/*.markdown")
+loader x         = loadAll (fromGlob $ "posts/" ++ x ++ "/*")
+
 main :: IO ()
 main = hakyll $ do
     match "favicon.ico" $ do
@@ -28,8 +42,8 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
-    forM_ [ "ru", "life", "universe" ] $ \x ->
-      match (fromGlob $ "posts/" ++ x ++ "/*") $ do
+    forM_ siteCat $ \x ->
+      matcher x $ do
           route $ setExtension "html"
           compile $ pandocMathCompiler
               >>= loadAndApplyTemplate "templates/post.html"    postCtx
@@ -37,14 +51,14 @@ main = hakyll $ do
               >>= loadAndApplyTemplate "templates/default.html" postCtx
               >>= relativizeUrls
 
-    forM_ [ "ru", "life", "universe" ] $ \x -> do
-      create [x] $ do
+    forM_ siteCat $ \x -> do
+      create [(fromFilePath x)] $ do
         route $ setExtension "html"
         compile $ do
-            posts <- recentFirst =<< loadAll (fromGlob $ "posts/" ++ (toFilePath x) ++ "/*")
+            posts <- recentFirst =<< loader x
             let archiveCtx =
-                    listField  (toFilePath x) postCtx (return posts)    `mappend`
-                    constField "title"  (title $ toFilePath x)          `mappend`
+                    listField  x postCtx (return posts)    `mappend`
+                    constField "title"   (title x)         `mappend`
                     defaultContext
             makeItem ""
                 >>= loadAndApplyTemplate "templates/archive.html" archiveCtx
@@ -101,9 +115,11 @@ feedCtx =
     bodyField "description" `mappend`
     postCtx
 
-title "ru" = "Публикации на русском"
-title "life" = "Life"
+title "ru"       = "Публикации на русском"
+title "life"     = "Life"
 title "universe" = "Universe"
+title "drafts"   = "Черновики"
+title x          = x
 
 feedConfig = FeedConfiguration { 
      feedTitle       = "Life, Universe and Everything"
