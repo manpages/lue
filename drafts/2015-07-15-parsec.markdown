@@ -1,0 +1,199 @@
+---
+title: Studies in Parsec
+tags: links, technical, haskell
+arrows: → ⇒ ⇄ ↑ ↩ ⤢ ↱ ↷ ↻ ☛
+---
+
+As I teach others about what Parsec is and how to use it, I use the following snippets
+that were written by me in different times of my life and refined recently to show
+both transformer-nature of Parsec and its capabilities to store and return data about
+parsed stream.
+
+```
+parens :: Parsec String (Int, Int) Int
+parens = do
+  (c, _) <- getState
+  if c > 0
+    then opening <|> closing
+    else opening
+  where
+    opening = do
+      char '('
+      modifyState $ \(c, t) -> (c+1, t+1)
+      parens <|> terminal
+    closing = do
+      char ')'
+      modifyState $ \(c, t) -> (c-1, t)
+      parens <|> terminal
+    terminal = do
+      (c, t) <- getState
+      if c /= 0
+        then unexpected "input (parentheses aren't balanced)"
+        else return t
+
+echo :: Parsec String String String
+echo = many1 anyChar
+
+byteSum :: Parsec String Int Int
+byteSum = do
+  bs <- many1 c
+  return $ foldl (+) 0 bs
+  where
+    c = do
+      x <- anyChar
+      return $ ord x
+
+runParens :: String -> Either ParseError Int
+runParens x = runIdentity $ runParserT parens (0, 0) "" x
+
+runEcho :: String -> Either ParseError String
+runEcho x = runIdentity $ runParserT echo "" "" x
+
+runByteSym :: String -> Either ParseError Int
+runByteSym x = runIdentity $ runParserT byteSum 0 "" x
+```
+
+Now let's write a parser that goes from top to bottom, reads expressions and aggregates
+a value "encoded" in those.
+
+```
+nat :: Parsec String Int Int
+nat =
+  foldl' (\a i -> 10 * a + digitToInt i) 0 <$> many1 digit
+
+model1 :: Parsec String Int [(Char, Int)]
+model1 = many1 $ do
+  k <- letter
+  v <- posNat
+  return (k, v)
+
+model2 :: Parsec String Int (Map Char Int)
+model2 = do
+  kvs <- model1
+  return $ fromListWith (+) kvs
+
+type R = Map Char Int
+type PE a = Either ParseError a
+model3 :: Parsec String Int [R]
+model3 = do
+  ms <- many1 $ do
+    m <- model2
+    many newline
+    return m
+  eof
+  return ms
+
+model :: Parsec String Int R
+model = do
+  ms <- model3
+  return $ foldl (unionWith (+)) M.empty ms
+
+runModel :: String -> PE R
+runModel x = runIdentity $ runParserT model 0 "" x
+```
+
+Let's rewrite this as follows (extending to the n-r language spec):
+
+```
+type R = Map Char Int
+type PE a = Either ParseError a
+
+model :: Parsec String (R, R) R
+model = do
+  (new <|> rep) `sepBy1` newline
+  eof
+  (c, a) <- getState
+  return $ u c a
+  where
+    new = do
+      string "n: "
+      xs <- kvs
+      modifyState $ \(c, a) -> (fl xs, u c a)
+      return ()
+    rep = do
+      string "r: "
+      xs <- kvs
+      modifyState $ \(_, a) -> (fl xs, a)
+      return ()
+    kvs = many1 $ do
+      k <- letter
+      v <- nat
+      return (k, v)
+    u = unionWith (+)
+    fl = fromList
+
+runModel :: String -> PE R
+runModel x = runIdentity $ runParserT model (M.empty, M.empty) "" x
+```
+
+Now let's parse our language for real! Let's begin with just parsing Dates:
+
+```
+{-# LANGUAGE FlexibleContexts      #-}
+{-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE OverloadedStrings     #-}
+
+module Main (main) where
+
+import           Control.Applicative   ((*>), (<*))
+import           Data.Char             (chr, digitToInt, ord)
+import           Data.Functor.Identity (runIdentity)
+import           Data.List             (foldl')
+import           Data.Map              (Map (..), fromList, fromListWith,
+                                        unionWith)
+import qualified Data.Map              as M
+import           Data.Time.Clock       (NominalDiffTime (..), UTCTime (..))
+import           Data.Time.Format      (defaultTimeLocale, parseTimeOrError)
+import           Data.Time.LocalTime   (LocalTime (..))
+import           Text.Parsec
+
+type DTime = NominalDiffTime
+type Verb  = String
+type Fact  = String
+type Ac a  = (LocalTime, a)
+type St u  = ([(LocalTime, Verb)], [(LocalTime, Fact)], Map Verb DTime, u)
+type PE a  = Either ParseError a
+
+parseDate :: String -> LocalTime
+parseDate x = parseTimeOrError True defaultTimeLocale "%a, %e %b %Y %X %z" x
+
+raw :: IO String
+raw = readFile "real.data"
+
+date :: Parsec String a LocalTime
+date = parseDate <$> extract
+  where
+    extract = string "Date: " *> many1 (noneOf "\n") <* newline
+
+model :: Parsec String a [LocalTime]
+model = many1 $ date <* stuff
+  where
+    stuff  = (manyTill anyChar $ try (lookAhead $ string "Date: ")) <|> eof' ""
+    eof' x = do
+      eof
+      return x
+
+runModel :: String -> PE [LocalTime]
+runModel x = runIdentity $ runParserT model () "" x
+
+main :: IO ()
+main = do
+  r <- raw
+  putStrLn $ show $ runModel r
+```
+
+Now let's save ``stuff`` using monadic aspect of Parsec type:
+
+
+```
+model :: Parsec String a [(LocalTime, String)]
+model = many1 $ do
+  d <- date
+  s <- stuff
+  return (d, s)
+  where
+    stuff  = manyTill anyChar $ lookAhead  $ try (string "Date:" <|> eof' "")
+    eof' x = do
+      eof
+      return x
+```

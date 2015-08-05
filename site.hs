@@ -19,7 +19,7 @@ matcher "drafts" = match (fromGlob "drafts/*")
 matcher x        = match (fromGlob $ "posts/" ++ x ++ "/*")
 
 loader  :: (Binary a, Typeable a) => String -> Compiler [Item a]
-loader "drafts"  = loadAll (fromGlob "drafts/*.markdown")
+loader "drafts"  = loadAll (fromGlob "drafts/*")
 loader x         = loadAll (fromGlob $ "posts/" ++ x ++ "/*")
 
 main :: IO ()
