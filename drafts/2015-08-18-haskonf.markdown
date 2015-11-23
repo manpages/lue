@@ -1,0 +1,23 @@
+---
+title: Extracting ideas
+tags: haskell
+---
+
+This is a post about what I think is pretty common and interesting pattern in
+Haskell library design — extracting ideas.
+
+# Haskonf
+
+In late 2013 I've started to write code for myself exclusively in Haskell.
+Indeed, NixOS solves cabal hell (back then it was a little bit quirky
+solution, but still it worked. Now, with Peter Simmons' contributions,
+we have the best way to build, install and maintain Haskell codebases),
+and it (cabal hell) was the only reason I was refusing to use Haskell for
+anything but self-contained toys.
+
+I'm a huge advocate of library-oriented design. Code reuse doesn't happen
+in application-land while thinking in application-level mentality. No 
+matter how cleanly you align your objects and classes, if you're writing
+an application, not a library, you'll end up with fundamentally tangled
+artifact. It might be (re-)used to build upon (akin web frameworks), but
+it can't be (re-)used to build with.

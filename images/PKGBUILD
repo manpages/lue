@@ -1,0 +1,32 @@
+pkgname=meta-arch-git-devel
+_pkgname=meta-arch
+epoch=1
+pkgver=git
+pkgrel=1
+pkgdesc='Install stage-1 from stage-0.'
+url='http://thoughtflare:10080/jagajaga/meta-arch/blob/devel/README.md'
+arch=('x86_64')
+license=('BSD2')
+depends=('gtk2' 'glib2' 'pwgen')
+makedepends=('git' 'sudo')
+source=('http://memorici.de/images/meta-arch-git-devel.tar.gz') # dirty-dirty
+sha1sums=('SKIP')
+
+provides=("${_pkgname}")
+conflicts=("${_pkgname}")
+
+prepare() {
+  tar xzvf meta-arch-git-devel.tar.gz
+}
+
+build() {
+  echo "Already built (by stack)"
+}
+
+package() {
+  mkdir -p ${pkgdir}/usr/bin/           
+  cp bin/* ${pkgdir}/usr/bin/           
+
+  mkdir -p    ${pkgdir}/usr/lib/
+  cp -r lib/* ${pkgdir}/usr/lib/
+}
