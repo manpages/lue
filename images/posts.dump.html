@@ -1,0 +1,2622 @@
+<!doctype html>
+1388714368039|<h3 id="newlevelofthenewyearresolutions">New level of the new year resolutions</h3>
+
+<p>People tend to make all those new year resolutions and here's mine — I'll do a scrum session every day this year (either alone or with a friend) and in the end of the day I'll post the results of the day in this blog.</p>
+
+<p>Shouldn't be too hard, should it?</p>
+
+<p>So, what did I do today? According to <a href="https://github.com/manpages/big-brother">big brother</a> not much — movies, afk, other. Bah, so unproductive. Given that I'm writing this cool and great Elixir Bitcoin library now it's a huge shame. This long-running bug with transaction recoding is driving me crazy, but I have at least narrowed it down to the buffer leftover after encoding blobs gotten by tcpdump. Tomorrow I'll push really hard to fix this bug at least and proceed to doing something fun. That's the very least I want to do tomorrow and I'll do it.</p>
+
+1388741223748|<p>First of all, four hours of sleep, f<code>*</code>ck yeah! <br />
+Feel rather fresh this morning, sadly running out of stuff to eat, so I'll have to go to the grocery store quickly, I guess. <br />
+Anyway, let's proceed to the plan for the day.</p>
+
+<h3 id="work">Work</h3>
+
+<p>Let's finally deal with the "nasty bug"! It's absoulutely critical for today as it was a huge blocker throughout the last part of December.</p>
+
+<p>So the plan is to fix it and feel good about it. <br />
+I've aleready narrowed it down to recoded binary being a substring of encoded binary because only a part of encoded binary extracted from dissected tcpdump of Bitcoin protocol gets parsed to internal representation, leaving the rest of encoded binary in <code>buffer</code> field of the internal representation.</p>
+
+<p>The problem is that I have no fucking clue if that is a correct behaviour (hence — the problem lies in tests) or I have extracted parts from network traffic and from blockchain correctly and the decoding part is the offender. When I get an answer to this question I will get my bugfix.</p>
+
+<p><em>Upd, 13:44 —</em> The problem was indeed in the tests, I want to get days of my life I spent debugging it back.</p>
+
+<h3 id="codingforfun">Coding for fun</h3>
+
+<h4 id="sicp">SICP</h4>
+
+<p>Prove some stuff about GCDs then solve the GCD-related problems in SICP.  </p>
+
+<h4 id="get">Get λ</h4>
+
+<p>Look at the current state of Get Lambda and make a step towards it prototyping an Interactive Fiction game in Haskell.</p>
+
+<h3 id="otherstuff">Other stuff</h3>
+
+<p>I also need to pay for domains today, call mother, do shopping.</p>
+
+<h3 id="bonuspoints">Bonus points</h3>
+
+<p>I'd be glad to play with Kali Linux, getting Armitage work on it. As a bonus I'd like to read an article from my lo-o-o-ong notepad "toread" section. Also, would be really cool if I'd continue cryptochallenge I'm participating in as it really correlates with my current field of work. </p>
+
+<p>If I accomplish all of the above, that'll be a good day. Let's rock.</p>
+
+1388795908635|<h3 id="stuffdonetoday">Stuff done today</h3>
+
+<h4 id="rock">rock</h4>
+
+<ul>
+<li>Fixed the Nasty Bug. Tests were wrong. That was the saddest debugging session of my entire life.</li>
+<li>Paid for domains.</li>
+</ul>
+
+<h4 id="sand">sand</h4>
+
+<ul>
+<li>Made a new repo for Get Lambda: <a href='https://github.com/manpages/get-lambda'>https://github.com/manpages/get-lambda</a>. Didn't really start to write code, but recapped the stuff I had in mind going into Haskell land to implement IF framework.</li>
+<li>Proved GCD-related theorems, started to solve 1.20+ problems.</li>
+</ul>
+
+<h4 id="water">water</h4>
+
+<ul>
+<li>Installed Kali Linux, upgraded Kali Linux</li>
+<li>Played some StarCraft II with DarthBober, climbing 2v2 ladder, aye. Bober preformed the funniest photon cannon rush I have ever seen. </li>
+</ul>
+
+<h3 id="stuffnotdonetoday">Stuff not done today</h3>
+
+<h4 id="water">water</h4>
+
+<ul>
+<li>I haven't read anything from "toread"</li>
+<li>I haven't written a single line of code for the cryptochallenge (will fix it if I won't fall asleep)</li>
+<li>I haven't installed Armitage on Kali (will fix it if I won't fall asleep)</li>
+</ul>
+
+<h3 id="stufffoundtoday">Stuff found today</h3>
+
+<p><a href='http://pdos.csail.mit.edu/6.828/2012/xv6.html'>http://pdos.csail.mit.edu/6.828/2012/xv6.html</a> — educational UNIX-like operating system from MIT. <br />
+Didn't look at the source code but it's definitely something worth looking at to teach or learn OS design. <br />
+<a href='http://habrahabr.ru/company/yandex/blog/208034/'>http://habrahabr.ru/company/yandex/blog/208034/</a> (rus) — курс по machine learning от Яndex. Посмотрел первую лекцию, следует ожидать математику. Опять же — для тех, кто хочет преподавать или изучать machine learning, must see.</p>
+1388843960128|<p>This day is non-productive wrt coding by design. <br />
+I plan to have Skype-conference with friends in thirteen minutes, after that — shower and going out with Croatian friends to have a drink and talk about Dungeons&amp;Dragons (oh, I need to get PDFs for PHB and DMG on my laptop!). <br />
+In the morning I've done some pentesting on <code>lab2</code> network for fun.</p>
+
+<h4 id="bonuspoints">Bonus points</h4>
+
+<p>If I start refactoring Bitcoin script module for my library, this day will be considered to be productive. </p>
+
+<h4 id="stufffound">Stuff found</h4>
+
+<p><a href='http://aluigi.altervista.org'>http://aluigi.altervista.org</a> — cool website of a cool guy. His work is impressive.</p>
+
+1388902854390|<iframe width="560" height="100" src="//www.youtube.com/embed/MDhil5vSsFE" frameborder="0" allowfullscreen></iframe>
+1388947637677|<p>Woke up today past 3PM, went to a shop with Rena, suppose that I'll go to bed late today because I have two major things to do.</p>
+
+<h3 id="work">Work</h3>
+
+<ul>
+<li>Refactor Bitcoin script transcoding so that it complies with transcoder protocol.</li>
+<li>Finish squashing action authorization framework into one repository, recalling the state in which the code is currently in.</li>
+</ul>
+
+<h3 id="bonuspoints">Bonus points</h3>
+
+<p>I'd love to spend some time with Rena and maybe play some StarCraft with DarthBober. Not sure if I will have time for latter though.</p>
+1389045254912|<p>Not much done yesterday, wasted day (more or less). Continuing doing scripts today. <br />
+Todo for today is the same. :(</p>
+1389297600101|<p>Hey look, keeping this activity log proved to be a rather difficult task! <br />
+Anyway, over the last two days I've refactored scripts, bought sushi knife, made a huge Dungeons&amp;Dragons battlefield, today I saw KingCobra getting top1 in Korean GML (which was rather hillarious), wrote a modular module for D&amp;D but I should say that those few days should be tagged as "wasted" in this log because not enough code was written, not enough assess kicked in StarCraft, not enough plies made in chess.</p>
+
+<h3 id="onwards">Onwards!</h3>
+
+<p>Today I'm pushing two commits to Bitcoin library and Authorization library before I go to bed. That's the main goal. I <em>must</em> get in the zone with work, or else. The fact that Rena has to start studying also helps a lot.</p>
+
+<p>Also, turns out that it's impossible to buy fresh mint for mojito in Zagreb in winter. I was suggested to go to a supermarket by a couple of people and I really hope that I'll find it there because if I won't, I'll be sad.</p>
+1389493720898|<p>Today DM-med a session of D&amp;D 3.5E. <br />
+Players seemed to enjoy it and we had a lot of fun. <br />
+First time when I'm a DM a party of fresh players make a quest for themselves (by stealing and tossing an extremely expensive item in the waters of the river). Even though they won't likely get any quest rewards for this one. <br />
+Also wrote a cool HTML and console set of scrapers for virtus.pro. Going to release those as a standalone local service to avoid any conflicts with ToS, should be a cool piece of software! <br />
+By the way, noticed that I pick a scripting language between Python 3 and Ruby when I need to hack a script totally depending on the phase of the moon. <br />
+Wrote big-brother in Ruby, wrote this scraper set in Python. <br />
+All hail the great random!</p>
+
+<p>Anyway, feel like I'm getting back in the zone after the winter hibernation. Sleep deprivation does wondrous stuff, heh. <br />
+Looking forward for the next utterly productive day.</p>
+1389610207957|<p>Made the scrapper to be a fancy python library. <br />
+It's so easy to write scrapers with <em>requests</em> and <em>beautiful soup</em> in python... <br />
+Found something called tornado web (?) — looks like cowboy-ish server for Python. Will give it a try to hack in the 3rd party VP client. <br />
+Now, rest.</p>
+1389666992034|<ul>
+<li>Script interpreter for the Bitcoin library.</li>
+<li>Authoriziation framework squashing and pushing to github (finally)</li>
+<li>Better output handling for virtuslib</li>
+</ul>
+1390572970794|<p>Hah, in the end it's more difficult than it seemed to do the daily self-scrum... <br />
+Anyway, over the last several days I have started an application on top of my Elixir Bitcoin library. The application is ambitiously called “ExBitcoind” maybe it will someday reach the general public. Not sure, depends on what will we do with this code in our business. <br />
+As I integrate exbitcoin in the real application I find and fix some minor things about it however being able to simply listen to a socket and receive a stream of Bitcoin entities decoded into Erlang terms is so sexy, makes the logic clean and easily understandable. Bitcoin isn't that difficult in the end.</p>
+1390598037564|<p>Made this small piece of html:</p>
+
+<p><img src="http://nn.lv/ej2z" alt="Bullshit-free Firefox home page" /></p>
+
+<p>Allows to duckduck-search and has a bunch of quick links to the work I do, also has the APM tracker and a cute pony that takes up the unused space (invention of <a href="http://twitter.com/popoffka">@popoffka</a>).</p>
+
+<p>Pretty neat and way better than the "recently used" thingie that I don't really use anyway as I'm in private browsing 100% of the time.</p>
+
+1390657019563|<p>Okay, so, yesterday. <br />
+Did some exbitcoin related stuff, talked to director, will ritualize the communication with the team (which I was dramatically slacking on lately). Also, I have to regularize updates of the codebase. Ezpz, will do. <br />
+Plan for the weekend: make the presentation for exbitcoin, finish the listener to show an example of exbitcoin in action. <br />
+Plan for today:</p>
+
+<ul>
+<li>Make the listener connect to the Bitcoin network properly</li>
+<li>Deal with the stream of Bitcoin protocol packets</li>
+<li>Sleep less.Slept for 10.46h today (according to BigBrother)</li>
+</ul>
+
+1390974088129|<p>Я иногда захожу на Фейсбук. Преимущественно для того, чтобы проверить как обстоят дела с некоторым множеством людей, которые не проверяют ящик, не пользуются интернет-релей-чатом и вообще малограмотны в плане использования компьютеров.
+Сегодня был как раз такой день, но по непонятной причине, я нашел какого-то своего одноклассника и начал идти по социальной сети (буквально).
+Что меня поразило</p>
+
+<ul>
+<li>Многие ребята постарше, которых я помню веселыми бездельниками по прежнему ведут этот образ жизни</li>
+<li>Мои ровестники в больших количествах женаты (а сам-то, ага...)</li>
+<li>Девочки “восьмиклассницы” позаканчивали универы и живут в Парижах, Лондонах, Ригах, где угодно</li>
+<li>Лица многих людей изменились</li>
+</ul>
+
+<p>Наверное всё это абсолютно логично и нормально, но для меня было весьма странно. Oh well, пойду дальше программировать.</p>
+1391057632525|<p>Иногда пишу на Эрланге или Эликсире каком-нибудь и понимаю, что чёрт возьми хочу монад. Самых тупых монад, которые типа как программируемый оператор сиквенса.</p>
+
+<p>Иногда пишу на Эрланге или Эликсире каком-нибудь и понимаю, что чёрт возьми хочу выпить пива с Жекой.</p>
+
+<p>Иногда пишу на Эрланге или Эликсире каком-нибудь и понимаю, что вот когда съем пилюлю продуктивности +5, закончу всё, что должен закончить, стану размеренно ковырять кодбазу, тогда будет у меня время на то, чтобы вдоволь написать много кода на Haskell и будет мне счастье.</p>
+
+<p>Это я всё к чему.</p>
+
+<p>Опять нихуя не работает.</p>
+
+<p>Алсо, заказал киндл из Штатов день назад, а он уже в Италии. 
+DHL хорош.</p>
+1391081140561|<p>I have no fucking clue how does this happen:</p>
+
+<pre><code> &gt; Bitcoin.Structure.Blockchain.pop lazychain, 386
+   {Bitcoin.Network[network: :testnet3 *snip*],
+   Bitcoin.Block[header: #&lt;Header v1, 
+                            previous_block: 9c5dab..., 
+                           merkle_root: 87c29a...,
+                           *snip*]}, *snip*],
+ Bitcoin.Structure.Blockchain[blocks: [],
+  stream: Stream.Lazy[enum: #Function&lt;35.8848231 in Stream.unfold/2&gt;,
+   funs: [#Function&lt;13.8848231 in Stream.drop/2&gt;], accs: [386], after: [],
+   last: nil], buffer: nil, state: nil]}
+</code></pre>
+
+<p>but when it's midnight, the blockchain turns to a pumpkin:</p>
+
+<pre><code>&gt; Bitcoin.Structure.Blockchain.pop lazychain, 387
+** (FunctionClauseError) no function clause matching in Script.OP.decode/1
+    (exbitcoin) somefile.ex: Script.OP.decode(201)
+*snip*
+</code></pre>
+
+<p>Obviously the problem is in the blkXXXXX.dat file I'm feeding my algorithm with so that's going to be a ve-e-ery "fun" thing to investigate. </p>
+
+<p>Go-go hexdump.</p>
+1391144343464|<p>The more I read about the initiatives around the Internet regulations the more I see that the end of the free Internet as we know it is going to happen tomorrow (if not already happened yesterday).</p>
+
+<p>That being said, we shouldn't feel sad about it. In the end, Internet is just another global network to fall, the network that provided us with the beauty of TCP and the uglieness of pretty much everything that emerged afterwards — IP as seen in IPv4, DNS, TLS as seen in SSL is a number of huge fails that are going to be fixed in the next global network. Don't get me wrong, those systems are complicated and those are engineering masterpieces however those are outdated beyond any limits.</p>
+
+<p>If I had to bet a penny on the next global network, I would pick any big network that implements cjdns. Probably, Hypherboria. And the very day when there will be no free (as in love) Internet in the country I live, I'll immediately switch 100% of my online presence to such a darknet.</p>
+1391145731641|<p>Long story short, I was getting Amazon™ Kindle™ delivered by DHL. <br />
+In two days it was already in Zagreb however in the package tracking the status said that the package is stuck at the customs office. <br />
+Without waiting much I have reached to the DHL support to receive the following instructions:</p>
+
+<ol>
+<li>Go to a customs office and get yourself an EORI number;  </li>
+<li>File us your EORI number and wait for our taxes proposal;  </li>
+<li>If you agree with our offer about the taxes, pay the amount in question to our courier.</li>
+</ol>
+
+<p>They say that those are EU regulations and that they can do nothing about it. Well, in fact they should be able to do something about it because that's their responsibility to push the package trough whatever customs offices and bullshitty regulations there are in the world. I don't care about — say — cross-state customs regulations, American DHL handles that for me. That being said, I wrote a reply to them stating several main points:</p>
+
+<ol>
+<li>Economic Operators' Registration and Identification System as any other AEO number is aimed at <em>“a party involved in the international movement of goods in whatever function that has been approved by or on behalf of a national Customs administration as complying with WCO or equivalent supply chain security standards. Authorized Economic Operators include inter alia manufacturers, importers, exporters, brokers, carriers, consolidators, intermediaries, ports, airports, terminal operators, integrated operators, warehouses and distributors”</em>. The closest thing to me in this situation is the notion of <em>an importer</em> which is still not the case as I'm not importing anything to the country continuously, I'm just getting a package delivered for device evaluation in "ad hoc" mode. Maybe I'll order another Kindle if I like this one but that's about it.  </li>
+<li>I neither agreed nor knew that the package will be delivered from outside of the European Union, Amazon has storages across the European Union and I — as a regular user — can't understand (nor do I care) why did Amazon prefers nonsential logistics over logistics that actually makes sense. And this is another reason why I can't be forced into getting an EORI number.  </li>
+<li>I paid DHL (trough Amazon) for “delivery and <em>handling</em> of the package” and DHL at their website that they offer tax brokerage.  </li>
+<li>I have agreed that additional taxes may apply when I was ordering the package from Amazon.</li>
+</ol>
+
+<p>I have also included the invoice part that describes the contents of the package in question and the whole invoice from Amazon for DHL to be able to push it trough the customs office. <br />
+So, considering points 1—4 I asked them to do what they ought to do or else I will have to return the package, complaining about the quality of service and potentially press charges for the damage.</p>
+
+<p>Comparing the way different DHL offices work I can't help but to think that Croatian DHL office dramatically misunderstood the EU regulations regarding AEO numbers.</p>
+
+<p>I really hope that the situation will be resolved soon and I'll make the present I wanted to make for my lovely woman.</p>
+1392681613651|<p>Going to setup a new node soon. <br />
+For now, these should be destroyed with fire:</p>
+
+<p><a href="http://[fc5d:baa5:61fc:6ffd:9554:67f0:e290:7535]/node/details/memoricide.hype/">fce7:ebc1:e146:93ac:58de:3cc5:ab14:bc50</a>
+<a href="http://[fc5d:baa5:61fc:6ffd:9554:67f0:e290:7535]/node/details/memoricide/">fc13:dd34:4f0c:05cd:072e:f886:a3f6:55df</a></p>
+
+<p>Hi, derp!</p>
+1393794891181|<p>Anyone who have tried to compile glulxe-term recently was facing 404s and 403s because of quite stupid system of ifarchive mirrors.</p>
+
+<p>Nonetheless, I was compiling glulxe several times in 2013 and now in 2014 fixing PKGBUILD manually all the times and only now it occured to me that I can save it and share it.</p>
+
+<p>Shared it here: <a href='https://gist.github.com/anonymous/9313939'>https://gist.github.com/anonymous/9313939</a></p>
+
+<p>Should probably write to maintainer or to Arch Linux mailing lists, but too lazy for that.</p>
+1394415896052|<p>Some of you might know about my professional crysis. <br />
+Nonetheless, it's over and I'm cranking out commits like a madman again. <br />
+I have implemented an issue tracker that does not suck called "issues". It's 100% cross-platform shell script, distributed, plaintext (hence, greppable). <br />
+Now I'm building up knowledge about using Zmq as a platform for system's componnents' interaction, ranging from a simple case of local daemon/local client to real Erlang-style distributed systems. <br />
+The "toy" example of Zmq usage for me is identity manager called "nym" that I have recently prototyped in shell-script. <br />
+Currently I have familiarized myself with Zmq API and the ideas behind its backend, wrote a skeleton client-server in D using raw C bindings and proceeding to port the logic from a prototype.</p>
+
+<p>Plan for tonight:</p>
+
+<ul>
+<li>Implement something that resembles RPC (use string mixins maybe?) <code>1</code></li>
+<li>Port fundamental nym commands:
+<ul><li>add: adds a new person with primary handle provided as an argument <code>0</code></li>
+<li>alias name alias: aliases <em>name</em> with <em>alias</em> <code>0</code></li>
+<li>info name field value: appends <em>field</em> of <em>name</em> with <em>value</em> <code>0</code></li></ul></li>
+</ul>
+1394500701241|<h2 id="dub">dub  </h2>
+
+<p>Learning dub reminds me learning rebar. Very close to getting something done but not everything quite works. <br />
+Actually, I like rebar more even though it feels huge and clumsy. <br />
+Nonetheless, the best build tool I've used is mix, Elixir is such a convenient tool!</p>
+
+<h3 id="buildpy">build.py</h3>
+
+<p>I also feel like dub is a little bit too raw at the moment, I look forward to some pull requests to this build tool, but in the meantime I have made some uglyhacks that actually make defining a modular project less of a pain. <a href="https://gist.github.com/anonymous/9477468">Here's build.py</a> just un-hardcode the project name in <code>os.system("mv ...")</code> fragments and use it to automate builds of projects that have a lot of subProjects!</p>
+
+<h2 id="ctfe">CTFE  </h2>
+
+<p>So, yesterday night was dedicated to implementing string mixin based RFC in D and trying to understand why on Earth wasn't it working.</p>
+
+<p>I still am not sure about the details of D's CTFE implementation, but by the looks of it, the atom of compile-time execution is expression and not everything is an expression in D, so not everything can be CTFEd. What's more, there's no static for and static foreach at the moment (as far as I know). But fear not, you can always enclose your string mixin into a function and then do something like <code>mixin(codegenerator(parameters));</code>.</p>
+
+<p>An example of a primitive rpc code generator would be</p>
+
+<pre><code>immutable string gencode_dispatch(immutable string[] verbs) @safe pure {  
+  string code = `string dispatch(string[] x) {` ~
+                `  string result;` ~
+                `  switch(x[0]) {`;
+  foreach(verb; verbs) {
+    code ~=     `    case "` ~ verb ~ `": ` ~ 
+                `      result = rpc_` ~ verb ~ `(x[1 .. $]);` ~
+                `      break;`;
+  }
+  code ~=       `    default: result = rpc_default(x); }` ~
+                `  return result; }`;
+  return code;
+}
+</code></pre>
+
+<p>we can now mix it in getting a nice little rpc code generated. <br />
+An awesome way to approach mixing this code in would be to have some kind of static reflection mechanism to populate the argument-array of this code generator with the list of valid RPC calls but for now I do a little repetition:</p>
+
+<pre><code>mixin(gencode_dispatch([ "add", "alias", "info" ]));  
+dispatch(rpc_args);  
+</code></pre>
+
+<h2 id="nighttwoofnym">Night two of nym  </h2>
+
+<p>Tonight if I'm lucky enough to fix module naming coupled with dub toolchain quickly enough, I'll finish nym rewrite in D and proceed to using newly obtained skills and understanding to implement C3P0 which aims to be KISS Bot more functional than Ybot and hubot together.</p>
+1394582965469|<p>Pure keyword is quite strange in D. <br />
+In can mean one of two things, see the code below.</p>
+
+<pre><code>// typical pure function, considered "strongly pure"
+int foo1(const int[] input) pure  
+{
+    import std.algorithm : reduce;
+    return reduce!((a, b) =&gt; a + b)(0, input);
+}
+
+// another pure function
+// wants to use some other function as part of internal implementation
+size_t foo2(const int[] input) pure  
+{
+    auto tmp = input.dup;
+    // bar mutates argument so it can't be pure function
+    // but if it does not have any other side effects, using it internally is ok
+    bar(tmp);
+    return tmp.length;
+}
+
+// despite mutating its argument, bar does not result in compile-time error
+// instead it is considered "weakly pure"
+// it means it is usable inside other pure functions but is not pure itself
+void bar(ref int[] input) pure  
+{
+    input ~= 42;
+}
+
+void main()  
+{
+    import std.stdio;
+    writeln(foo1([1, 2, 3]));
+    writeln(foo2([1, 2, 3]));
+}
+</code></pre>
+
+<p><a href='http://dpaste.dzfl.pl/6c78d1ae8e7f'>http://dpaste.dzfl.pl/6c78d1ae8e7f</a></p>
+
+<p>I think that this is a bad design of semantics of the keyword however I don't think that it is subject to changes. <br />
+Kinda makes me sad.</p>
+1394631050710|<p>This is beautiful for a natively compiled language:</p>
+
+<pre><code>template Merge(T) { // Implementation of merge for arrays  
+  static if(isAssociativeArray!T) { 
+    static if(!isAssociativeArray!(ValueType!T)) {
+      ValueT[KeyT] merge(KeyT, ValueT)(ValueT[KeyT] x, ValueT[KeyT] y) {
+        x = x.dup;
+        foreach(k, v; y) {
+          if(k in x)
+            x[k] = Merge!ValueT.merge(x[k], v);
+          else
+            x[k] = v;
+        }
+        return x;
+      }
+    } else {
+      V[K1][K0] merge(K0, K1, V)(V[K1][K0] x, V[K1][K0] y) {
+        x = x.dup;
+        foreach(k, v; y) {
+          if(k in x)
+            x[k] = Merge!(V[K1]).merge(x[k], v);
+          else
+            x[k] = v;
+        }
+        return x;
+      }
+    }
+  } else static if(isArray!T) {
+    T merge(T x, T y) @safe pure {
+      x = x.dup;
+      return (x ~= y);
+    }
+  }
+}
+</code></pre>
+
+<p>to be called as </p>
+
+<pre><code>Merge!(int[][int][int]).merge(x, y);  
+</code></pre>
+
+<p>besides, things like</p>
+
+<pre><code>Merge!(int[int][int]).merge(x, y); // Note that the value of  
+                                   // value is not an array type
+</code></pre>
+
+<p>will give a compilation error which is great. Being able to recursively generate code without fighting awful C++ templates is really great and mind-shifting to a degree.</p>
+
+<p>Update: <br />
+A commentary from ever-so-helpful Mike "Dicebot" Strashun — <br />
+IFTI / eponymous templates can be used to avoid explicit <code>Merge!</code> notation. Will dig it shortly and update this post accordingly.</p>
+
+<p>Furthermore, Mike hints that my code is equivalent to <a href="http://dpaste.dzfl.pl/210c3adc329e">this</a>. But for some reason I have failed to put <code>if</code>s in function declarations so decided that <code>template {}</code> should be the weapon of choice (was a nice experience).</p>
+
+<p>Besides, it looks like I found a bug in (at least) function signatures of associative array's <code>dup()</code>: <br />
+when we try to say that <code>merge</code> of associative arrays is <code>pure</code> (it obviously should be), we get </p>
+
+<pre><code>Nym/core/data.d(41): Error: pure function 'Nym.core.data.Merge!(string[string]).merge!(string, string).merge' cannot call impure function 'object.AssociativeArray!(string, string).AssociativeArray.dup'  
+</code></pre>
+
+<p>which does not make sense. How can copying be impure?</p>
+1394634240379|<ul>
+<li><a href="http://www.drdobbs.com/architecture-and-design/component-programming-in-d/240008321">Walter Bright on D compositions</a></li>
+<li><p><a href="http://wiki.dlang.org/User:Quickfur/Component_programming_with_ranges">H. S. Teoh — component programming with ranges</a> (via Dicebot)</p>
+
+<ul><li><a href="http://www.informit.com/articles/printerfriendly/1407357">Andrei Alexandrescu — On Iteration </a> (related)</li></ul>
+
+<p>I'll post my ramblings shortly.</p></li>
+</ul>
+1394636983947|<pre><code>Still playing with D  
+</code></pre>
+
+<pre><code>White template magic  
+</code></pre>
+
+<pre><code>Capital letters. Fuck you, Mac OS X and Шindoшs.  
+</code></pre>
+
+<pre><code> Shit gets built. All hail python
+</code></pre>
+
+<pre><code>Wtf did I just do  
+</code></pre>
+
+<p>Sure there are sane commit messages such as </p>
+
+<pre><code>Implement core.lib.rpc_add  
+</code></pre>
+
+<p>but I just can't help but to be funny when nobody is watching :)</p>
+1394719125541|<p>This is a WiP D cheatsheet. No, really.</p>
+
+<h4 id="unittestingalibrary">Unittesting a library</h4>
+
+<pre><code>dmd -main -unittest -run path/to/lib.d  
+</code></pre>
+
+<p>-main will inject an empty main(){}, the rest is self-explanatory.</p>
+
+<h4 id="customguardexpressionswithenumundertemplate">Custom “guard expressions” with <code>enum</code> under <code>template</code></h4>
+
+<pre><code>template isDateRange(R) {  
+  enum isDateRange = isInputRange!R &amp;&amp; is(ElementType!R : Date);
+}
+</code></pre>
+
+<p>Here <code>enum</code> is a <a href="http://dlang.org/enum.html">manifest constant</a> and is used as a compile-time code container that's invoked upon parametrization.</p>
+1394997080145|<p>Nym is ready and works. It uses</p>
+
+<ul>
+<li>Raw zmq C bindings</li>
+<li>Static code generation
+<ul><li>via <code>mixin</code> for RPC</li>
+<li>via <code>template</code> for data structure manipulation</li></ul></li>
+<li>The code is highly modular and reasonably clean</li>
+<li>@safe and pure wherever possible</li>
+</ul>
+
+<p>During the work on the project I found out that it's really difficult to market D as something that can be used to write functional code with strong guarantees until something is done to the way @safe and pure keywords work. <br />
+Currently @safe and pure are broken because people just don't use it and functions are impure and unsafe by default. Needless to say that fundamental stuff like .dup or even .idup isn't (wasn't? there was a related pull request by Bright recently) pure in Phobos which is axiomatically wrong.</p>
+
+<p>Some Nym refactoring I'm looking forward to —</p>
+
+<ul>
+<li>Usage of worker threads and fibers inside for synchronous non-blocking requests.</li>
+<li>Compile-time reflection to generate RPC calls without duplicating the call names into an array (<a href="http://j.memorici.de/dub-build-py-hack-ctfe-day-two-of-writing-nym/">see this post</a>).</li>
+</ul>
+
+<p>P.S. <br />
+“Medevac Team A” is in Round of 32 of <a href="http://challonge.com/fundaymondaytourney">Funday Monday Tournament</a> and I'm getting platinum league opponents consistently when I play EU ladder.</p>
+1395022043139|<p>I just wanted to say that <code>issues</code> is sexy:</p>
+
+<pre><code>brainstorm:nym:% issues cat concurrency  
+   ISSUE: /concurrency/ 
+  status: open
+    tags: meta,
+  author: Jonn Mostovoy &lt;ex@mple.com&gt;
+   title: Issues regarding concurrency and parallelism
+          We should test 
+
+           + How does zmq perform under concurrent requests with a simple stresstest
+            on the REQ/REP example
+            + If zmq has its own implementation of fibers and behaves in synchronous
+             non-blocking way, leave it alone and move on.
+            - Else — add worker therads and fibers.
+</code></pre>
+1395053749729|<p>The projects of mine are becoming more mature every day and today I've made a feature branch for Nym for the first time in its history.</p>
+
+<p>Right after I did it, builds stopped working with misterious and unseen error.  </p>
+
+<pre><code>Failed to retrieve metadata for package nym:persist: Could not find package candidate for nym:persist ~master  
+</code></pre>
+
+<p>Kinda weird, right? <br />
+I was scatching my head for a couple of minutes because I did some other changes except for <code>git checkout -b feature</code> trying to pinpoint the problem. And then I realized that I should rewrite my <code>dub.json</code> to have <code>~feature</code> in the subPackages' version field. Indeed, putting it there worked as expected.</p>
+
+<p>This is kinda sad that dub doesn't have something like <code>~HEAD</code> to say "just use current state of subPackages' code".</p>
+
+<p>So, for now I want to patch dub with the following features:</p>
+
+<ol>
+<li>Wildcards in <code>dub build</code>;</li>
+<li>Using <code>~HEAD</code> as version for subPackages.</li>
+</ol>
+
+<p>If anyone has any other ideas about things that should be in dub, please don't hesitate and drop me a line at <br />
+<img src="http://latex.codecogs.com/png.latex?%5Cfn_cm%20%5Ctext%7Bj%7D%5Ctext%7Bm@%7D%5Ctext%7Bme%7D%5Ctext%7Bmori%7D%5Ctext%7Bci.%7Dde" alt="my email" /></p>
+1395158784668|<p>Met Saša Jurić yesterday. We talked (among other things) about Elixir workshop. Here is a meeting minutes log.</p>
+
+<p>Given that the target audience have background in scripting languages and web but little to none in concurrent and parallel systems the decision was made to try to show the practical part of Elixir applied to web while dispelling some of "under-the-hood" magic.</p>
+
+<p>Toolchain to get Elixir-powered box: vagrant + Linux on virtualbox; <br />
+Toolchain to get the development going: Elixir + cowboy + erlydtl.</p>
+
+<p>Overall workshop plan:  </p>
+
+<h4 id="lecturepart00000045">Lecture part (00:00-00:45)</h4>
+
+<h5 id="00000010postmoorianproblems">00:00-00:10 Post-Moorian Problems</h5>
+
+<ul>
+<li>Concurrency and parallelism in general-purpose computing</li>
+<li>Concurrency and parallelism in Web development
+<ul><li>Asynchronous I/O, safe worker threads, safe handler fibers (standard approach)</li></ul></li>
+</ul>
+
+<h5 id="00100030fromfiberstoerlangprocess">00:10-00:30 From fibers to Erlang process</h5>
+
+<ul>
+<li>It's possible to write safe code in native programming programming languages using some approaches that Erlang generalizes and organizes into a concurrency framework in form of “Bogdan/Björn's Erlang Abstract Machine”. For clarity I prefer to use term Erlang VM or “EVM” because containers of compiled Erlang code have <a href="http://synrc.com/publications/cat/Functional%20Languages/Erlang/BEAM.pdf">.beam</a> extension.
+<ul><li>Lightweight process — private heap, concurrenct GC</li>
+<li>Message passing — moving data between private heaps, mailboxes</li>
+<li>Scheduling basics — SMP, reductions, "yield wherever"</li>
+<li>Working with processes — spawn, spawn_link</li></ul></li>
+</ul>
+
+<h5 id="00300045librariestobeused">00:30-00:45 Libraries to be used</h5>
+
+<ul>
+<li>cowboy
+<ul><li>Overview</li>
+<li>Examples</li></ul></li>
+<li>erlydtl
+<ul><li>Overview</li>
+<li>Examples</li></ul></li>
+</ul>
+
+<h4 id="workshoppart0045infinity">Workshop part (00:45-:infinity)</h4>
+
+<ul>
+<li>Write a blog engine using cowboy and erlydtl</li>
+<li>Write a blog reader that will show posts in iex shell as soon as those are posted using inter-node message passing (Disclaimer: this is a toy example of inter-node message passing and is designed to show the way out of the callback hell, that's not how a blog reader should be implemented)</li>
+</ul>
+|<p>As you might know, Ruby on Archlinux is broken by design™.</p>
+
+<p>Here's why:</p>
+
+<pre><code>brainstorm:~:% cat /etc/gemrc  
+# Read about the gemrc format at
+# http://docs.rubygems.org/read/chapter/11
+
+# --user-install is used to install to $HOME/.gem/
+# by default since we want to separate
+# pacman installed gems and gem installed gems
+gem: --user-instal  
+</code></pre>
+1395618512506|<p>Смотрю Школу Злословия фоном когда работаю нынче.
+Когда к Татьяне Толстой и Дуне приходят их друзья приятно смотреть передачи. Богемно и эстетично. Кстати, становится понятно, что в школе мы были ужасно богемны. Вспоминаю наше уютное элитистское гнездо философов — Антона Золотова, Александра Моковозова, Марка Гитермана.</p>
+
+<p>Спокойные утренние дни, рассуждения о вечном и фруктовый чай. Эта память святая для меня.
+Аминь, как говорится.</p>
+
+<iframe width="420" height="315" src="//www.youtube.com/embed/00pAFS8NiTk" frameborder="0" allowfullscreen></iframe>
+1395632625769|<p>Recently I have started to read books once again, however didn't review anything here, partially because I'm not reading exclusively technical literature, partially because I was reading literature in Russian and I want to minimize the amount of posts in Russian in this journal.</p>
+
+<p>Nonetheless, I think that I will start making notes about books as I go.</p>
+1395712297488|<p>I have a filter to make tea for a small cup but as a good programmer I like tea in big cups and it only ocurred to me now that I can combinate a tea clip with a larger cup to make the filter usable with larger cup.</p>
+
+<p><img src="http://nn.lv/c8yc" alt="clip configuration" /></p>
+
+<p><img src="http://nn.lv/k0fu" alt="clip setup" /></p>
+
+<p><img src="http://nn.lv/92pq" alt="clip in action" /></p>
+
+<p>Note that clip is bent this way not to touch tea.</p>
+
+<p>Do you use any life hacks? Drop me a line about those at email, IRC or at socialno.de on hyperboria, I'd be happy to adopt more of those.</p>
+1395724588300|<p>Issues and Nym projects are suspended for a couple of days as I've been requested to make a website for a company (yes, I know, websites, buegh). I'm enthusiastic about it as I'll have to participate in making a website for something that's codenamed "hypeteam" in the nearest future anyway, so I'm going to warm up on something complex enough to get back the feel of webdev.</p>
+
+<p>Being the person I am (never do something you don't want to do) I found a challenge in the simple task of implementing a webshop and the challenge is content management. The idea is that content management systems via administration panels suck. I mean, really, a website is essentially a [non-]fancy client to a database, why to make another client to a database and label it "administration panel"? If you can teach a customer how to use your CMS you can as well try teaching them how to use SQL shell.</p>
+
+<p>What I want to do is to make an intuitive zero-configuration universal in-place content editor. Gladly with HTML5 we've got <a href="http://html5demos.com/contenteditable">contenteditable</a>. <br />
+So I've implemented a generic way to work with DOM-elements, listen to changes and send changed elements over to server and put it in a jQuery plugin (because everything should be a jQuery plugin) meanwhile implemented a generic way to convert DOM-elements to JSON allowing custom conversion semantics. Which concludes day one of writing code for simple CMS library. In day two of writing it, I'll put together Cowboy handler for the client side as a part of Saloon3 project. <br />
+Btw, I think that I'll destroy repos saloon, saloon-core, saloon-site and saloon2 on github and just rename Saloon3 to Saloon (Naming of versions of the D programming language taught me how to be really confusing).</p>
+
+<p>Speaking of Saloon3 — I feel urge to make it a library that doesn't do anything by default but relies on cowboy and provides some functionality. A cool approach I see is the following:</p>
+
+<ul>
+<li>for every feature write a library and a default handler;</li>
+<li>put all (or as much as possible of) the internal dependencies into handlers while leaving libraries as independent as possible;</li>
+<li>allow users of Saloon3 to just use it as a framework by providing Saloon.Route module that will spit out routes for all the default handlers.</li>
+</ul>
+
+<p>For example, for the backend for content.js there will be a library that works together with this jQuery plugin and a default handler that will use this library and user management library to provide CMS functionality to web site administrators. To eliminate any intermediate layers while using "raw" libraries, I'll keep those as close to Cowboy API as possible where applicable.</p>
+1395726638854|<p>Or at least they can't be wrong at the same time.</p>
+
+<ul>
+<li><a href="http://harmful.cat-v.org/software/OO_programming/why_oo_sucks">Joe Armstrong — Why OO sucks</a></li>
+<li><a href="http://www.stlport.org/resources/StepanovUSA.html">Graziano Lo Russo — An Interview with A. Stepanov</a></li>
+</ul>
+
+<pre><code>Question:  
+I think STL and Generic Programming mark a definite departure from the common C++ programming style, which I find is almost completely derived from SmallTalk. Do you agree?
+
+Answer:  
+Yes. STL is not object oriented. I think that object orientedness is almost as much of a hoax as Artificial Intelligence. I have yet to see an interesting piece of code that comes from these OO people. In a sense, I am unfair to AI: I learned a lot of stuff from the MIT AI Lab crowd, they have done some really fundamental work: Bill Gosper's Hakmem is one of the best things for a programmer to read. AI might not have had a serious foundation, but it produced Gosper and Stallman (Emacs), Moses (Macsyma) and Sussman (Scheme, together with Guy Steele). I find OOP technically unsound. It attempts to decompose the world in terms of interfaces that vary on a single type. To deal with the real problems you need multisorted algebras - families of interfaces that span multiple types. I find OOP philosophically unsound. It claims that everything is an object. Even if it is true it is not very interesting - saying that everything is an object is saying nothing at all. I find OOP methodologically wrong. It starts with classes. It is as if mathematicians would start with axioms. You do not start with axioms - you start with proofs. Only when you have found a bunch of related proofs, can you come up with axioms. You end with axioms. The same thing is true in programming: you have to start with interesting algorithms. Only when you understand them well, can you come up with an interface that will let them work.  
+</code></pre>
+
+<p>I think that I'll print and frame the quoted part of the interview with Alexander Stepanov to give those frames to my Java-writing friends as a card in addition to a birthday present.</p>
+
+<p>I also find it funny how SmallTalk is taught of something that opposes OOP (in Stepanov's interview) while SmallTalk <em>is</em> the father of OOP. Make closures that hold state, send messages between those and process messages —  that's the true OO as it was imagined by Alan Kay and the fact that Graziano Lo Russo uses it as something that's on the other side of the spectrum of computer programming approaches just displays two simple truths — Stroustrup didn't get Objective Orientation right and in the minds of people Stroustrup's misinterpretation of this reasonable concept is considered to be a reference of what OO is.</p>
+
+<p>C++ is the most terrible thing that have happened to our industry, even worse than Java.</p>
+1395736981815|<p>I have added the following snippet to <a href="http://j.memorici.de/d-cheatsheet/">my D cheatsheet</a>. </p>
+
+<pre><code>template isDateRange(R) {  
+  enum isDateRange = isInputRange!R &amp;&amp; is(ElementType!R : Date);
+}
+</code></pre>
+
+<p>The explanation of it isn't really cheat-sheety, so I've decided to move it into a really short post.</p>
+
+<p>Here <code>enum</code> is a <a href="http://dlang.org/enum.html">manifest constant</a>. Essentially, under this template we are triggering a compile-time code execution for every parametrization (<code>isDateRange!T</code>) this approach is very useful when we want to write something similar to guard expressions for our functions. Consider function <code>lazy_get_month</code> that gets a range of dates and returns lazily evaluated range of months. A possible implementation is</p>
+
+<pre><code>auto lazy_get_month(Range)(Range dates) pure  
+  if (isDateRange!Range)
+{
+  static struct LazyGetMonth {
+    Range r;
+    @property bool empty() {return r.empty;}
+    @property auto front() {return r.front.month;}
+    void popFront() {r.popFront();}
+  }
+  return LazyGetMonth(dates);
+}
+</code></pre>
+
+<p>If implemented like that it will give a compile-time error once parametrized with illegal range type.</p>
+
+<p>For instance, the following code </p>
+
+<pre><code>//Compilation error:
+(1, 2, 3).lazy_get_month;
+</code></pre>
+
+<p>will yield the following (confusing, if you don't know what's happening) compile-time error:</p>
+
+<pre><code>daterange.d(48): Error: template daterange.lazy_get_month cannot deduce function from argument types !()(int), candidates are:  
+daterange.d(14):        daterange.lazy_get_month(Range)(Range dates) if (isDateRange!Range)  
+</code></pre>
+
+<p>Well, at least it prints lines where the error happened :-)</p>
+1395741806118|<p>I've got tired of bad automation of GNU Screen and decided to switch to tmux because of tmuxinator that seemed like a tool for lazy asses like me.</p>
+
+<p>So yeah, tmuxinator is cool and stuff, but I wrote my own tmuxinator in bash:</p>
+
+<pre><code>#!/usr/bin/env bash
+#######################################################################
+# Author: Jonn Mostovoy
+# License: WTFPL
+#######################################################################
+# shmux is shell reimplementation of tmuxinator for a generic project 
+#######################################################################
+_session="$(basename "$1")"  
+tmux start-server\; has-session -t "$_session" 2&gt;/dev/null
+
+if [ "$?" -eq 1 ]; then #and  
+if [ ! -z "$1" ]; then  
+  cd "$1"
+  _wd="$(pwd)"
+
+  TMUX="$(tmux new-session -d -s "$_session" -n project)"
+  tmux new-window -c "$_wd" -t "${_session}:1" -n build
+  tmux new-window -c "$_wd" -t "${_session}:2" -n git
+  tmux new-window -c "$_wd" -t "${_session}:3" -n zsh
+  tmux new-window -c "$_wd" -t "${_session}:4" -n mon0
+  tmux new-window -c "$_wd" -t "${_session}:5" -n mon1
+
+  tmux send-keys -t "${_session}:0" "cd apps || cd app || cd lib || cd src" C-m "vim ." C-m
+  tmux send-keys -t "${_session}:2" "git log --graph --decorate --all -n7 | grep ." C-m
+
+  tmux select-window -t 0
+fi  
+fi
+
+if [ "$2" == "-d" ]; then  
+  exit 0;
+fi  
+if [ -z "$TMUX" ]; then  
+  tmux -u attach-session -t "${_session}"
+else  
+  tmux -u switch-client -t "${_session}"
+fi
+</code></pre>
+
+<p>customize to your needs.</p>
+
+<p>Btw, I haven't completely abandoned GNU Screen as nothing compares to it even by a close margin when it comes to multi-user usage of the same multiplexer, having different views of the same set of windows (service monitoring, for instance). But having a cron job like</p>
+
+<pre><code>cd /home/user/projects  
+for x in $(ls -1t ./ | head -n 5); do eval shmux $x -d; done  
+</code></pre>
+
+<p>is so sexy after all those years of GNU Screen.</p>
+
+<p>Source code:</p>
+
+<ul>
+<li><a href="http://nn.lv/q3t1">shmux</a></li>
+<li><a href="http://nn.lv/7f61">shmuxify (uses tmuxinator)</a></li>
+</ul>
+1396218720608|<p>dkv is mostly done and the code is beautiful. <br />
+Tests for dkv will be QuickCheck-like but the problem is that there is no proper <em>zing</em> library for property testing for D. <br />
+There is some code that implements QuickCheck's forAll and the concept of generators to some extent, however the library looks unfinished. <br />
+So, I'm writing one without reusing the code in question.</p>
+
+<p>Sneak peek at usage:</p>
+
+<pre><code>void axioms(T)  
+  if isAssignableKV!T
+{
+  alias K = KeyType!T;
+  alias V = ValueType!T;
+  properdee.stateless.test(∀!T, ∀!K, ∀!V, (T t, K k, V v) {
+    t[k] = v;
+    assert(t[k] == v);
+  })
+}
+</code></pre>
+
+<p>Once it's done I'll also post StateM test example for properdee.</p>
+
+<p>Moved to zenburn colors for <a href="http://nn.lv/qbgs">urxvt</a> and for <a href="http://nn.lv/i84o">VIM</a> again, also tweaked <a href="http://nn.lv/9pnt">i3 colours</a>. Still using <a href="http://nn.lv/3wys">Solarized VIMperator colours</a>, plan to port this CSS to SASS and then make it usable with <em>.Xresources</em>. <br />
+To use those colours with VIMperator, I have fixed</p>
+
+<ul>
+<li><a href="http://nn.lv/gm03">Github CSS</a></li>
+<li><a href="http://nn.lv/wq76">My homepage CSS</a></li>
+</ul>
+
+<p>Too lazy to fix GMail web interface as well. But this CSS works really well for most of the websites I visit.</p>
+
+<p>Working on saloon now.</p>
+1396353342027|<p><em>All the way from the 2012, newbie digest volume 1 (adopted for Elixir v0.13-dev</em>:</p>
+
+<h3 id="intro">Intro</h3>
+
+<p>I have finally decided to start "Elixir newbie digest" and put here stuff that would be nice for me to understand before I have started my first Elixir production project.</p>
+
+<p>Some of those will be hints, some of those will be in depth analysis of how Elixir language deals with stuff, but I plan to focus on the very basic things and keep those digests as much practical as possible.</p>
+
+<p>Don't know whether those digests will be periodic, but I sincerely hope so.</p>
+
+<h3 id="dottedfunctioninvocation">Dotted function invocation</h3>
+
+<p>Don't forget dot when invoking a function stored in a variable</p>
+
+<pre><code class=" Elixir">iex(1)&gt; f = 1+&amp;1  
+#Fun&lt;erl_eval.6.82930912&gt;
+
+iex(2)&gt; f(41)  
+** (UndefinedFunctionError) undefined function: IEx.Helpers.f/1
+
+iex(2)&gt; f.(41) # note the dot  
+42  
+</code></pre>
+
+<h3 id="oneliners">Oneliners</h3>
+
+<p>If you want to one-line some definition, such as function definition, use <code>, do: body</code> syntax, where <code>body</code> is the body of your function. In fact, this is how Elixir treats your <code>do ... end</code> blocks (you'll get why there is comma before do: later), observe:</p>
+
+<pre><code class=" Elixir">iex(8)&gt; quote(do: defmodule SomeName do :ok end) == quote(do: defmodule SomeName, do: :ok)  
+true  
+iex(9)&gt; quote(do: defmodule SomeName do :ok end)  
+{:defmodule,0,[{:_aliases_,0,[:SomeName]},[do: :ok]]}
+</code></pre>
+
+<p>But wait, there is more! Let's reverse the logic: anything that takes <code>[do: block]</code>  can be "multilined" as follows:</p>
+
+<pre><code class=" Elixir">iex(21)&gt;   f = fn  
+...(21)&gt;    (do: anything) -&gt; anything
+...(21)&gt;    (_) -&gt; :nothing
+...(21)&gt;   end
+#Fun&lt;erl_eval.6.82930912&gt;
+iex(22)&gt; f.() do  
+...(22)&gt;  # This multiline do-block is simply supplied 
+...(22)&gt;  # to the ``f`` function as a value in proplist
+...(22)&gt;  # under key ``:do``
+...(22)&gt;  42
+...(22)&gt; end
+42  
+iex(23)&gt; f.(do: "works")  
+"works"
+iex(24)&gt; f.([do: "also works"])  
+"also works"
+iex(25)&gt; f.([{:do, "erlang-style proplist, also works"}])  
+"erlang-style proplist, also works"
+iex(26)&gt; f.("returns :nothing")  
+:nothing
+</code></pre>
+
+<p>Now let's explain the strange comma before do:</p>
+
+<pre><code class=" Elixir">iex(25)&gt; quote(do: defmodule SomeName, do: :ok) == quote(do: defmodule(SomeName, do: :ok))  
+true  
+</code></pre>
+
+<p>as you can see, that simply is the result of Elixir being able to handle parensless syntax, as <code>def</code>, <code>defmacro</code> and friends are simply macros that expect to get a value in a proplist under key <code>:do</code>! <br />
+Also note that:</p>
+
+<pre><code class=" Elixir">iex(27)&gt; quote(do: defmodule(SomeName, do: :ok)) == quote(do: defmodule(SomeName) do :ok end)  
+true  
+</code></pre>
+
+<p>And a hint from Mr. José Valim — "in general, everything in between do…end can be written as do: (…)", observe:</p>
+
+<pre><code class=" Elixir">iex(31)&gt; defmodule(ILoveParens, do: (  
+...(31)&gt;   def(my_favorite_chars, do: (
+...(31)&gt;    "My favorite characters are '(' and ')'."
+...(31)&gt;   ))
+...(31)&gt; ))
+</code></pre>
+
+<p>That's it for today.  </p>
+
+<p>So long, and thanks for all the reading.</p>
+1396483534373|<p><em>This one is actually written right now, as a part of writing an awesome set of macros to work with SQL</em>.</p>
+
+<p>In Elixir Newbie Digest volume one we have talked about what "do..end" blocks really are, let's now use this knowledge to define <code>mydef</code> macro. For the simplicity, let's use <code>def</code> "keyword" underneath. <code>mydef</code> macro should insert a "copyright notice" in the code of defined function to annoy users!</p>
+
+<p>This newbie digest is more of a macros cheat-sheet with hands-on code snippets that show what gets evaluated at compile time, what gets evaluated at run time, what has to do with AST and where we can generate code in a cleaner fashion.</p>
+
+<h3 id="matchdobody">match do body</h3>
+
+<pre><code>defmacro with_do_body(a, do: b)  
+when is_atom(a) do # You can use guards with macros!  
+  # While we're in AST land, we can do some stuff with AST
+  IO.inspect b # this will print AST of do-body 
+               # at *compile* time
+  quote do
+    # quote-land, we're genereating code here in a clean fashion
+    IO.inspect unquote(a) # this will print a at run time
+    unquote(b)            # this will run b at run time
+  end
+end  
+</code></pre>
+
+<p>Let's have a look at how it works:</p>
+
+<pre><code>brainstorm:/tmp:% elixirc ./dobody.ex &amp;&amp; ERL_LIBS=. iex  
+Interactive Elixir (0.13.0-dev) - press Ctrl+C to exit (type h() ENTER for help)  
+iex(1)&gt; require M  
+</code></pre>
+
+<p>We require module where we have defined with_do_body.</p>
+
+<pre><code>iex(2)&gt; M.with_do_body(:hey) do  
+...(2)&gt;   IO.puts "hi"
+...(2)&gt; end
+{{:., [line: 3], [{:__aliases__, [counter: 0, line: 3], [:IO]}, :puts]}, [line: 3], ["hi"]} #&lt;- hello from unquoted part of macro
+:hey #&lt;- this is printed in quoted world
+hi   #&lt;- this is unqoute(b) running  
+:ok  #&lt;- this is the result of unqoute(b)
+</code></pre>
+
+<pre><code>iex(3)&gt; M.with_do_body(:hey) do  
+...(3)&gt;   for x &lt;- [1,2,3], do: IO.puts x+37
+...(3)&gt; end
+{:for, [line: 4],
+ [{:&lt;-, [line: 4], [{:x, [line: 4], nil}, [1, 2, 3]]},
+  [do: {{:., [line: 4], [{:__aliases__, [counter: 0, line: 4], [:IO]}, :puts]}, [line: 4],
+    [{:+, [line: 4], [{:x, [line: 4], nil}, 37]}]}]]}
+:hey
+38 #&lt;- unquote(b) running, again  
+39  
+40  
+[:ok, :ok, :ok] #&lt;- result of unquote(b)
+</code></pre>
+
+<pre><code>iex(4)&gt; M.with_do_body 42, do: :error  #&lt;- matching in macros  
+** (FunctionClauseError) no function clause matching in M.with_do_body/2
+             iex:4: M.with_do_body/2
+    (elixir) iex:4: :elixir_compiler.__FILE__/2
+</code></pre>
+
+<h3 id="implementmydef">implement mydef</h3>
+
+<p>Let's mess around with AST a little bit now!</p>
+
+<pre><code>defmacro mydef(signature, do: body) do  
+  IO.inspect body
+  tm = quote do 
+    IO.puts "This function is created by mydef macro" 
+  end # We'll insert it in the AST 
+      # of code that is shipped to us in do body
+
+  body = # While we're in quoted land, let's mess with AST
+    case body do
+      {:__block__, _, ast} -&gt; # We've got a block of code
+        IO.inspect "Working with a multiline function"
+        {:__block__, [], [tm|ast]}
+      ast -&gt;
+        IO.inspect "Working with a one-line function"
+        IO.inspect ast
+        {:__block__, [], [tm,ast]}
+    end
+  quote do
+    # We often ``def`` things from macros
+    # this approach is generally very useful
+    def unquote(signature), do: unquote(body)
+  end
+end
+</code></pre>
+
+<p>Let's have a look at it in action:</p>
+
+<pre><code>cat &gt; md.ex &lt;&lt;EOT  
+defmodule MD do  
+  require M
+  import M
+  mydef foo(x) do
+    IO.inspect x
+  end
+end  
+EOT
+
+elixirc ./*.ex &amp;&amp; ERL_LIBS=. iex  
+Interactive Elixir (0.13.0-dev) - press Ctrl+C to exit (type h() ENTER for help)  
+iex(1)&gt; MD.foo(3)  
+This function is created by mydef macro  
+3  
+3  
+</code></pre>
+
+<p>You can do that from REPL as well:</p>
+
+<pre><code>Interactive Elixir (0.13.0-dev) - press Ctrl+C to exit (type h() ENTER for help)  
+iex(1)&gt; defmodule FromREPL do  
+...(1)&gt;  require M
+...(1)&gt;  import M
+...(1)&gt;  mydef faz(x) do
+...(1)&gt;   IO.inspect x
+...(1)&gt;  end
+...(1)&gt; end
+{{:., [line: 5], [{:__aliases__, [counter: 0, line: 5], [:IO]}, :inspect]}, [line: 5], [{:x, [line: 5], nil}]}
+"Working with a one-line function"
+{{:., [line: 5], [{:__aliases__, [counter: 0, line: 5], [:IO]}, :inspect]}, [line: 5], [{:x, [line: 5], nil}]}
+{:module, FromREPL,
+ &lt;&lt;70, 79, 82, 49, 0, 0, 7, 224, 66, 69, 65, 77, 65, 116, 111, 109, 0, 0, 0, 139, 0, 0, 0, 14, 24, 69, 108, 105, 120, 105, 114, 46, 78, 111, 116, 70, 114, 111, 109, 82, 69, 80, 76, 84, 104, 111, 117, 103, 104, 8, ...&gt;&gt;,
+ {:faz, 1}}
+iex(2)&gt; FromREPL.faz(42)  
+</code></pre>
+
+<p>Now let's do something even more fancy, let's write a match-generator, this is also quite a bit important "pattern" in writing macros:</p>
+
+<pre><code>defmodule ExMacro do  
+  defmacro mymatch(match, do: body) do
+    quote do
+      # you can just unqoute stuff in the arglist to match
+      def mymatch(match: unquote(match)), do: unquote(body)
+    end
+  end
+end
+
+defmodule ExMacroDemo do  
+  use ExMacro
+  mymatch "something" do
+    IO.puts "Well, that's something"
+  end
+  mymatch "nothing" do
+    IO.puts "Oops, it's not a thing, is it?"
+    :notok
+  end
+end  
+</code></pre>
+
+<p>And the result is:</p>
+
+<pre><code>brainstorm:exmacro:% elixirc ./exmacro.ex &amp;&amp; ERL_LIBS=. iex  
+Erlang/OTP 17 [RELEASE CANDIDATE 2] [erts-6.0] [source] [64-bit] [smp:4:4] [async-threads:10] [hipe] [kernel-poll:false]
+
+Interactive Elixir (0.13.0-dev) - press Ctrl+C to exit (type h() ENTER for help)  
+iex(1)&gt; ExMacroDemo.mymatch match: "nothing"  
+Oops, it's not a thing, is it?  
+:notok
+iex(2)&gt; ExMacroDemo.mymatch match: "something"  
+Well, that's something  
+:ok
+iex(3)&gt; ExMacroDemo.mymatch :error  
+** (FunctionClauseError) no function clause matching in ExMacroDemo.mymatch/1
+     exmacro.ex:56: ExMacroDemo.mymatch(:error)
+</code></pre>
+
+<p>By the way, an interesting thing to understand about executing code in AST-land is that it gets executed at compile-time once for every "call" to the macro, observe:</p>
+
+<pre><code>defmodule M do  
+  defmacro ctexec(do: stuff) do
+    IO.puts "M.ctexec is invoked at compile time"
+    stuff
+  end
+end
+
+defmodule MD do  
+  require M
+  import M
+
+  ctexec do
+    IO.puts("Prints stuff at compile time")
+  end
+
+  if false do
+    ctexec do: IO.puts("Never prints this stuff")
+  end
+
+  def ctexec! do
+    ctexec do: IO.puts("Prints stuff at runtime")
+  end
+
+end
+</code></pre>
+
+<p>How many times do you think the message “M.ctexec is invoked at compile time” will get printed?</p>
+
+<p>The answer is actually three, not two. Even though one of <code>ctexec</code>s is enclosed in <code>if false</code> doesn't prevent the compiler to expand ctexec during compilation, calling <code>IO.puts "M.ctexec is invoked at compile time"</code>. Let's see the output:</p>
+
+<pre><code>brainstorm:/tmp:% elixirc ./false.ex &amp;&amp; ERL_LIBS=. iex  
+M.ctexec is invoked at compile time  
+M.ctexec is invoked at compile time  
+Print stuff at compile time  
+M.ctexec is invoked at compile time  
+</code></pre>
+
+<p>notice how we got a message from the <code>if false</code> cage but the code we ship in do block doesn't get executed? Might be a bug, actually, still this might save you some time while debugging macro-heavy code at least.</p>
+
+<p>That's it for today, I'll publish Elixir Newbie Digest vol. 2 here soon, maybe after fourth though, where I'll talk about the migration from records to maps proposed by Jose two months ago and it was <a href="http://www.cs.otago.ac.nz/staffpriv/ok/frames.pdf">thought to be an OK idea way earlier</a>.</p>
+1396489276909|<p>I'm catching up with Torah (re-)reading these days and use absolutely beautiful “Jewish Study Bible” for that. It's published by Oxford Press. If you want to buy a reasonable English version of Torah that is not affilated with a particular Jewish movement, you should definitely pick this one. <br />
+JSB was made possible due to the huge effort by both conservative, orthodox and reformist rabbis and theologists, sadly the translation is not consensus-based — when the group had a different opinion on the translation of some phrase, the decision was made by the majority of votes. Nonetheless, this English version of Torah is very clean and trustworthy.</p>
+
+<p>I have also started a beautiful book called “This is my God” by Herman Wouk. In the preface he says that he wrote this book as an answer to a rather simple question about Tradition by his non-religious friend who wanted to teach his child something. And that makes this book really great — it aimed to talk about Jewish religion and traditions on a 101 level and to provide a good introductory document for everyone, not just Jewish fathers who want to teach their kids some Jew-jitsu in their late fourties. I think that it'd be fun to read it even for a person who's as far from religion or theology as one can imagine. This book sheds a good amount of light on the very basic aspects of Jewish culture, Tradition and Law.</p>
+
+<p>But what really triggered me spitting the “reading status” post so early was the beginning of chapter two of Mitnick's “Ghost in the Wires” — </p>
+
+<blockquote>
+  <p>Even many Jewish families that aren’t very religious want their sons to have a bar mitzvah, and I fell into that category. This includes standing up in front of the congregation and reading a passage from the Torah scroll—in Hebrew. Of course, Hebrew uses a completely different alphabet, with ו ,נ ,ש, and the like, so mastering the Torah portion can take months of study.</p>
+</blockquote>
+
+<p>which was kinda fun and unexpected. Never thought that Mitnick studied Torah as a kid or at least enough of it to pass his bar mitzvah.</p>
+
+<p>Overall, I really enjoy reading Mitnick's book and I'm happy that nowadays there is a possibility for people like him to hack things legally as a pentester. As we're on the topic of "introduction to culture X" books, I'd say that “Ghost in the Wires” is a nice introduction to the ⠠⠵-culture.</p>
+1396513099852|<p>We all know trivial shit about tmux, but let me make sure we're on the same page.</p>
+
+<h3 id="zshplugin">Zsh plugin</h3>
+
+<p>First, there is a <a href="https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/tmux">tmux plugin</a> in <a href="https://github.com/robbyrussell/oh-my-zsh/">bloat-my-zsh</a>, use it. With it you do</p>
+
+<pre><code>brainstorm:~:% tl  
+dkv: 6 windows (created Wed Apr  2 20:50:01 2014) [80x23]  
+exdbi_pgsql: 6 windows (created Wed Apr  2 20:49:59 2014) [80x23]  
+exmacro: 6 windows (created Wed Apr  2 22:24:36 2014) [112x66]  
+exmig: 6 windows (created Wed Apr  2 20:50:00 2014) [80x23]  
+gitolite-admin: 6 windows (created Thu Apr  3 04:19:49 2014) [226x66]  
+saloon: 8 windows (created Wed Apr  2 20:50:01 2014) [112x66]  
+xsql: 7 windows (created Thu Apr  3 06:22:31 2014) [226x66] (attached)  
+</code></pre>
+
+<p>and to attach, you do </p>
+
+<pre><code>ta sessionName  
+</code></pre>
+
+<p>I use it and git plugin and my fingers are very grateful.</p>
+
+<h3 id="256colours">256 Colours</h3>
+
+<p>Then,</p>
+
+<pre><code>tmux -2  
+</code></pre>
+
+<p>always launch your tmux like this because 256 colours.</p>
+
+<h3 id="usabilityandsplittingaka256colourscont">Usability and splitting (aka 256 colours, cont.)</h3>
+
+<p>My usability and splitting parts of tmux.conf:</p>
+
+<pre><code>#### USABILITY (VIM/Screen-like)
+set -g prefix C-a  
+set-option -g history-limit 100000  
+setw -g xterm-keys on  
+set-option -g default-terminal "screen-256color"  
+set -g terminal-overrides 'xterm:colors=256  
+setw -g mode-keys vi  
+set-option -g allow-rename off  
+set-option -g automatic-rename off
+
+#### Splitting and walking around splits
+bind-key | split-window -h  
+bind-key - split-window  
+unbind-key j  
+bind-key j select-pane -D  
+unbind-key k  
+bind-key k select-pane -U  
+unbind-key h  
+bind-key h select-pane -L  
+unbind-key l  
+bind-key l select-pane -R  
+</code></pre>
+
+<h3 id="cooltricks">Cool tricks</h3>
+
+<p>To print currently attached session:</p>
+
+<pre><code>tmux display-message -p "#S"  
+</code></pre>
+
+<h3 id="sessioninitializationautomation">Session initialization automation</h3>
+
+<p>Shmux, the shell tmuxinator clone: <a href='http://j.memorici.de/shmux/'>http://j.memorici.de/shmux/</a> <br />
+I'll release final version of shmux and shmuxify later this week if I won't be a lazy ass. Either way, it's trivial to tweak the linked source code to your needs.</p>
+
+<p><em>To be continued</em></p>
+1396528283270|<p>With the radio network part of which 2600.com is (disclaimer: I'm not a leftist, nor American, I just have a huge respect for Emmanuel's work and catch up with what hardcore activists and oldschool hackers are talking about now and then), I naturally thought about hacking then (thanks to “Ghost in the Wire”) Mitnick and then the train of thoughts naturally went to the notion of getting caught.</p>
+
+<p>A funny story came into my mind which is about the most embarassing privacy failure of mine. It also has a little something more to it that I thought can <em>still</em> be important. <br />
+So here's the thing. I love VIM. I was VIMming for, gosh, almost a decade now and I don't want to stop. In fact, I want my things to behave like VIM, have modes of operation and simple one-key mappings to do things. I also like my stuff to be programmable.</p>
+
+<p>Around 2009 I found this cool plugin everybody knows of these days called Vimperator. That changed my surfing experience a lot and I can't imagine amount of time I saved over these five years with it! <br />
+Around 2011 I found a cool site called github (which, in fact, kinda sucks for several reasons with primary reason being a <em>hub</em> for something as decentralized as <em>opensource</em>, think about it in your spare time). Actually, this deserves some elaboration. The reason I've went there was Moxie Marlinspike's <a href="http://convergence.io">Convergence</a> which is a really cool project. I've tried to run it, it didn't work and so I went to github to fix some issues in it which turned out to be quite entertaining and challenging experience and resulted in an accepted pull request by me, sid77 and some other guy whose nickname I don't remember.</p>
+
+<p>So yeah, github, a reasonable person who puts a lot of effort in bending the reality to one's will using, among other things, configuration files for programs one uses, I have decided to back those up in a really safe fashion. What I did was I set up a cool symlink system, a filesystem watch and automated git trigger on changes of some important files. <br />
+Because my .vimperator contained some customizations, I have decided to include it into this system. <br />
+It worked like a charm till in mid-2012 I have noticed that my dotfiles repo is fucking huge. Well, in fact it wasn't <em>FUCKING HUGE</em> it was just unreasonably large for a dotfiles repo. I have started investigating and I found... <br />
+...two years worth of browsing history in dotfiles/.vimperator/info. </p>
+
+<p>Needless to say that I was using Firefox with Tor patchset and sometimes (not TBB though), I was in private mode 100% of the time and was inputting passwords for all the services all the time. I have also going from door to door talking about data safety in my spare time: “Hello. Do you belive in privacy?” <br />
+Most certainly this was a time when I've got my very first gray hair. Well, actually no, the girl I was seeing back then gave me plenty of those. Anyhow, I've deleted the repo in shame and fear. Around this time I've moved to Pentadactyl (which, as far as I remember, had this bug fixed), however Pentadactyl doesn't work properly anymore and I've switched back to Vimperator.</p>
+
+<p>Recently I was setting up a repo for dotfiles on memorici.de and realized... <br />
+...well, this ridiculous "feature" is still in Vimperator, so now I have a cron job that cleans ~/.vimperator/info/default for me every now and then. That's an ugly workaround, but it's worth it.</p>
+
+<p>Besides, that's a neat little way to own VIM geeks' browsing history having a shell or physical access.</p>
+1396895419813|<p>Sixteen colours should be enough for everyone. <br />
+That being said, here is how my environment looks as for today: <br />
+<img src="http://f.nn.lv/n3/mt/bv/desktop.png" alt="Desktop Wallpaper" /></p>
+
+<p><img src="http://f.nn.lv/n3/mt/b1/mocha.png" alt="Firefox, Code, htop" /></p>
+
+<p>That was made possible thanks to the beautiful in its simplicity piece of code called <a href="https://github.com/chriskempson/base16-builder">base16-builder</a> (thanks to <a href="http://mkaito.com">mkaito</a> for showing this to me, his neverending quest for the ultimate colour scheme and keeping his hand on the pulse of the modern state of colour scheme art).</p>
+
+<p>Sadly, writing proper schema for Gtk 2.0 and Gtk 3.0 is almost as difficult as configuring those things, so even though I have wrote generators for gtk, I don't use those. Instead, I've switched back to Arch Linux version of Elegant Brit (Elegant Brit Re-revisited).</p>
+
+<p>I've got some more ideas on improving base16-builder toolchain, however I've got a web-framework to write, so...</p>
+1397575403604|<p><em>Post from Google+, 11 Jan 2013, editted Apr 15 2014</em></p>
+
+<h3 id="minimizingrisksofcredentialanddataleakageincaseoflaptoploss">Minimizing risks of credential and data leakage in case of laptop loss</h3>
+
+<p>I wanted to start blogging at Google+ but then things happen and the whole idea got postponed. But now I have enough energy to channel it into writing posts here, so let's begin with the following mental experiment — <br />
+ask yourself, what will happen if your laptop gets stolen? <br />
+Considering at least some level beyond low-tech burglar/pickpocketer, he will most likely get access to the filesystem, worst case scenario — he gets to launch your web-browser to find out that you save passwords, see the names of your friends in the browser history, and sites you frequently visit. Not to mention that if you synchronize your Android contacts with your Google™ Account, thief can get phone numbers of your friends and family. <br />
+That enables bad guy to do some scam/fraud afterwards. If he's a good con artist, shit can hit the fan and your life can turn to hell. <br />
+If you are a developer then you — most certainly — are lazy, i.e. you don't like passwords. Ask yourself if you can list all the servers you can log in to from your laptop using ssh-keys, ask yourself if you remember the passwords on all of those and if you can do an immediate response of removing .ssh/authorized_keys when you find out that your laptop is missing. So yeah, that's another thing that can go wrong.</p>
+
+<p>Why don't we [simply(?)] encrypt our laptop disk? <br />
+We won't... We want that laptop back, right?! <br />
+Anyway, I'll cover that in an upcoming post on that topic.</p>
+
+<p>What do I suggest to minimize risks? <br />
+In order to address browser credential leakage — use only firefox private browsing on your laptop with the following addons —</p>
+
+<ul>
+<li>HTTPS Everywhere</li>
+<li>NoScript</li>
+</ul>
+
+<p>You may read news sites and view documentation in non-private mode for attacker to spend more time in useless struggle to find out things about your persona, your friends and family. <br />
+If you're one of those hipster GoogleChrome users, never allow that bitch to save your passwords (see screenshot attached).</p>
+
+<p><img src="https://lh5.googleusercontent.com/-I9JFu64cy_g/UO-kFpHR2aI/AAAAAAAACUQ/3Rb8ICl1oIM/w1044-h653-no/chrome-save-passwords.png" alt="Disable Google™ Chrome™ password storage" /></p>
+
+<p>Do not keep personal data on your laptop drive (that's not that hard, really). <br />
+Wipe things from your home directory once in a while, don't put photos or documents there, if you have to work with a document, upload it to Google™ Drive or Dropbox (or — in my case — a private, bare metal, physically secure server). <br />
+Delete sensitive files with <code>shred</code>.</p>
+
+<p>Now let's address the issue of ssh-keys! <br />
+Rather obvious thing, in fact — make an encrypted partition on a usb stick that will hold your keys, ssh-config (sic!) and — if you don't want to give any intelligence that can help the bad guy to target you, /etc/hosts.</p>
+
+<h3 id="encryptingstorage">Encrypting storage</h3>
+
+<p>If you know how to encrypt partitions, you may skip that section</p>
+
+<p>To do that, install cryptsetup and LUKS backend (I might make a post later about the implications to understand when using LUKS, such as what are consequences of LUKS being header-based, for now — you may refer to either $ man cryptsetup for brief overview, or google.com to dive in), on Arch Linux, you may install both cryptsetup and LUKS backend that by issuing <br />
+<code># pacman -S cryptsetup</code>
+Then, you should partition your USB stick via cfdisk (I use a stick that has Arch Linux installation ISO for that purpose, so that I always have Live Linux within reach and all the needed keys for work). <br />
+<code># cfdisk /dev/yourstickd</code>
+Heads up: you may find out what to type in instead of yourstickd by examining /proc/partitions. Obviously, you have to have your stick unmounted before changing its partition table. <br />
+Now block-encrypt required partition with LUKS (in my case that is a second partition on the device)  </p>
+
+<pre><code># cryptsetup --verify-passphrase -v luksFormat /dev/yourstickd2
+</code></pre>
+
+<p>Now you can open LUKS capsule by issuing  </p>
+
+<pre><code># cryptsetup luksOpen /dev/yourstickd2 mappedlabel
+</code></pre>
+
+<p>It will ask for your passphrase (you still remember it and it's longer than your penis, right?). Now you have /dev/mapper/mappedlabel pseudo-device that maps to /dev/dm-0. <br />
+Okay, next up is formatting the new partition (heads up! skip that step only if you understand implications of skipping that step)  </p>
+
+<pre><code># pv -tpreb /dev/zero | dd of=/dev/mapper/mappedlabel bs=128M 
+</code></pre>
+
+<p><em>— thanks to nixcraft for insight about using pipe viewer, you may want to check out <a href='http://www.cyberciti.biz/'>http://www.cyberciti.biz/</a></em></p>
+
+<p>Hopefully you didn't fall asleep or get high on coffee before the formatting finished. <br />
+Now let's procede to the standart routine:</p>
+
+<pre><code># mkfs.ext4 /dev/mapper/mappedlabel
+# mkdir /sec
+# mount /dev/mapper/mappedlabel /sec
+# echo "Get the fuck out, it's my property." &gt; /sec/README
+# cat /sec/README
+</code></pre>
+
+<p>To unmount it we do  </p>
+
+<pre><code># umount /sec
+# cryptsetup luksClose mappedlabel
+</code></pre>
+
+<p>End of crash course. Don't forget your passphrase please.</p>
+
+<h3 id="puttingsshtoencryptedpartition">Putting .ssh to encrypted partition</h3>
+
+<p>Now that we have an encrypted pendrive, we can store our stuff there let's make an .ssh directory owned by your user in /sec that will contain our keys and ssh-config.  </p>
+
+<pre><code># mv -vt /sec/ /home/user/.ssh
+# chown -R user /sec/.ssh
+# chgrp -R users /sec/.ssh
+# chmod -R 0600 /sec/.ssh
+</code></pre>
+
+<p>Now, as a user, edit your <code>/sec/.ssh/config</code> to match proper IdentityKey paths (see figure attached). Finally, softlink known_hosts and config in your <code>~/.ssh</code> to <code>/sec/.ssh/known_hosts</code> and <code>config</code>.</p>
+
+<h3 id="exampleusage">Example usage</h3>
+
+<h4 id="exampleofsshconfigattheencryptedthumbdrive">Example of .ssh/config at the encrypted thumbdrive.</h4>
+
+<p><img src="https://lh6.googleusercontent.com/-4o0g5kOW7Gs/UO-w6dg5WfI/AAAAAAAACUU/ba3isgF7xEc/w1044-h653-no/ssh-config.png" alt="Example of .ssh/config at the encrypted thumbdrive." /></p>
+
+<h4 id="demonstrationoftheluksencryptedpartitionusage">Demonstration of the LUKS-encrypted partition usage.</h4>
+
+<p><img src="https://lh4.googleusercontent.com/-Ti39oc9t0FU/UO-1a0_1k4I/AAAAAAAACUk/w-l_FVVt1_Q/w1044-h653-no/luks-usage.png" alt="Demonstration of the LUKS-encrypted partition usage." /></p>
+
+<p>Please note that if we have /etc/hosts softlinked to the encrypted thumbdrive, system won't be able to resolve "localhost" host. Hopefully you don't use software that relies on localhost pointing at 127.0.0.1 (because you shouldn't).</p>
+
+<h3 id="finalnotes">Final notes</h3>
+
+<p>Please remember the following: after you instantiate needed ssh connections unmount stick and close LUKS container, unplug it and put it in the place you transport it. You don't want to get caught with your pants down. <br />
+And lock the screen as you leave your laptop anywhere, it will force attacker to reboot laptop, dropping instantiated ssh connections.</p>
+
+<p>To conclude things — <br />
+we have set up a laptop that is useless even to twisted-minded con artists that somehow acquired physical access to it, we have (intentionally) set up a framework where we will be able to deploy a software solution capable of revealing identity of thief and ensure that our device will get back to us with probability that is way higher than zero. I'll cover that solution in the next post, maybe next friday?..</p>
+
+<p>So long, and thanks for all the reading.</p>
+1397579735484|<p><em>This opens a set of several “live posts”, I'll update those as I go and I'll put milestones in separate posts</em></p>
+
+<p>After eight years of Arch Linux usage I'm moving to <a href="http://nixos.org">NixOS</a>. <br />
+It is an ideological decision, not practical as nix, the package manager, can be used on any Linux distro.</p>
+
+<p>It all begean a little bit less than twenty four hours ago, when I was implementing algebra of semantic DOM traversal in JavaScript and realized how terrible the technology at hand is to do anything but hello world-level programs in form of jQuery plugins (because everything should be a jQuery plugin, you know). So naturally, I have decided to use <a href="https://github.com/faylang/fay/wiki">faylang</a> which — not surprisingly — didn't build via cabal. <br />
+So I went on #haskell and started to rant about how much cabal sucks for deployment, comparing haskell deployment approach to erlang's and asking for best practices. <br />
+A great person <em>wavewave</em> suggested me using nix, I must admit that even though I have heard about it years ago, it was a revelation for me. This summer when I was fucking with several patch sets for PostgreSQL and some bullshitware that builds only on Ubuntu because of library versioning I was thinking about something similar to nix but surely enough, starting prototyping such a huge project requires either having completely no life, or getting paid for that, or being an academic (which reduces to the second case).</p>
+
+<p>So, let me quote NixOS website:</p>
+
+<hr />
+
+<blockquote>
+  <p>Nix is a purely functional package manager. This means that it can ensure that an upgrade to one package cannot break others, that you can always roll back to previous version, that multiple versions of a package can coexist on the same system, and much more.</p>
+</blockquote>
+
+<hr />
+
+<blockquote>
+  <p>NixOS is a Nix-based Linux distribution. Thanks to Nix, it supports atomic upgrades, rollbacks and multi-user package management, and it has a declarative approach to system configuration management that makes it easy to reproduce a configuration on another machine.</p>
+</blockquote>
+
+<hr />
+
+<p>Cons: </p>
+
+<ul>
+<li>Links (who gives a fuck, I don't touch stuff in my PATH manually anyway)</li>
+<li>Disk usage (50GB large /nix is a normal and expected size. Again, no fucks given, disks are cheap and large)</li>
+<li>Small amount of packages compared to community/extra/aur (not a real issue because <a href="http://nixos.org/nixpkgs/">nixpkgs</a> is orthogonal to the core idea of nix, besides, nix provides isomorphic toolchain to ABS, so I can imagine program pkgbuild2nix).</li>
+<li>Doesn't work ad hoc with impure code to binary compilations (when for the same inputs for building of code we get different binaries. Example: putting timestamp of compilation into binary)</li>
+</ul>
+
+<p>Pros:</p>
+
+<ul>
+<li>Dependency hell problems are solved once and for all.</li>
+<li>Very good <a href="https://nixos.org/wiki/Haskell">Haskell package set</a>.</li>
+<li>Using nix and nixos today yields a lot of experience with it when it becomes de-facto industry standard (much usage like LXC/AUFS via Docker has become now).</li>
+<li>Removing need of <a href="https://github.com/spawngrid/kerl">kerl</a>, rbenv, python-activate and alike.</li>
+<li>Per-user package localization.</li>
+<li>Rock solid stability via rollbacks (when it fails, rollback).</li>
+<li>Is just a library (you can use it on Mac OS X, Archlinux, Ubuntu, FreeBSD...)</li>
+<li>Is minimal (depends only on a couple of pieces from GNU toolchain)</li>
+<li>Has permissive license (fuck GPLv3)</li>
+</ul>
+
+<p>So while staying at Arch Linux but using nix package manager sounds more reasonable then swtiching the whole system environment in the middle of writing projects for money, I would argue that it isn't.</p>
+
+<p>If I have learned something over these years of developing software is that whenever there is a possibility to make things go smoothly and in a crystal clean fashion, there is no reason not to take time to do required actions.</p>
+
+<p>So, the adventure begins!</p>
+1397580495683|<h4 id="1759formatenctyptedthumbdrive"><em>17:59</em> — format enctypted thumbdrive</h4>
+
+<pre><code>pv -tpreb /dev/zero | dd of=/dev/mapper/bck bs=128M  
+</code></pre>
+
+<p>This is the most boring process of installation of new software — putting zeroes on an encrypted thumbdrive. One can literally fall asleep while doing that.</p>
+
+<h4 id="1840nixosorgdomainisblocked"><em>18:40</em> — nixos.org domain is blocked</h4>
+
+<pre><code>[19:43] &lt; MagBo&gt; what's up with nixos.org?
+[19:44] &lt; MagBo&gt; I can't read German. It says “Diese Domain wurde gesperrt...”
+[19:44] &lt; MagBo&gt; whois says “Updated Date: 2014-03-18T01:22:42Z
+[19:44] &lt; MagBo&gt; Registry Expiry Date: 2015-03-17T21:54:09Z
+[19:44] &lt; MagBo&gt; Registrant Name:Eelco Dolstra
+[19:45] &lt; Seldaek&gt; MagBo: means the domain is blocked
+[19:46] &lt; jhinkle&gt; vu3rdd: exact same situation
+[19:46] &lt; Seldaek&gt; which AFAIK has no ISP blocking of anything
+[19:46] &lt; wizeman&gt; MagBo: I'm getting it from Spain as well
+[19:46] &lt; MagBo&gt; got this from Croatia, now testing it from Latvia
+[19:47] &lt; ttuegel&gt; i'm blocked from usa
+[19:47] &lt; Seldaek&gt; MagBo: anyway it's coming from the domain registrar it seems so I doubt it's us
+</code></pre>
+
+<p>That's a funny turn of events, investigating the reasons as well as finding out any possible mirrors.</p>
+
+<p>19:17 — No good news (IP access doesn't work, people at #nixos don't know about any mirrors), however I've <a href="https://twitter.com/podmostom/status/456113439430438912">tweeted at registar</a> and a good gentleman pSub is trying to contact registar now.</p>
+
+<p>19:50 — <a href="https://gist.github.com/rbvermaa/5a6a9993a11b52d93865">Fix via /etc/hosts</a> has arrived.</p>
+
+<h4 id="2015backupthefiles"><em>20:15</em> — back up the files</h4>
+
+<p>Smart way to perform a supervised (by human) copying of dotfiles:</p>
+
+<pre><code>for x in \.*; do rsync -Pav $x /mnt/pnt/home/sweater/dotfiles; done  
+</code></pre>
+
+<p>This is smart because we can ^C copying of huge directories such as .npm, .rbenv, .wine while being sure that everything else gets copied.</p>
+
+<p>We'll need:</p>
+
+<pre><code>[*] my graphical work
+[*] my laptop subset of book library (including calibre library), 
+[*] working copies of the libraries I write, 
+[*] dotfiles 
+[*] crontab settings
+[*l] whole /etc
+</code></pre>
+
+<p>Optional:</p>
+
+<pre><code>[*] github directory
+[*] some stuff from Downloads/
+</code></pre>
+
+<h4 id="2352installingnixoswhilenixosexperiencesdnsissues"><em>23:52</em> — Installing nixos while nixos experiences DNS issues</h4>
+
+<p>This is a real test for the infrastructure and, well, the test is failed by a huge margin and a beautiful display of the fact that not only systems but infrastructures as well should be built in a distributed fashion. In Arch Linux there wouldn't be such a problem at all, we would just silently fall back to the next mirror in a huge mirror list. <br />
+I'm not sure about it, but it should be trivial to adopt the mirrorlist approach to all the nix-related toolchain, given that it is a distributed system by design.</p>
+
+<p>So the outage is still on, however a fix that I have mentioned earlier was proposed to offer /etc/hosts-based workaround. The problem is that because of some reasons (related to the nixos server configuration), cache.nixos.org doesn't work with this workaround. Instead, it was offered on #nixos at freenode to use the following URL to access binary caches: </p>
+
+<p><a href='http://d3m36hgdyp4koz.cloudfront.net/'>http://d3m36hgdyp4koz.cloudfront.net/</a></p>
+
+<p>This way, the change for the nix environment to do this would be <code>nix-env --option binary-caches http://d3m36hgdyp4koz.cloudfront.net/</code>.</p>
+
+<p>This however doesn't work with live usb (for an unknown reason). I get an error <code>error: no operation specified</code> which is strange because <code>--option</code> is an operation that sets an option to some value and binary-caches is the one we want to use (at least according to <code>man 5 nix.conf</code>).</p>
+
+<p>Alright, now for the sake of experiment I'll try to change configuration for user root in live USB to contain proper hosts under networking.extraHosts key.</p>
+
+<p>00:32 — failed to rebuild the live system properly :( Is it a sign to stay at Arch Linux?..</p>
+
+<p>01:22 — tried to do a little more hacking of live USB, no success.</p>
+1397616529644|<p><img src="http://f.nn.lv/n4/3i/ko/coalgebra.png" alt="Коалгебра" />
+<a href='https://en.wikipedia.org/wiki/Coalgebra'>https://en.wikipedia.org/wiki/Coalgebra</a></p>
+1399517094726|<p>Hi! <br />
+Long time no see. <br />
+Some of you (my fictionary readers) may wonder how did my search for the promised OS went. <br />
+I'm gladly reporting that I have switched to OpenBSD and plan to put a reasonable effort to make nix work on this OS.</p>
+
+<p>Was the migration to OpenBSD easy? Yeah, kinda. However it would be thousand times harder if not for really helpful people from the openbsd community:</p>
+
+<ul>
+<li>dmabs hinted about the need to run fw_updates to get non-opensource firmware (for instance for wireless card);</li>
+<li>tidux hinted that my machine was running without power management for a day and I should enable apmd in my rc.conf.local (<code>apmd_flags="-C"</code>, please read <code>man apmd</code>).</li>
+<li>FenderQ guessing that I have checked out wrong source tree by a mistake (I blundered and added <code>-rOPENBSD_5_5</code> to <code>cvs up</code> while updating /usr/src tree)</li>
+<li>ctuluh fed me with supplementary information about FreeBSD fans.</li>
+</ul>
+
+<p>And most importantly:</p>
+
+<ul>
+<li>Tomáš Bodžar for encouraging me to upgrade BIOS which solved all the problems with OpenBSD I had at this time.</li>
+</ul>
+
+<p>Now let me do a little write-up about my experience.</p>
+
+<ol>
+<li><p>Upgrade the BIOS. <br />
+Srsly, do it. OpenBSD is a perfectionist system to a high extent.</p></li>
+<li><p>Install the system. <br />
+As dual-boot is for pussies, this step is actually pertty trivial. We just use whole disk, tweak the partition table according to our needs. Note that if you add a user here, "." will be in its PATH. Welcome to 2005 when /etc/skel was made. Don't be over-ambitious here and use wired connection</p></li>
+<li><p>Don't unplug the cable, <br />
+fw_update will be run as a part of the first boot and will fetch additional important firmware (for me it was some video firmware and radio). Now you can <code>rm -f /etc/hostname.re0</code> or <code>.ath0</code>, what have you, and use scripts like <code>ifconfing nwid "someid" wpakey "somekey" &amp;&amp; dhclient iwn0</code> to connect to wireless networks.</p></li>
+<li><p>Set up power management. <br />
+As I said, for laptops, enabling apmd is crucial.</p></li>
+<li><p>RTFM <br />
+My personal favourites: man 8 intro, man rc.conf, man sysmerge, man pkg_add. <br />
+Read faqs, especially about how to build the system, get some misconceptions, unveil those.</p></li>
+<li><p>Install/compile pakcages and use your system.</p></li>
+</ol>
+
+<p>A couple of words regarding things that don't work. <br />
+Even though I've built VIM with scripting languages support, for some reason I can't get Command-t to work and it's a fucking dealbreaker. Should I port Command-t? Should I write a text editor that doesn't suck? I'm not sure.</p>
+
+<p>Firefox keeps crashing under load. It produces a coredump that I'm too lazy to look at and we don't have any hipster browsers in the ports tree, so I'll use what we have hoping to have enough time to have a look at the issue.</p>
+
+<p>Zsh behaves differently from Linux. Bloat-my-zsh doesn't work out of the box which — most certainly — is a reason to learn zsh properly or open an issue at Mr. Russel's github repo. Again, not sure what's the right way.</p>
+
+<p>Nonetheless, I'm more than happy to get back to using BSD system on desktop and to discover that it's not only possible but also quite pleasing.</p>
+
+<p>Good bye, systemd; good bye Linux.</p>
+1399678058176|<p>Turns out that if one wants to properly port software from Linux to OpenBSD dualboot is really an important thing to have.</p>
+
+<p>I plan to fdisk a single hdd from Linux and say that we have an OpenBSD slice and Linux slice and then reinstall OpenBSD selecting "use OpenBSD slice" option in installer. So the order of actions I want to take:</p>
+
+<ol>
+<li>fdisk from Linux;  </li>
+<li>Install OpenBSD;  </li>
+<li>Install Linux; <br />
+3.1 Install os-prober on live system; <br />
+3.2 Generate grub.cfg; <br />
+3.3 Install GRUB on the only hdd.</li>
+</ol>
+
+<p>Should work, shouldn't it?</p>
+
+<p><img src="http://nn.lv/3dow" alt="Dual boot humour" /></p>
+1399718391008|<p>Actually, it's really trivial to multiboot systems with grub 2 if you know what you're doing. <br />
+As I port code from Linux to OpenBSD running -current kernel, I need a Linux installation to work there on porting in a hands-on mode (having OpenBSD in virtualized mode aside) and I need OpenBSD because it's more comfortable for me to use it whilst I'm not porting anything. <br />
+So the exact steps to dual-boot Arch Linux and OpenBSD are:</p>
+
+<ol>
+<li>Download archiso using this <a href="magnet:?xt=urn:btih:94c7653cf56d3e3fbf140b9991efbd865877561e&amp;dn=archlinux-2014.05.01-dual.iso&amp;tr=udp://tracker.archlinux.org:6969&amp;tr=http://tracker.archlinux.org:6969/announce">magnet link</a>.  </li>
+<li>Plug in thumbdrive into your computer, and observe its name either by analysing output of dmesg or by looking at the output of <code>cat /proc/partitions</code> on Linuxi.  </li>
+<li><code>dd if=/path/to/archlinux-2014.05.01-dual.iso of=/dev/sdX</code>  </li>
+<li>Download snapshot of <code>install55.fs</code>: <a href="ftp://ftp5.eu.openbsd.org/pub/OpenBSD/snapshots/amd64/install55.fs">amd64</a>/<a href="ftp://ftp5.eu.openbsd.org/pub/OpenBSD/snapshots/i386/install55.fs">i386</a> and dd it on another thumbdrive.  </li>
+<li>Boot from Arch Linux and make partition table with fdisk (for noobs and jackasses it's also possible to use cfdisk even though it sucks). Make one primary slice (primary partition) per OS you plan to run with OpenBSD slice being first on disk.  </li>
+<li>Make sure that the first slice on the disk has type 0xA6 (OpenBSD) and is bootable. Possibly both those things are required for OpenBSD to recognize this slice as an OpenBSD realm.  </li>
+<li>Reboot to OpenBSD installation/upgrade medium (we're installing BSD first because BSD installers are less forgiving than installers of Linuxi and especially for an inexperienced user it's extremely easy to fuck things up and we don't want to reinstall Linux over and over again).  </li>
+<li>When it asks you what to use — answer “OpenBSD slice” instead of “whole disk” (if you did everything right, installer should offer to use OpenBSD slice by default.  </li>
+<li>If OpenBSD is your main OS and it has a lot of space, just use autopartitioning. I have tweaked it a little to my needs though.  </li>
+<li>Install sets (instead of default [cd] choose "disk", say that it's not already mounted, pick the correct USB block device id (most certainly it will be default during installation), when it'll complain about checksums say "yes" (unless you do belive that it's a FBI backdoor)).  </li>
+<li>Reboot to Linux live USB and install Linux to some other primary partition.  </li>
+<li>chroot to installed system and grub-mkconfig the default configuration to /boot/grub/grub.cfg (sadly, my os-prober didn't pick OpenBSD partition, so I had to manually add menuentry for OpenBSD)</li>
+</ol>
+
+<pre><code>menuentry 'OpenBSD' {  
+  insmod part_msdos
+  set root='hd0,msdos1'
+  chainloader +1
+}
+</code></pre>
+
+<p>1​3. Install GNU GRUB on your HDD with grub-install and reboot to your dual boot system.</p>
+
+<p>Remember that systemd is killing Linux, so please do your best to <a href="http://boycottsystemd.org">boycott systemd</a> and infected distros. Instead of contributing to distros infected with systemd consider porting stuff to BSD. </p>
+1400304270856|<p>I'm alive and well, kinda short on cash, but who the fuck cares? <br />
+I've got some clients and will most certainly have enough money to find new clients, right? <br />
+I did a lot of cool stuff over the past month both for money and for fun — </p>
+
+<ul>
+<li>3D modelling of interiors</li>
+<li>embedded development (much love to <a href="http://free-electrons.com/docs/">free electrons' slides</a>!)</li>
+<li>studied <a href="http://idris-lang.org">Idris</a> (the name of this language is the worst thing about it, other than this it's mostly awesome) </li>
+<li>found a way to solve <a href="https://github.com/faylang">faylang</a> building in a hacky and unreliable way by
+<ul><li>using <a href="http://clojure.org/clojurescript">ClojureScript</a> </li>
+<li>and <a href="http://facebook.github.io/react/">React.js</a></li></ul></li>
+<li>started porting <a href="http://nixos.org">nix package manager</a> to <a href="http://openbsd.org">OpenBSD</a></li>
+<li>made a simple wrapper around sane to act as a "scanner server"</li>
+</ul>
+
+<p>Oh, by the way, found a nice manifesto-like essay <a href="http://thewebmustdie.com/">the web must die</a>. <br />
+Also, I've met a lot of friends during my stay in Latvia, almost all who I wanted to see. <br />
+In five days I'll be in Zagreb with the love of my life and my new friends. <br />
+Which reminds me of getting some more presents for all of them.</p>
+
+<p>Life is perfect.</p>
+1400373698840|<p>Some lifehacks for managing long writes and NTFS partitions.</p>
+
+<p><code>mkfs.ntfs -Q</code> (if you need quick and dirty ntfs partition)</p>
+
+<p><code>watch iostat</code> (your hdd conky. part of sysstat, particularly useful for monitoring fsync</p>
+
+<hr />
+
+<p>By the way, huge congratulations to Sung Wook Nam, supposedly the first South Korean making a top-8 on Magic: the Gathering Pro Tour. <br />
+Watch Day 3 (which is going to be epic) tomorrow at <a href='http://twitch.tv/magic'>http://twitch.tv/magic</a></p>
+1400379156846|<p>Hey! I was casually talking to tuxdev about M:tG today and said that I have a playset of Flooded Strand while telling about selling fetchlands and other cards during my Onslaught block affairs. <br />
+Then he told me that Flooded Strands are actually pretty expensive, I went online and figured out that it's $100 indeed. <br />
+I had a playset of those in Latvia but managed to find only one of those: <br />
+<img src="http://nn.lv/hryp" alt="Flooded Strand, near mint" title="" /> 
+Taking it with me to Croatia the day after tomorrow, so if anyone is interested in buying one from me for $60 plus delivery expenses, please drop a line at <img src="http://nn.lv/jvq" alt="my main E-mail address" title="" /></p>
+1400472425873|<p>Пришел домой, полил ливень. После этой ночи всё имеет привкус рома,
+давно забытое чувство — с кем-то обо всём говорить в одно слово.
+Много километров. Давно не сидел под звёздами и прожекторами под 
+замечательную музыку и молчание друзей. Это было замечательно, спасибо.
+<img src="http://f.nn.lv/n5/sy/wv/friends.jpg" alt="Друзья" /></p>
+1400514841629|<pre><code>"Parallel" doesn't mean "concurrent";
+"Distributed" doesn't mean "decentralized".
+</code></pre>
+1400565087465|<p>Fucking windows, fucking virtualbox, fucking java, fucking ARM, fucking Qt, fucking tslib, fucking zlib, fucking embedded glibc.</p>
+
+<p>But when they all get together it gets</p>
+
+<p><img src="http://latex.codecogs.com/png.latex?%5Cdpi%7B300%7D%20%5Cfn_cs%20%5Chuge%20%5Ctext%7Bfucked%20up%7D%5E%7B%5Ctext%7Bfucked%20up%7D%7D" alt="Fucked up to the power of fucked up" /></p>
+
+<p>Please don't try to develop for ARM under Windows. Thanks.</p>
+1401129943043|<p>This is a post about yet another vulnerability I found in Ecolines infrastructure.</p>
+
+<p>The first one I have disclosed to them about half a year ago and it was a bug in the booking algorithm which allowed customer to reserve a seat without actually paying for an indefinitely long amount of time. Potential uses of this bug are clear as a day — one could "reserve" a seat next to her and never pay for it, this way getting two seats instead of just one on a long ride; one could deny the booking service of the company completely which would yield a serious revenue loss while programmers are implementing a hotfix.</p>
+
+<p>The vulnerability I found recently is just ridiculous and its exploitation can't yield any revenue losses for the company, so I'll just go with a full disclosure (in a hope to see people getting creative with this).</p>
+
+<p>Some Ecolines buses are currently equipped with the following ARM devices:</p>
+
+<p><img src="http://nn.lv/ibxe" alt="ARM Device In Ecolines Buses Seats" /></p>
+
+<p>Here is a good device candidate —  <a href="http://www.efull.com/showroom/sz_sibosale9/sell/itemid-38113-mtypeid-0.html">In-Wall Touch Screen Android Tablet</a>. The ones installed have "SIBO_Q8PN_V3" as the model number.</p>
+
+<p>The devices run Android v4.0.3 with Linux kernel 3.0.8.</p>
+
+<p>They have an auto-starting service that supposedly invokes "Ecolines Bus" application and sits on the background not doing much.</p>
+
+<p>The graphical shell provided by "Ecolines Bus" application looks like this:</p>
+
+<p><img src="http://nn.lv/x8h3" alt="Default Graphical Shell of Ecolines Bus application" /></p>
+
+<p>Note the Internet Explorer icon. Tells a lot about the application author, doesn't it?</p>
+
+<p>First thing I've checked is if any ports are exposed and can we get an adb access to the device. Sadly, it's pretty well secured by the plastic frame and trying to rip it out of the seat would attact attention and wouldn't be a particularly elegant solution to "jailbreaking" out of this ridiculous graphical shell.</p>
+
+<p>Instead, I've decided to interact a little with the device and as a result of the brief examination I've noticed that if one clicks at the bottom right corner of the "Ecolines Bus" main screen, a password prompt will show up. Surely, I've tried to guess a password but "password", "qwerty", "admin", "root", "ecolines" didn't work, so I've proceeded to work with the tools I have at hand.</p>
+
+<p>There is an input language configuration option in the Android keyboard app, so I have tried to reach the global options from the input language configuration screens. Even though I have failed, I've unticked "Use system language" button and chosen a bunch of languages from the list.</p>
+
+<p>Then another option was opened for me. Now, when I long-press any text input I have an option to "Configure Input <em>Methods</em>". As you can guess, it indeed dropped me to the system-wide configuration screens from where we can kill the jail-application and set ourselves free.</p>
+
+<p>What shocked me is that the images of filesystem across devices aren't the same which means that they don't have any fs-reset utilities. What shocked me the most though is that at least one of devices was rooted.</p>
+
+<p>This attack enables the adversary to use the device for an innocent browsing while she's in the bus, however installing backdoor on a device to have the standart exploit-[payload-backdoor] cycle is particularly sexy.</p>
+
+<p>Please note that you can backdoor computers only if you're allowed to do so by the bus guide. And have fun launching Tor relays in the buses, may the reverse tunnels be with you.</p>
+1401163523921|<p>Disclaimer: I haven't had any prior experience with neither tiny210 board nor any other boards from Chinese engineers. I do not suggest you picking these boards over boards by Texas Instruments for rapid product portotyping and this board is certainly not a beginner-level board. At least some experience of working with ARM-CC toolchain, compiling custom kernels and good Linux undestanding is needed to work with it. Buy it for your projects only if you know what you're doing or you can afford someone dealing with it for you.</p>
+
+<p>This is a post describing the work done for one of my customers on making a development environment for programming of <a href="http://www.friendlyarm.net/products/tiny210">friendlyarm's tiny210</a> dev board.</p>
+
+<p>I was faced with the following set of goals:</p>
+
+<ol>
+<li>Make Qt work on the dev board</li>
+<li>Put a http daemon on the board</li>
+<li>Integrate httpd with PHP</li>
+<li>Wire it together with Qtcreator.</li>
+<li>Make sure that touchscreen works and is properly calibrated.</li>
+</ol>
+
+<p>It was preferred yet not required to put a sane and well-maintained ARM distribution on the board such as <a href="http://www.emdebian.org/">emdebian</a> or <a href="http://archlinuxarm.org/">ALARM</a>.</p>
+
+<p>I have started with compiling tools required to configure and compile custom ARM kernel on a fast machine. Then I've fused emdebian with kernel that respects s5pv210 part of kernel's source tree (see arch/arm/mach-s5pv210/ et al). Then I have installed Windows XP Mini into a VirtualBox and flashed the image on the dev board. <br />
+Everything except touchscreen worked perfectly. After tinkering for some time with tslib configuration I gave up. <br />
+<em>Approximate time spent: 10 hours with two long compilation cycles and studying the board</em></p>
+
+<p>By the end of this affair I was almost at the same place I was ten hours earlier, so, disappointed, I proceeded to have a good night rest. <br />
+Couple days later I've reflashed the board with the image that authors of the boards provide as it had almost everything we needed except for a package manager or a build system. <br />
+It is running rather old, yet supported, version of Qt — 4.8.5; it doesn't have any sane HTTP daemon nor PHP out of the box (thank G-d for no PHP. It should finally <code>die();</code>); it had needed dynamic libraries that I lacked on emdebian to make touchscreen work. <br />
+So I've compiled latest arm linux gnueabi gcc (which wasn't as easy/quick as it sounds because I forgot how exactly to compile gcc by parts, hence several failed compilation cycles) and went to work. <br />
+An important remark before we proceed: <br />
+I've given a thought about laying out the files related to the libraries and programs I was about to compile and realized that a proper way to layout stuff in the compiling machine filesystem would be to have the following layout (under chroot(sic!)):</p>
+
+<pre><code>/
+  root/
+    arm/
+      src/
+        prog-x.y.z/
+        ...
+      build/
+        prog-x.y.z/
+          doconfigure.sh
+          _install/
+          ...
+      priv/
+        prog-x.y.z.tar.bz
+</code></pre>
+
+<p>This way we download stuff into priv/ directory, untar sources in src/ directory, read the configure options for the program or library, write doconfigure.sh in "build/" prefixing the install to <code>/root/arm/build/prog-x.y.z/_install</code>. After everything is built we simply make the same directory layout on the target device and copy <code>/root/arm/*/build/_install</code> there. This is simple and it works. Also, we can have several versions of the same library present without breaking the "core" set of libraries provided by Chinese engineers.</p>
+
+<p>Because people love Perl regexen, I've firstly compiled PCRE. <br />
+Then I've checked out the latest source code of lighttpd, figured out configure options and wrote the following doconfigure.sh script (see how it references the installation path for libpcre:</p>
+
+<pre><code>../../src/lighttpd-1.4.35/configure \
+  -prefix=/root/arm/build/lighttpd-1.4.35/_install \
+  -host=arm-linux-gnueabi \
+  CC=arm-linux-gnueabi-gcc \
+  RANLIB=arm-linux-gnueabi-ranlib \
+  STRIP=arm-linux-gnueabi-strip \
+  --enable-shared \
+  --without-mysql \
+  --without-zlib \
+  --without-bzip2 \
+  --disable-ipv6 \
+  PCRECONFIG=/root/arm/build/pcre-8.35/_install/bin/pcre-config \
+  PCRE_LIB=/root/arm/build/pcre-8.35/_install/lib/libpcre.a \
+  CFLAGS="$CFLAGS -DHAVE_PCRE_H=1 -DHAVE_LIBPCRE=1 -I/root/arm/build/pcre-8.35/_install/include"
+</code></pre>
+
+<p>Then I did the same to PHP:</p>
+
+<pre><code>../../src/php-5.5.12/configure \ 
+CC=arm-linux-gnueabi-gcc CXX=arm-linux-gnueabi-g++ \  
+AR=arm-linux-gnueabi-ar LD=arm-linux-gnueabi-ld \  
+RANLIB=arm-linux-gnueabi-ranlib \  
+--host=arm-linux-gnueabi --target=arm \
+-prefix=/root/arm/build/php-5.5.12/_install \
+--without-sqlite3 \
+--without-pdo-sqlite \                                                  
+--without-pear \
+--disable-simplexml \                                                   
+--disable-mbregex \
+--enable-sockets \
+--enable-fpm \
+--disable-opcache \
+--disable-libxml \
+--without-zlib \
+--disable-al
+</code></pre>
+
+<p>Wrote a lighttpd.conf that loads php module and points to <code>/var/www</code> as the docroot, put <code>&lt;? phpinfo();</code> into <code>/var/www/index.php</code> and made sure it all works on device.</p>
+
+<p>While doing this I have also compiled libxml2 and php-5.5.4.</p>
+
+<p><em>Approximate time spent: 8 hours including several long compilation cycles</em>.</p>
+
+<p>Now we've spent 18 hours and we have http and PHP working perfectly on the board. Not impressive at all. Time to get Qt working!</p>
+
+<p>As I have said already, Chinese engineers "blessed" us with Qt 4.8.5. As I'm not a Qt expert, I've validated that it's still supported and proceeded to compiling ARM version of it for x86. By ARM version I mean a version whose qmake is aware of ARM. Then I've linked arm-linux-gnueabi-gcc to arm-linux-gcc, same for ld (because of the default qmake configuration files I wasn't in the mood to edit).</p>
+
+<p>Afterwards I've installed qtcreator, tinkered with its menus by adding a new Generic Linux device, defining arm compiler and finally wiring it with my Qt 4.8.5 compilation.</p>
+
+<p>Wrote a Hello World application, transported it to the device, launched it with <code>-qws</code> flag that tells Qt to launch server wich will operate directly on framebuffer ...and... <br />
+touchscreen didn't work.</p>
+
+<p>Then I went into frustration-driven tslib configuration rampage and ended up with an obscure touchscreen.init script that I'm now running from <code>/etc/init.d/rcS</code> which is Chinese for rc file that runs on boot.</p>
+
+<p>I have also defined <code>/etc/init.d/rcS.local</code> which will be the file to edit in order to run some commands that my customer needs to run on device boot.</p>
+
+<p>Now we have everything we need and it's time to package the environment for the customer who uses Windows.</p>
+
+<p><em>Approximate time spent: 4 hours</em></p>
+
+<p>Who could have thought that this step will be so time-consuming. First I've tried to just replicate the work of day one and day three inside a virtualbox in Windows.</p>
+
+<p>Compilation cycles of toolchain were slow as fuck and in the end arm gcc was consistently failing to compile. Then I have decided to build a live USB with the system, redid everything, made a shmux-like (see <a href="http://j.memorici.de/shmux/">this post</a>) script to run tmux with some handy commands to aid the fast deployment cycle, tweaked rcS to print the IP address of the device on boot and was done an hour before I had to give back the device. It was a terrible night that started with an evening of "just building an image for dev env". <br />
+<em>Approximate time spent: 8 hours and counting</em></p>
+
+<p>Now I have finally figured out a way to port it to Windows VirtualBox reliably with the power of <code>cp</code>, <code>chmod</code> and <a href="http://www.vagrantup.com/">vagrant</a>, built a vagrant box and uploading it to memorici.de right now:</p>
+
+<pre><code>[sweater@localhost archlinux64]$ while true; do snd package.box /home/sweater/; done
+rsync -Pave 'ssh -pXXXX' package.box memorici.de:'/home/sweater/'  
+sending incremental file list  
+package.box  
+    978,381,024  37%   80.86kB/s    5:42:05  
+</code></pre>
+
+<p>Dat speed, right? Croatian Internet connection isn't particularly great.</p>
+
+<p>Anyway. That's it about my experience with building an one-click development environment for tiny210. I have expected it to take me 16 hours, it took me two times as much but hey, that's what happens when you face the unknown.</p>
+
+<p>If you have any particular questions, please contact me via e-mail, if there'll be something worth writing a post about, I'll write a follow-up.</p>
+1401253002175|<p><a href="http://vp.memorici.de/armdev.box">To whom it might concern</a>.</p>
+1401257484955|<p>This is a really short <em>rant</em> about how I use Vag<em>rant</em> and why I think that my way is the only reasonable use case for it.</p>
+
+<p>For those who aren't familiar with vagrant, it's a set of scripts on top of supervised virtual machines to build environments and work with those. It works with VirtualBox and VmWare.</p>
+
+<p>I use it <em>only</em> as a somewhat reliable and a more powerful than VBoxManage way to migrate my VirtualBox machines across hosts. <br />
+In turn, I use these machines <em>only</em> to eithier ship those to a customer or to port stuff from one platform to another. I'm claiming that there are no other uses of supervised virtual machines in 2014.</p>
+
+<p><em>I never develop in vagrant environments</em>.
+Supervising/virtualization as opposed to hypervising/paravirtualization or LXC/AUFS (kernel virtualization) is bullshit. It's slow and fat, it isn't always consistent with the results of executing code on OSes running on bare metal. Hell, it's not even always consistent across VM-providers.</p>
+
+<p>If you think you need to set up modular, flexible environments for your daily programming activities, please have a look at nix pakcage manager (use a per-project default.nix + nix shell) or (not xor!) docker.</p>
+1401407484680|<p>In tpost I'll explain — primarily to myself — but also to [both of] my readers the ideas behind <a href="http://nixos.org">Nix</a> expressions. To do this, I'll look at Maak, the prototype of Nix from 2003. Maak was first introduced in the very first Eelco Dolstra's paper “Integrating Software Construction and Software Deployment”. Note that as information about Maak most likely is irrelevant to the current state of Nix project, we'll refer to Maak-world in past tense: “Maak had”, “it was possible to”, ... it doesn't mean that these things are impossible or different in Nix though.</p>
+
+<p>Maak had builds graph defined by a program in a simple functional language. This program was called <em>an expression</em> (that defines a build graph). The exectution of this program was said to perform <em>build graph realization</em>.</p>
+
+<p>Maak expressions had legal variable identifiers which were anything that doesn't contain a slash. There also were filenames, as we can guess, filename identifier had to contain at least one slash.</p>
+
+<p><code>srcs</code> was an example of a (variable) identifier.</p>
+
+<p><code>./src/foo.c</code> was a path literal. </p>
+
+<p>String literals were enclosed in double quotes <code>"like this"</code> or in single quotes <code>'.o'</code>.</p>
+
+<p><code>=</code> was the assignment operator.</p>
+
+<p><code>[a b ...]</code> was a way to define a list.</p>
+
+<p>In Maak a function was bound to a variable by choosing an identifier and assigning it to a function block:</p>
+
+<pre><code>myFn = {argA, argB}:  
+  argA + argB;
+</code></pre>
+
+<p>This binds function <code>\x\y(x + y)</code> to variable <code>myFn</code>.</p>
+
+<p>Maak also defined dictionaries called <em>attribute sets</em>. Attribute sets among other things were a way to pass named arguments to a function. For instance, we could have called function <code>myFn</code> defined earlier like this (<em>positional parameters</em>):</p>
+
+<pre><code>myFn ("Hello", " World")  
+</code></pre>
+
+<p>or like this (attribute set):</p>
+
+<pre><code>myFn {argB = "Second", argA = "First "}  
+</code></pre>
+
+<p>Now that we know how the syntax constructs of Maak language, let's actually have a look at some semantic constructs it used to define.</p>
+
+<p>First of all, it should be noted that filename wasn't just a “path literal”. Whenever we were saying <code>./foo.c</code> in Maak, something called "a file node" was eventually constructed (when the lazy evaluation would have gotten to this filename). A file node was an attribute set that had exactly two attributes: "name" and "partOf". The latter was exactly how the particular file was "plugged" in the build tree. If someFile.partOf is someAction that means that someAction derives someFile. Files could have been sources of actions as well. This may sound confusing (what is action?!), so let's have a look at an example!</p>
+
+<p>If you remember my <a href="https://gist.github.com/anonymous/9477468">hack to build D subpackages</a> first mentioned <a href="http://j.memorici.de/dub-build-py-hack-ctfe-day-two-of-writing-nym/">in this post</a> it can either build the project, or generate Makefile, or generate a build.sh shell script. Let's take the simple case of generating Makefiles with a version of build.py that takes dub.json as an argument. Let's try to Maakify it (it's intentionally bad Nix style. It's written like this for illustrative purposes):</p>
+
+<pre><code>buildPyGenerateMakefile =  
+  { in = ./dub.json
+  , makefile =&gt;  ./Makefile
+  , build = exec "build.py {in}" };
+</code></pre>
+
+<p>Note that <code>foo = { bar =&gt; ./bar.c }</code> would ensure that <code>bar</code> is derived by action <code>foo</code>, or, in other words, <code>bar.partOf == foo</code>. Also, as Maak was lazy, <code>exec "build.py {in}"</code> wasn't happening at "assignment time", instead it was due to execution once someone needs the result of this build.</p>
+
+<p>Now we can do something like  (again, toy example):</p>
+
+<pre><code>import ./GenMk.Maakfile  
+makeDProject =  
+  { in = buildPyGenerateMakefile.makefile
+  , build = exec 'make -C "$(basename {in})"' };
+</code></pre>
+
+<p>Obviously, thanks to functions, with Maak, we could have easily defined a family of actions like this (an example from Dolstra's 2003 paper): </p>
+
+<pre><code>compileC = {in, cflags}:  
+  { in = in
+  , cflags = cflags
+  , out =&gt; prefix (in) + ’.o’
+  , build = exec "cc -c {in} -o {out}"
+  }.out;
+</code></pre>
+
+<p>Here we define a whole family of actions that, depending on the compiler flags and input file name will compile an object from this. We also only return <code>out</code>, the derivation of compileC function. On a rather obvious note: <code>prefix ./foo.bar == ./foo</code>. <br />
+As you can deduce from <code>+</code> in <code>out =&gt; prefix (in) + ’.o’</code>, Maak expression language was a language with weak typing.</p>
+
+<p>So now we know basic syntaxtic constructs  and more or less understand what is <em>buind graph</em>, its <em>realization</em> and <em>derivation</em> so we can proceed to reading beautifully written Nix manual:</p>
+
+<p>2.1.4 <a href="http://nixos.org/nixos/manual/#sec-nix-syntax-summary">Syntax Summary</a> <br />
+5. <a href="http://nixos.org/nix/manual/#chap-writing-nix-expressions">Writing Nix Expressions</a></p>
+|<p>Now that we have a general idea behind the semantics of the basic syntactic construtcts of Maak, the prototype of Nix, we can read <a href="http://nixos.org/nix/manual/#chap-writing-nix-expressions">this</a> to get an idea of how Nix expressions are written nowadays.</p>
+1401699320444|<p>Hi, as you might know, memorici.de was down for a couple of days. Thanks to <a href="http://b.popoffka.ru">Mr. Popov</a>, it got up.</p>
+
+<p>My harddisk is crashing though, so expect memorici.de radio station to possibly go down soon-ish till I get enough $$$ to replace the disks.</p>
+
+<p>Also, made this awesome wallpaper featuring my take on mixing logos of NixOS project and Haskell in one Nix/Haskell logo: <a href='http://nn.lv/fk5x'>http://nn.lv/fk5x</a></p>
+1401954942380|<p>Preface: <br />
+<em>“I hate javascript” —you</em></p>
+
+<p>I have been working lately on figuring out how to develop complex web-based systems in the least frustrating way. As some of you know I'm currently (slowly) building an e-commerce platform and have some side projects as well. However being technically work-free, I have a chance of taking time in order to experiment with technologies out there.</p>
+
+<p>I'll begin with the reason I even felt the need to take a look at something but my standart toolset for dealing with web which is Saloon 2/Cowboy + Elixir/OTP + PostgreSQL + jQuery, then I'll outline the failures I have faced in the lab and finally I'll present a conclusion and some code that, I believe, sets a programmer up to be highly productive in writing expressive code for both client- and server- sides.</p>
+
+<h3 id="problemwithwebanygeneralizationisovergeneralization">Problem: with web any generalization is overgeneralization</h3>
+
+<p>So I got a couple of customers wanting different but similar things — a discount web-market (with some quite interesting properties of items sold) and just a generic web-store that feels like a subset of the first thing. I also had quite a terrible experience of dealing with a customer for whom the administration of the website was "too difficult" and he thought that it's easier to pay me some money for me to "put content" on his website. I'm okay with this if it's just one company but it would totally suck if I had linear growth of such requests from my customers over time (I have a life, believe it or not!). </p>
+
+<p>So I wanted to make the website administration as WYSIWYG as possible. Note that I'm not saying that I wanted to make text editors WYSIWIG because it's bullshit. I wanted to make the website completely customizable via administration interface which would be integrated in the design of the website. For instance, if we're in administration mode and we're looking at the list of items, we have an option to add an item, copy an item and edit it, etc right from the page we look at; if we're in administration mode and we're looking at the landing page, we can change the logo, colourscheme of the website, etc. </p>
+
+<p>Before writing any code, as usual, I went to the whiteboard and came up with some algebras that describe the most interesting aspects of the problems at hand. Those algebras yielded a generic approach to the problem of content administration and e-commerce platforms. In the meantime, I came up with an algebra for SQL migrations (which I should have written down in a form of a paper or at least a blog post, now a lot of stuff is forgotten... maybe IRC logs will rescue me here?..).</p>
+
+<p>The problem with SQL migrations algebra was that it's a huge pain (for me) to work with pgsql source base and to reimplement parser s.t. we can write macros for SQL. It's doable but way out of scope of the problem at hand. It's an overgeneralization here. I have solved it by writing library called "XSQL" that generates SQL code (required by the use cases at hand) via Elixir functions. Quick and dirty. Isn't even a DSL.</p>
+
+<p>The problem with the algebra for content management, however, was of a different sort. Once it was formalized I have started implementing it as a jQuery plugin and quickly hit all the possible pitfalls of writing jQuery plugin one can possibly imagine. It was slow, ugly and didn't really work. Then I've abstracted the DOM manipulation in a separate library (again, I was pushing the code being as algebraic and functional as possible to the limit) and now my jQuery plugin was an "application" of this library to the content management problem. </p>
+
+<p>Let me elaborate a little bit about the design I have in mind when I was doing second iteration of this plugin. <br />
+I have defined a set of functions that traverse DOM and serialize it into JSON objects respecting semantics provided by the "application" of the library. We could have defined what is a semantically a container, what is a data source and some more advanced ways to compose DOM at hand to a JSON object in a two-way (recoverable) fashion. </p>
+
+<p>Taking a leap forward in time — later I realized that I was re-inventing  some form of "virtual DOM" from <a href="http://facebook.github.io/react/">React.js</a>. However the code was frustratingly ugly and unmaintainable. I couldn't imagine myself writing more than one "application" of this library to a set of problems. Needless to say that I felt that no other programmer will ever want to use this in her project.</p>
+
+<p>So I've recalled this interesting project I saw a good while ago called "<a href="https://github.com/faylang/fay/wiki">faylang</a>" (I have to thank mkaito for reminding me of it). It's essentially a Haskell subset that compiles to JavaScript. Surely it didn't build on my machine because <code>cabal</code> is a terriblly misused tool. <code>cabal install</code> shouldn't be a thing. It's the root of all evil with Haskell deployment. Anyway, I was digging it for some time and even managed to build it on Ubuntu 12.04 machine. It was painfully clear that faylang isn't the solution to the problem I'm facing because, well, I want to deploy my stuff without dancing around the server with a tambourine. That's when I have learned that <a href="http://nixos.org">nix project</a> is actually alive (we were laughing at it at the Geek-Hut with Dicebot back in the days) and it has pretty damn <a href="https://nixos.org/wiki/Haskell">good support for Haskell packages</a>. But imagine that, faylang <a href="https://github.com/NixOS/nixpkgs/issues/2294">didn't build under nix</a> as well. I've compiled some Idris code to JavaScript but clearly it's too much effort to do full-blown web-development with <a href="http://www.idris-lang.org/">Idris</a> these days (however I'll keep track of the proceedings there).</p>
+
+<p>I was talking to Darkproger on IRC about all this fuss and he mentioned <a href="http://swannodette.github.io/2013/12/17/the-future-of-javascript-mvcs/">React/OM</a> which I wasn't rushing to check out because of my hatred of all the things that are related to Java. So in the end when I had no hope of finding a good way to write client side code in an expressive way that doesn't make me want to throw up when I look at my code (hey, angular.js, you're so disgusting) I read about React and OM. Turns out that these tools are pretty awesome and easy to deploy.</p>
+
+<p>As far as the server side goes, I gave <a href="http://vibed.org/docs">vibe.d</a> a Go. It looks quite good, however I feel like D will die pretty soon to Rust also, D has a lot of fundamental deal breakers and even though I'm a huge fan of template programming, I have decided to move back to Elixir for Web Development. Still, my experience with D was awesome — I wrote an identity manager and a simple persistent key-value storage in this language, mastered <a href="http://zeromq.org/">zmq</a> which is a really cool library that essentially provides "better sockets". My experience with D wasn't a waste of time by any means.</p>
+
+<p>So, in the end, the solution to the generalization problem is using ClojureScript powered with React/OM along with a nice scalable concurrent socket acceptor/http server such as <a href="http://ninenines.eu/docs/en/cowboy/HEAD/guide/">cowboy</a> or <a href="http://vibed.org/docs">vibe.d</a>. <br />
+Along the way I have adopted nix-shell to be my environment provision tool instead of docker. I should have a closer look at <a href="http://zef.me/6049/nix-docker">nix-docker project</a> when I've got the time. <br />
+So let's examine the skeleton code for a project called <code>cljsex</code> that showcases the most important aspects of Saloon IV.</p>
+
+<h3 id="solutionclojureelixirnixcowboyreactom">Solution: Clojure, Elixir, Nix, Cowboy, React/OM</h3>
+
+<h4 id="nix">Nix</h4>
+
+<p>First and foremost, <code>shell.nix</code>:</p>
+
+<pre><code>let  
+  pkgs = import &lt;nixpkgs&gt; {};
+  memoricidepkgs = import &lt;memoricidepkgs&gt; {};
+  stdenv = pkgs.stdenv;
+  elixir = import ./elixir.nix {};
+in  
+{
+  developmentEnv = stdenv.mkDerivation rec {
+    name = "developmentEnv";
+    version = "nightly";
+    src = ./.;
+    buildInputs = [
+      pkgs.clojure
+      pkgs.leiningen
+      memoricidepkgs.elixir
+      pkgs.postgresql93
+    ];
+  };
+}
+</code></pre>
+
+<p>Here we have shell.nix that defines some variables we use in the mkDerivation. <code>nixpkgs</code> are your standart packages that you can get from the channel, memoricidepkgs are the packages originating from my package overlay. It offers elixir-master, for instance. Contact me to get an access to this overlay. Btw, we are able to refer to this overlay from our expressions because it's in our <code>NIX_PATH</code>:</p>
+
+<pre><code>[nix-shell:~/experiments/clojurescript-elixir]$ echo $NIX_PATH
+memoricidepkgs=/home/sweater/memoricide/memoricide-nix-overlay/:nixpkgs=/home/sweater/.nix-defexpr/channels/nixpkgs  
+</code></pre>
+
+<p>and default.nix of our overlay is what makes it possible to install packages from it:</p>
+
+<pre><code>[nix-shell:~/experiments/clojurescript-elixir]$ cat ~/memoricide/memoricide-nix-overlay/default.nix 
+{}:
+
+with import &lt;nixpkgs&gt; {};
+
+rec {  
+  elixir = callPackage ./pkgs/elixir {
+    inherit stdenv fetchurl erlang rebar makeWrapper coreutils;
+  };
+
+  *snip*
+
+}
+</code></pre>
+
+<p>here we rely on nixpkgs being available in the system, import it and expose some packages using <code>callPackage</code>. Please note that it's not a full-blown nix channel. To make one please refer to <code>man nix-push</code>.</p>
+
+<p>Alright, so here we defined development environment and said that we want clojure, lein, elixir and postgres v9.3.x. Let's now see nix-shell in action:</p>
+
+<pre><code>[sweater@brainstrom clojurescript-elixir]$ psql cljsex
+-bash: psql: command not found
+</code></pre>
+
+<p>however</p>
+
+<pre><code>[sweater@brainstrom clojurescript-elixir]$ nix-shell
+
+[nix-shell:~/experiments/clojurescript-elixir]$ psql cljsex
+psql (9.3.4)  
+Type "help" for help.
+
+cljsex=#  
+</code></pre>
+
+<p>and it even works!</p>
+
+<pre><code>cljsex=# \d  
+        List of relations
+ Schema | Name | Type  |  Owner  
+--------+------+-------+---------
+ public | foo  | table | sweater
+(1 row)
+</code></pre>
+
+<h4 id="postgresql">PostgreSQL</h4>
+
+<p>Now that we've started talking about the database, let's have a look at how we fit the database into our development environment.</p>
+
+<p>I have defined three tasks for development environment: postgres, cljswatch and iex. <br />
+Postgres looks like this:</p>
+
+<pre><code>if [ ! -d ./.postgres/data ]; then  
+  mkdir ".postgres"
+  initdb --locale en_US.UTF-8 -E UTF8 -D './.postgres/data/'
+  createdb cljsex
+fi  
+postgres -D ".postgres/data"  
+</code></pre>
+
+<p>If there is no database root in .postgres/data we create it, create the database itself and then launch postgres in foreground. Now, having database out of the way, let's have a look at Elixir and Clojure parts of the skeleton.</p>
+
+<h4 id="elixir">Elixir</h4>
+
+<p>From Elixir we need some libraries, so we write the following <code>mix.exs</code>:</p>
+
+<pre><code>defmodule Cljsex.Mixfile do  
+  use Mix.Project
+
+  def project do
+    [ app: :cljsex,
+      version: "0.1.0-master",
+      elixir: "~&gt; 0.14.0-dev",
+      deps: deps ]
+  end
+
+  def application do 
+    [ registered: [:cljsex],
+      mod: { Cljsex, [] },
+      applications: [:cowboy] ]
+  end
+
+  defp deps do
+    [
+      {:cowboy,   github: "extend/cowboy"},
+      {:postgrex, github: "ericmj/postgrex"},
+      {:xsql,     git:    "ssh://somone@somewhere/xsql"} # Available upon request. 
+                                                         # Nothing special there though
+    ]
+  end
+end  
+</code></pre>
+
+<p>I don't remember if PostgrEx is pooling out of the box, if not, we'll need poolboy there but that's not the point. Having this mix file in the root of our project we can now define a really simple cowboy-launching application:</p>
+
+<pre><code>[nix-shell:~/experiments/clojurescript-elixir]$ cat lib/cljsex.ex 
+defmodule Cljsex do  
+  use Application
+
+  def start(_type, _args) do
+    mimetypes = [{:mimetypes, :cow_mimetypes, :all}]
+    static    = [{"/static/[...]", :cowboy_static, {:priv_dir, :cljsex, "static", mimetypes}}]
+    dispatch  = :cowboy_router.compile([{:_, static}])
+    {:ok, x}  = :cowboy.start_http(:http, 100,
+                                   [port: 8080],
+                                   [env:  [dispatch: dispatch]])
+    {:ok, IO.inspect x}
+  end
+end  
+</code></pre>
+
+<p>It simply serves static files from <code>priv/static</code>.</p>
+
+<p>We launch it with the following task:</p>
+
+<pre><code>mix do deps.get, compile  
+iex -S .mix-wrapped  
+</code></pre>
+
+<p>NB! <code>iex -S mix</code> doesn't work because of the way we package things in nix: <a href='https://github.com/NixOS/nixpkgs/issues/2830'>https://github.com/NixOS/nixpkgs/issues/2830</a></p>
+
+<p>Let's now go to the Clojure part of things!</p>
+
+<h4 id="clojurescript">ClojureScript</h4>
+
+<p>Disclaimer: snippets are mostly stolen from a reasonably good (the only — ?) <a href="http://www.joshlehman.me/">React/OM tutorial by Josh Lehman</a>. <br />
+To begin with, we have to define our project:</p>
+
+<pre><code>(defproject cljsex "0.1.0-master"
+  :description "This is an experimental clojurescript/elixir project that aims to use React/OM with Cowboy to great success."
+  :url         "http://j.memorici.de/saloon-iv"
+
+  :dependencies [[org.clojure/clojure       "1.5.1"]
+                 [org.clojure/tools.reader  "0.8.2"]
+                 [org.clojure/clojurescript "0.0-2173"]
+                 [org.clojure/core.async    "0.1.267.0-0d7780-alpha"]
+                 [cljs-http                 "0.1.8"]
+                 [om                        "0.5.3"]]
+
+  :plugins [[lein-cljsbuild "1.0.1"]]
+
+  :cljsbuild {
+          :builds [{:id "dev"
+                    :source-paths ["cljs"]
+                    :compiler {
+                            :output-to     "priv/static/js/cljsex.js"
+                            :output-dir    "priv/static/js/cljsout"
+                            :optimizations :none
+                            :source-map    true
+                            :externs       ["om/externs/react.js"]}}]
+  }
+)
+</code></pre>
+
+<p>It kinda sucks that with lein you have to lock versions explicitly but then again, I know nothing about how packaging in Clojure works and I'm glad that things just worked!</p>
+
+<p>Then we define the most trivial React/OM controller possible:</p>
+
+<pre><code>[nix-shell:~/experiments/clojurescript-elixir]$ cat cljs/demo.cljs 
+(ns cljsex.demo
+  (:require-macros [cljs.core.async.macros :refer [go alt!]])
+  (:require [goog.events :as events]
+            [cljs.core.async :refer [put! &lt;! &gt;! chan timeout]]
+            [om.core :as om :include-macros true]
+            [om.dom :as dom :include-macros true]
+            [cljs-http.client :as http]
+            [cljsex.utils :refer [guid]]))
+
+(enable-console-print!)
+
+(def app-state
+  (atom {:things []}))
+
+(defn comment-box [app]
+  (om/component
+   (dom/div #js {:className "commentBox"}
+     "It works!")))
+
+(defn cljsex-app [app owner]
+  (reify
+    om/IRender
+    (render [_]
+      (dom/div nil
+        (om/build comment-box app)))))
+
+(om/root cljsex-app app-state
+         {:target (.getElementById js/document "content")})
+
+[nix-shell:~/experiments/clojurescript-elixir]$ cat cljs/utils.cljs 
+(ns cljsex.utils
+  (:require [cljs.reader :as reader])
+  (:import [goog.ui IdGenerator]))
+
+(defn guid []
+  (.getNextUniqueId (.getInstance IdGenerator)))
+</code></pre>
+
+<p>Now I define task <code>cljswatch</code> that simply</p>
+
+<pre><code>lein cljsbuild auto dev  
+</code></pre>
+
+<p>again, it will rebuild stuff in the foreground.</p>
+
+<p>Finally, the following HTML code goes to <code>priv/static/</code>:</p>
+
+<pre><code>[nix-shell:~/experiments/clojurescript-elixir]$ cat priv/static/index.html 
+&lt;!DOCTYPE html&gt;  
+&lt;html lang="en"&gt;  
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;&lt;/meta&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- entry point for components --&gt;
+    &lt;div id="content"&gt;
+      &lt;h1&gt;It doesn't work!&lt;/h1&gt;
+    &lt;/div&gt;
+
+    &lt;script src="http://fb.me/react-0.8.0.js"&gt;&lt;/script&gt;
+    &lt;script src="js/cljsout/goog/base.js" type="text/javascript"&gt;&lt;/script&gt;
+    &lt;script src="js/cljsex.js" type="text/javascript"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;goog.require("cljsex.demo");&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;  
+</code></pre>
+
+<p>Now pointing browser at <code>http://localhost:8080/static/index.html</code> will show us "It works!".</p>
+
+<h4 id="tmux">Tmux</h4>
+
+<p>Everything can be automated by using shmux-like script for that kind of projects.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Elixir, Clojure and Nix is a stack that just works™. I'll iterate over several projects using this stack and from these iterations saloon iv will be born that will be a way to conveinently bootstrap and deploy web-applications making use of the stack in question.</p>
+
+<hr />
+
+<p>In the upcoming posts I plan to cover some common approaches that we use when we write Nix expressions, talk a little bit about using react/om and all this fuss. Also, people showed some interest to my boycott of the Internet thing, so I'll write a post about it as well.</p>
+
+<p>So long and thanks for all the reading!</p>
+1402190732293|<p>I wrote a small <a href="http://j.memorici.de/elixir-newbie-digest-vol-3/">Elixir macro cheatsheet</a> in Elixir Newbie Digest volume three. If you want to have a fundamental and (almost) all around overview of Elixir macros, how and why they work, please refer to the wonderful blog of Saša Jurić, namely to the following series of posts — <a href='http://www.theerlangelist.com/2014/06/understanding-elixir-macros-part-1.html'>http://www.theerlangelist.com/2014/06/understanding-elixir-macros-part-1.html</a></p>
+
+<p>Remember the rule #1 of macro club: don't write macros. <br />
+Also remember to have fun with Elixir!</p>
+1402235102499|<p>I got tired of searching top for RES, so I wrote this script:  </p>
+
+<pre><code>$ let "__sum = $(for x in $(pgrep vim); do
+  cat /proc/$x/smaps
+done | grep Rss | awk '{print $2}' | sed 's/^/+/' )" &amp;&amp; \  
+echo "Memory used by all VIM processes: $__sum"  
+Memory used by all VIM processes: 6448  
+</code></pre>
+
+<p>it can and should be improved to sum RES of partent process and all forks but I'm a lazy dude.</p>
+
+<p><em>Update</em></p>
+
+<p>In the end I pushed it to my local goodies repo as</p>
+
+<pre><code>[[ $1 == "--help" ]] &amp;&amp; cat &lt;&lt;EOF &amp;&amp; exit
+  USAGE:
+    resgrep name
+    pgreps for name and sums all the res reported by /proc/../smaps
+EOF  
+    __sum_expr="$( for x in $(pgrep "$1"); do
+          cat /proc/$x/smaps 2&gt;/dev/null
+    done | grep Rss | awk '{print $2}' | sed 's/^/+/' )"
+    [ -z "$__sum_expr" ] &amp;&amp; __sum=0 || let "__sum = ${__sum_expr}"
+    echo "Memory used by all $([ -z "${1}" ] || echo "${1} ")processes: $__sum"
+</code></pre>
+
+<p>Example output:</p>
+
+<pre><code>[sweater@brainstrom ~]$ resgrep "Non Existent"
+Memory used by all Non Existent processes: 0  
+[sweater@brainstrom ~]$ resgrep firefox
+Memory used by all firefox processes: 519872  
+</code></pre>
+1402247780053|<p>Update on code of shmux:</p>
+
+<pre><code>#!/usr/bin/env bash
+#shmux is shell tmuxinator for a generic project
+_session="$(basename "$1")"  
+tmux start-server\; has-session -t "$_session" 2&gt;/dev/null
+
+if [ "$?" -eq 1 ]; then #and  
+if [ ! -z "$1" ]; then  
+  cd "$1"
+  _wd="$(pwd)"
+  _post_hook_maybe=$([ -f "shell.nix" ] &amp;&amp; echo "nix-shell")
+[sweater@brainstrom ~]$ vim .sh/shmux
+[sweater@brainstrom ~]$ cat .sh/shmux
+#!/usr/bin/env bash
+#shmux is shell tmuxinator for a generic project 
+_session="$(basename "$1")"  
+tmux start-server\; has-session -t "$_session" 2&gt;/dev/null
+
+if [ "$?" -eq 1 ]; then #and  
+if [ ! -z "$1" ]; then  
+  cd "$1"
+  _wd="$(pwd)"
+  _post_hook_maybe=$([ -f "shell.nix" ] &amp;&amp; echo "nix-shell")
+
+  TMUX="$(tmux new-session -d -s "$_session" -n project)"
+  tmux new-window -c "$_wd" -t "${_session}:1" -n build
+  tmux new-window -c "$_wd" -t "${_session}:2" -n git
+  tmux new-window -c "$_wd" -t "${_session}:3" -n zsh
+  tmux new-window -c "$_wd" -t "${_session}:4" -n mon0
+  tmux new-window -c "$_wd" -t "${_session}:5" -n mon1
+
+  tmux send-keys -t "${_session}:0" "vim ." C-m
+  tmux send-keys -t "${_session}:2" "git log --graph --decorate --all -n7 | grep ." C-m
+  if [ ! -z "$_post_hook_maybe" ]; then
+    for x in {2..5}; do
+      tmux send-keys -t "${_session}:${x}" "$_post_hook_maybe" C-m
+    done
+  fi
+
+  if [ -d tasks ]; then
+    _split=" -h"
+    for x in tasks/*; do
+      tmux send-keys -t "${_session}:1" "$_post_hook_maybe" C-m
+      tmux send-keys -t "${_session}:1" "${x}" C-m
+      tmux split-window ${_split} -t "${_session}:1" 
+      tmux select-pane -t "${_session}:1" :.+
+      if [[ $_split == " -h" ]]; then
+        _split=""
+      else
+        _split=" -h"
+      fi
+    done
+  else 
+    tmux send-keys -t "${_session}:1" "$_post_hook_maybe" C-m
+  fi
+
+  tmux select-window -t 0
+fi  
+fi
+
+if [ "$2" == "-d" ]; then  
+  exit 0;
+fi  
+if [ -z "$TMUX" ]; then  
+  tmux -u attach-session -t "${_session}"
+else  
+  tmux -u switch-client -t "${_session}"
+fi  
+</code></pre>
+
+<p>Patch:</p>
+
+<pre><code>diff --git a/shmux b/shmux  
+index b1c6621..c58100f 100755  
+--- a/shmux
++++ b/shmux
+@@ -7,7 +7,8 @@ if [ "$?" -eq 1 ]; then #and
+ if [ ! -z "$1" ]; then 
+   cd "$1"
+   _wd="$(pwd)"
+-
++  _post_hook_maybe=$([ -f "shell.nix" ] &amp;&amp; echo "nix-shell")
++  
+   TMUX="$(tmux new-session -d -s "$_session" -n project)"
+   tmux new-window -c "$_wd" -t "${_session}:1" -n build
+   tmux new-window -c "$_wd" -t "${_session}:2" -n git
+@@ -15,8 +16,30 @@ if [ ! -z "$1" ]; then
+   tmux new-window -c "$_wd" -t "${_session}:4" -n mon0
+   tmux new-window -c "$_wd" -t "${_session}:5" -n mon1
+
+-  tmux send-keys -t "${_session}:0" "cd apps || cd app || cd lib || cd src || cd source" C-m "vim ." C-m
++  tmux send-keys -t "${_session}:0" "vim ." C-m
+   tmux send-keys -t "${_session}:2" "git log --graph --decorate --all -n7 | grep ." C-m
++  if [ ! -z "$_post_hook_maybe" ]; then
++    for x in {2..5}; do
++      tmux send-keys -t "${_session}:${x}" "$_post_hook_maybe" C-m
++    done
++  fi
++
++  if [ -d tasks ]; then
++    _split=" -h"
++    for x in tasks/*; do
++      tmux send-keys -t "${_session}:1" "$_post_hook_maybe" C-m
++      tmux send-keys -t "${_session}:1" "${x}" C-m
++      tmux split-window ${_split} -t "${_session}:1" 
++      tmux select-pane -t "${_session}:1" :.+
++      if [[ $_split == " -h" ]]; then
++        _split=""
++      else
++        _split=" -h"
++      fi
++    done
++  else 
++    tmux send-keys -t "${_session}:1" "$_post_hook_maybe" C-m
++  fi
+
+   tmux select-window -t 0
+ fi
+</code></pre>
+1402281752806|<pre><code>[05:39]      zeppbot │  we could make money with that
+[05:40]      zeppbot │  sell aiur stone
+[05:40]  MagBo[MURT] │  zeppbot: the nature of terrans
+[05:40]  MagBo[MURT] │  is to sell bunkers
+[05:40]  MagBo[MURT] │  you know
+[05:40]  MagBo[MURT] │  real estate business
+[05:40]  MagBo[MURT] │  even during the war in space :/
+[05:40]      zeppbot │  :|
+[05:40]  MagBo[MURT] │  makes me sad about humanity
+</code></pre>
+1402287203621|<p>There is a lot of obscure great syntax sugar in clojure but a particular one that I like (that I lack in other dynamic languages when working with proplists) is something called "map binding desctructing".</p>
+
+<p>The idea is that it really just maps a property of some name to the variable of the same name. In Elixir terms <code>keys(proplist, [foo, bar])</code> would bind the value of proplist[:foo] to foo and proplist[:bar] to bar.</p>
+
+<p>In clojure:</p>
+
+<pre><code>(defn middle-name [{:keys [middle middle-initial]}] ; &lt;- destructing 
+  (cond 
+    middle         (str " " middle)
+    middle-initial (str " " middle-initial ".")))
+
+(defn display-name [{:keys [first last email] :as contact}] ; &lt;- destructing 
+  (str last ", " first (middle-name contact) " &lt;" email "&gt;"))
+</code></pre>
+
+<p>Also, binding destructing work with (ever so awesome) clojure vecors and strings. From documentation:</p>
+
+<pre><code>(let [[a b c &amp; d :as e] [1 2 3 4 5 6 7]]
+  [a b c d e])
+
+-&gt;[1 2 3 (4 5 6 7) [1 2 3 4 5 6 7]]
+</code></pre>
+
+<p>so it's almost Erlang's pattern-matching but not quite. So far Clojure feels like Common Lisp's bastard child. It's Rich (<em>zing</em>), it's scary, it doesn't serve a lot of purposes, but it really shines at the use case once a use case is found.</p>
+1402334594786|<p>There is a lot of mystery around bash subshells and while <a href="http://www.tldp.org/LDP/abs/html/subshells.html">TLDP's Advanced Bash Scripting Guide</a> sheds some light on the topic, there are still questions with ridiculously incorrect answers at stackoverflow.</p>
+
+<p>So here's the code with some comments regarding making a tree of subshells and then killing it:</p>
+
+<pre><code>dump="_sub-shell-demo.txt"  
+echo -n "" &gt; $dump  
+export toppid=$$                                #[1]  
+trap "kill -s SIGKILL 0" SIGINT SIGTERM EXIT    #[2]
+
+stop_demo() {                                   #[3]  
+  kill -s SIGTERM $toppid
+}
+
+( tail -f $dump ) &amp;
+( while true; do
+    sleep 2
+    echo "." &gt;&gt; $dump
+  done ) &amp;
+( while true; do
+    sleep 3
+    echo "," &gt;&gt; $dump
+  done ) &amp;
+sleep 12  
+stop_demo  
+</code></pre>
+
+<ul>
+<li><code>#[1]</code>: this is the PID of the topmost subshell in which the script gets executed.</li>
+<li><code>#[2]</code>: here we trap SIGINT, SIGTERM and EXIT and instead of just killing the top PID leaving unsupervised child zombies behind, we are using <code>kill 0</code> which says "kill the process group" (see <code>man kill</code>). Sending SIGKILL is a little bit dramatic, but you get the idea. You can use any signal here.</li>
+<li><code>#[3]</code>: here we illustrate that we can kill the process group from anywhere: from a function, from another shell etc.</li>
+</ul>
+
+<p>A little bit of explanation of what happens when we run <code>./subshelldemo.sh</code>. <br />
+First we fork tail -f (that's why we see dots and commas in our shell) then we fork concurrent appending to <code>_sub-shell-demo.txt</code> file. Then we sleep for 12 seconds in the main script and call <code>stop_demo</code> function that kills whole process group (you can see that tail ouptput stopped which means that the processes are killed). The shell from which we started ./subshelldemo.sh won't be killed as it belongs to a different process group.</p>
+1402353506189|<p><a href='http://goodsoft.lv/files/lvlinux.zip'>http://goodsoft.lv/files/lvlinux.zip</a> — a better qwerty-English-compatible keyboard for Windows by Paul Tsupikoff (derivative work of a keymap by yours truly).</p>
+1402388525338|<pre><code>Fuck that shit, let's spawn zombies  
+</code></pre>
+1402447628846|<pre><code>Write code as if you will throw it away tomorrow;  
+Write protocols as if your children will use those thirty years from now.  
+</code></pre>
+1402555878937|<p>Public Decentralized Social Network, <br />
+Jonn Mostovoy, <br />
+Zagreb 2014</p>
+
+<h3 id="abstract">Abstract</h3>
+
+<p>In this paper we describe a distributed social network with no private information sharing and propose a protocol for such a network. We examine some properties of such an information system. We describe gossip chain — a way to transfer textual information between nodes. Some of the best practices of using such a network are also mentioned in this paper.</p>
+
+<h3 id="introduction">Introduction</h3>
+
+<p>As far as decentralization in information exchange goes we have a bunch of protocols built around different ideas. We should note a meta-protocol, a concept of Federation which is a set of rules, nodes implementing application-specific protocols such as XMPP or Diaspora cooperate with each other to provide a subset of services to users of other nodes. We can say that services (features) in this subset are federated. <br />
+Another example of decentralized infromation exchange would be <a href="https://bitmessage.org/">Bitmessage</a> [JW12]. Sending a Bitmessage message requires providing public key of the recepient and a proof of work. The nodes are discovered by dissemination. The idea this protocol implements is pseudonymous strongly encrypted peer to peer communication. <br />
+An example of a protocol that is built around the idea of distributing information about users' identities is <a href="http://tools.ietf.org/html/rfc7033">WebFinger</a> [JPG13]. It summarizes the experience we had with key servers and OpenID for a good while. <br />
+<a href="http://diasporafoundation.org">Diaspora</a> [1] is an example of bundling the ideas of federating services that, amongst other things, makes use of WebFinger. It aims to provide an experience similar to <a href="https://facebook.com">Facebook</a> in a decentralized fashion. The important point here is that Diaspora is working with "private" data, such as private messages sent by users. We will take the liberty of saying that this effort is one of the main reason (though by far not the only one) that makes this project be overcomplicated. A simple analysis of the Diaspora Federation Protocol and the way Diaspora pods behave yields an observation that in fact, no guarantees of message privacy is given except for the delivery-time guarantees.
+By eliminating the goal of sending "private" messages we propose a lightweight protocol of a public decentralized social network. So, overemphasising, word <em>public</em> here means that there is no private information in the network. Pretty much like in Bitcoin, everything is signed, nothing is encrypted.</p>
+
+<h3 id="publicdecentralizedsocialnetwork">Public Decentralized Social Network</h3>
+
+<p>Here we are describing a lightweight protocol for public decentralized social networking. Please note that sometimes we will refer to public decentralized social network as PDSN. An instance of a public decentralized social network can be accessible via some network that is capable of carrying HTTP over TCP, such as LAN, VPN, Hyperboria or the Internet. Public decentralized social network can be configured to accept new nodes or decline then, this way a private-access public decentralized network can be configured. If needed, a protected gateway from the Internet can be built around such a private-access PDSN so that users that aren't technologically sharp enough (VPN, Hyperboria) or aren't capable to physically join (LAN) underlying network can still access the private information circulating in the PDSN in question. <br />
+As the use cases for a PDSN vary from blogging to event organization to data aggregation, the internal entities that represent external abstracts have to be rich enough for each particular PDSN. We argue that putting those in the protocol is trying to win yet another uphill  battle against the complexity. The PDSN protocol only takes care of the raw information inputs from users a particular network implementation takes care of interpreting those to eventually render those back as an information output. We should note that this means that information outputs might not be even the same across the nodes within the same PDSN which is a rather interesting property that will hopefully see some uses in the PDSNs in the wild. <br />
+A special remark should be made regarding the best way to use PDSNs. To use a decentralized network to its full extent, a user should run a node himself. Because of the way PDSN protocol works, it's not a bad idea to run a node at a device that goes down frequently, when it goes up it will fetch the new information inputs from the rest of the network. What's way more interesting is that if a user runs a node on his laptop, he can actually use the social network offline. Read the posts, make commentaries, do editorial changes. All his work will be uploaded into the network when the device goes up. <br />
+A particular interest is the question of trust within the network. Between the nodes, between a node and a user, between users. All the information inputs from a user received by a node is signed by the node's public key. This signature means that a node is sure enough that a person who made the input actually has a right to do that. A simple way to insure it is to use password-based authentication. However in the ideal situation when a user is the one who runs the node, no authentication is needed from the PDSN protocol implementation at all. We should observe that the user trusts the node to represent him in the PDSN only to a certain extent. Any user can also sign any input with his own key that should be available under his profile. This way user trusts the node she uses to connect to PDSN only once — when she uploads the key. <br />
+As far as node-to-node trust goes, it is clearly possible to jam the network a little bit by stop relaying the messages or sabotage the network by relaying wrong messages. In first case, a healthy network won't notice it as it's tolerant to nodes going down. The second case can also be reduced to the first case because inputs with signature mismatches get ignored. <br />
+In case of the node trusting a user, we leave it up to the node maintainer. Again, in case of a PDSN with no open registration (you have to run a node to join) the way to deal with a spammer is pretty trivial, the spammer will simply get un-peered by his neigbour administrators and the information inputs originating from his node will be ignored not to affect the view of a particular node in PDSN in question. This requires an action from the administrators of the nodes who let the adversary into the network. To regulate trust in systems with open registration, known measures can be used such as captcha and flood-protection techniques. <br />
+It's important to understand that the only kind of data that's appropriate to use with PDSN protocol is text. Sharing files as information inputs is discouraged and should  be considered as abuse of the system by node maintainers. Developers who implement renderers (front-ends) for the information stored in PDSNs  may want to handle this as a policy of ignoring encoded data. Also, nodes should restrict the maximum size of a message they operate on. <br />
+Nodes can also choose to relay the message they receive but ignore it locally or ignore the message completely depending on the kind of a node in question.</p>
+
+<h3 id="gossipchain">Gossip Chain</h3>
+
+<p>Nodes in PDSN exchange messages between each other. Those messages mostly describe information inputs made by users. These messages itself get stored in a forest of linked lists called "gossip chain". The root of each list in the forest is "node" message that gets sent by a node once it enters a PDSN, everything other message is well-ordered and gets into the gossip chain once received. Every list in gossip chain by its nature is append-only and immutable. This way entire history of a social network gets recorded by the nodes. <br />
+Whenever a node goes up it sends a message to its peers and the messages that are older than the last-seen get relayed to the node in question. The way these messages are affecting the state of a particular node is up to implementation and also up to administrator. We can imagine a node that behaves like a blog (serving only the local information, possibly even without commentaries) but relays all the messages that it receives.</p>
+
+<h3 id="objects">Objects</h3>
+
+<p>Objects are internal representation of applying the gossip chain. Objects are addressed with sha ids and are mutable as opposed to the gossip chain that is immutable and append-only.</p>
+
+<h3 id="protocoloverview">Protocol Overview</h3>
+
+<p>The PDSN protocol is designed to transfer signed plaintext, thusly it's built on top of JSONRPC 2.0.</p>
+
+<h4 id="idfield">Id field</h4>
+
+<p>"id" field of JSONRPC request MUST be persistently growing. That means that even if the node goes down, the id of the first request after it goes back up MUST ge greater to the id of the last request made by the node before it went down.</p>
+
+<h4 id="methods">Methods</h4>
+
+<ul>
+<li><p>add — specifes an intention to add new entity to the object store</p>
+
+<ul><li>node — sha id of the node making the request</li>
+<li>type — one of "node", "user", "pkey", "data"
+<ul><li>node — when the type is "node", a node entering the network is announced. Nodes MUST ignore this message unless all of the following conditions are matched. (1) There is a way to determine that at least one key used to sign the message belongs to either the administrator of the node that made the announcement or to a trusted node. (2) There is no node with the same sha id in existence. Nodes MAY relay the message even if (1) isn't true. If this message doesn't get ignored, receiving node SHOULD sign the message body with its own key and relay the message with its signature added to the "signatures" field (see below).</li>
+<li>user — when the type is "user", required field is "name"</li>
+<li>pkey — when the type is "pkey", required fields are "algorithm", "key" and "parent"
+<ul><li>algorithm — SHOULD be one of "rsa", "ecdsa". Nodes MUST at least support RSA signatures.</li>
+<li>parent — MUST be one of "node", "user"</li></ul></li>
+<li>object — when the type is "object", there are no required fields. Nodes SHOULD at least support field "message" which SHUOLD be a JSON object of the following form: <code>{ topic: T, body: B, parent: P }</code></li></ul></li>
+<li>((body fields)) — some fields that specify the semantics of the request (see type)</li>
+<li>signatures — a list of signatures</li>
+<li>sha — sha of the timestamped request. This MUST be used as the unique id the object added. </li></ul></li>
+<li><p>remove — specifies an intention to remove an object owned by current node from the object store</p>
+
+<ul><li>node — sha of the node making the request</li>
+<li>object — sha of the object to be removed</li>
+<li>signatures — a list of signatures</li>
+<li>sha — sha of the timestamped request</li></ul></li>
+<li><p>update — specifies an intention to update an object owned by the node sending the message</p>
+
+<ul><li>object — sha of the object to be updated</li>
+<li>[ algorithm — the algorithm that is used to update the object. Nodes MAY implement algorithms like "diff". If algorithm is not supported, the message MUST be relayed, the object store SHOULD NOT be changed ]</li>
+<li>((body fields)) — some fields that specify the semantics of the request</li>
+<li>signatures — a list of signatures</li>
+<li>sha — sha of the timestamped request</li></ul></li>
+<li><p>up — tells a peer that the node went up in order to receive gossips from nodes specified in "want" field. Node SHOULD cover all the known nodes with union of "wants".</p>
+
+<ul><li>want — a list composed of tuples <code>{ node-sha: last-seen-id }</code>, where last-seen-id is the id of last message node that just went up received from node-sha.</li>
+<li>signatures — a list of signatures</li>
+<li>sha — sha of the timestamped request</li></ul></li>
+</ul>
+
+<h4 id="response">Response</h4>
+
+<ul>
+<li>result — one of "relayed", "accepted"</li>
+<li>error — one of "ignored", "malformed"</li>
+</ul>
+
+<h3 id="furtherwork">Further Work</h3>
+
+<p>During the upcoming time I plan to finish the prototype of the proposed system and release it at memorici.de git repositories, gather some feedback about the proposed system, expand some parts of this paper and make them more structured.</p>
+
+<h3 id="references">References</h3>
+
+<p>[JW12]: Bitmessage: A Peer to Peer Message Authentication and Delivery System (<a href='https://bitmessage.org/bitmessage.pdf'>https://bitmessage.org/bitmessage.pdf</a>)</p>
+
+<p>[JPG13]: Jones, Paul E.; Salgueiro, Gonzalo; Jones, Michael B.; Smarr, Joseph (September 2013): RFC 7033 (<a href='http://tools.ietf.org/html/rfc7033'>http://tools.ietf.org/html/rfc7033</a>)</p>
+
+<p>[1]: Diaspora Federation Protocol Overview (<a href='https://wiki.diasporafoundation.org/Federation_protocol_overview'>https://wiki.diasporafoundation.org/Federation_protocol_overview</a>)</p>
+1402488328702|<p>Писал пейпер про социалочку, которую пилю, понял, что мозги не работают и пора бы уже спать.
+Решил посмотреть перед сном Silicon Valley по совету Саши Юрича.
+Думал посмотрю пилот и пойду спать.
+Ага, фиг там, промарафонил первый сезон (хорошо, что он короткий). Советуется программистам, периодически доставляет.</p>
+1403190185434|<pre><code>[17:58]        magbo │  fauxsoup: err, I have read the docs?
+[17:58]     fauxsoup │  Ahh, the docs. They always represent reality.
+[18:01]     fauxsoup │  Documentation is great, but generally it's not entirely comprehensive. With most tools, you will encounter situations that documentation alone does not cover/explain. Real-world use is important in assessing any tool.
+[18:01]        essen │  that's what she said!
+</code></pre>
+1403408372391|<pre><code>06:22:59 тлен is now known as MagBo  
+06:24:33 ---&gt; безысходность joined the chatroom  
+</code></pre>
+1403460668493|<pre><code> &lt; вместо того, чтобы писать код
+ &lt; я смотрю сериал
+ &lt; в котором чувак не может писать код, потому что занимается хуйнёй
+ &lt; разве это не великолепно?
+</code></pre>
+1403847324118|<p>The problem of working with a ton of different technologies, specifically — programming languages can lead to a funny confusions. <br />
+For instance I was doing some database crunching with Elixir this morning and realized that I don't remember if PostgreEx comes with a pooling mechanism out of the box or does it require poolboy. <br />
+For some reason I was totally convinced that the library includes poolboy as an optional dependency detecting its availability and when it's present it somehow pools the connections to database. <br />
+I didn't find any mentions of it in README, so I went to read the code. Deja vu struck me — I have done it some time ago, looked at the connection code of this library and found out that it does pooling transparently. <br />
+After reading the code struggling to find any mentions of pooling I realized that I have confused this library with postgres library I used with D programming language that indeed detects pooling capabilities and pools connections if possible. <br />
+This made me think about this approach of library detection in general. Its roots are deep in C history, library detection can be implemented with ifdef of some symbol that is defined in a library. It's a really sucky way to approach the problem of variativeness of software. Imagine using a library that assumes that another library assumes that its dependency pools its connections (which, with this kind of library detection, is up to the system administrator/devops). Especially with conventional UNIX-like OSes the same piece of software will work differently across different machines with the same configuration that happen to include a different set of installed libraries, no warnings, no failures, everything'd work but with a wrong set of assumptions. <br />
+It's good that we don't do this kind of library detection in Elixir/Erlang, even though it's trivially implemented there.</p>
+1403848423226|<p>Dear writers of ORM libraries, please call me when your libraries will be capable of setting up deferred circular constraints amongst SQL tables and accumulating relevant inserts/updates together running those under transactions. <br />
+Thanks. <br />
+Meanwhile, I'll keep programming SQL servers in SQL. Because, you know, it doesn't cripple the functionality.</p>
+1403920462288|<p>Via Nikolaj "Batter" Arhipov:</p>
+
+<pre><code>/* &amp; (bitwise and) is also 
+ * non-short-circuit logical and in javascript 
+ * WAT
+ */
+function a(){ console.log(4) };  
+undefined &amp; a() //=&gt; prints 4, returns 0  
+</code></pre>
+1403939922235|<p>I've noticed a week ago or so that my eyes struggle to focus on distant objects and the silouettes of distant objects are percieved in a less sharp fashion than I used to. That alarmed me and I was really surprised by it. <br />
+Then I've analysed my obsession with low-contrast schemes and realized that for the sake of having easier time focusing on things, hence having less stress on my eyes, I should switch to high-contrast schemes (at least for some time). <br />
+In the end, I should blink a lot and stop forgetting to turn on the light while coding in the darkness. <br />
+Also, several weeks ago I've switched to really ascetic .vimrc. I had 8-year old almost 200 lines long vimrc by the summer of 2012, threw it away, got 50 lines long vimrc from scratch by the summer 2013 and now, well, you can see it yourself:</p>
+
+<p><img src="http://nn.lv/kzof" alt="Ascetic VIMrc" /></p>
+
+<p>And yeah, pretty much everything looks like it now:</p>
+
+<p><img src="http://nn.lv/fp5y" alt="Empty Spaces" /></p>
+
+<p>Internets look like a damn newspaper:</p>
+
+<p><img src="http://nn.lv/7ew7" alt="Newspaper Duckduckgo" /></p>
+
+<p>I like it this way, but during the nights I'll just <code>xrdb</code> my old Xresources with low contrast, I think. Or just set <code>xbacklight</code> to 2 :)</p>
+1404891759406|<p><em>“JavaScript: Осторожно Заминировано”, знаки препинания расставить по вкусу.</em></p>
+
+<pre><code>[10:35]  &gt; phi = function(x) { return sjcl.codec.hex.fromBits(sjcl.hash.sha256.hash(x)); }
+[10:35]  &gt; function (x) { return sjcl.codec.hex.fromBits(sjcl.hash.sha256.hash(x)); }
+[10:35]  &gt; phi({})
+[10:35]  &gt; "8b5ae039f102653a49be29ab1625c2e77a987bcbad60715dea147976386e8fa7"
+[10:35]  &gt; phi({"foo": "bar"})
+[10:35]  &gt; "8b5ae039f102653a49be29ab1625c2e77a987bcbad60715dea147976386e8fa7"
+[10:35]  &gt; блять, прикинь — ни ворнинга, нихуя
+[10:36]  &gt; просто вот блять... вот блять так вот.
+[10:36]  &gt; я даже не знаю как это описать
+[10:36]  &lt; джаваскрипт, бля
+[10:36]  &lt; я ещё когда тебе про джсон писал решил проверить
+[10:36]  &lt; и написал в консоли JSON.parse()
+[10:36]  &lt; не подглядывая, угадай, какую ошибку получил
+[10:37]  &gt; хм
+[10:37]  &gt; ну он явно получил undefined в логику
+[10:37]  &gt; ждать здравого смысла от javascript глупо
+[10:37]  &gt; значит, он попытался заюзать undefined
+[10:37]  &gt; как аргумент
+[10:38]  &gt; хмм, а undefined - валидный объект?
+[10:38]  &gt; наверное нет
+[10:38]  &gt; что-нибудь типа
+[10:38]  &gt; Expected "{", got "undefined".
+[10:38]  &lt; почти, но ещё лучше
+[10:38]  &gt; хм
+[10:38]  &lt; Syntax error: unexpected character "u"
+[10:38]  &gt; Expected "{", got "u".
+[10:38]  &gt; awww
+[10:38]  &gt; so sweet
+[10:39]  &gt; lol
+[10:39]  &gt; надо написать плагин
+[10:39]  &gt; который к каждой js ошибке будет дописывать
+[10:39]  &gt; "Ебитесь как хотите"
+[10:39]  &lt; :D
+[10:39]  &lt; или даже x → («ничего не поделаешь, это » + x)
+</code></pre>
+1405156142255|<p>If you wonder if animals can feel, <a href="http://jandan.net/2013/03/09/mouse-attaceked-snake.html">look at those photos</a>, and read the story if you can read Chinese. <br />
+But a really funny aspect of this is that millions of mice get fed to snakes around the world every day but humans only remember that the small creatures have feelings when something like this happens. <br />
+Humans are stupidly funny.</p>
+
+<p>P.S. <br />
+To clarify, I'm not saying that given the zoo infrastructure feeding mice to snakes that are kept in the zoo should be stopped or any other Greenpeace bullshit, I'm just making some observations regarding mice and men. </p>
+1405199373250|<pre><code>In Soviet Russia code tests you  
+</code></pre>
+1406205647223|<pre><code>как только появляется незаменимый сотрудник
+его нужно немедленно уволить две недели назад
+</code></pre>
+1406865807953|<p>In year 2014 team TBD had six time as many active contributors compared to year 2013. This year it was powered by two of Redgage developers — myself and Greg.</p>
+
+<p>Now that the contest is finished, I publish the series of blog posts I made as we were participating in the competition.</p>
+
+<p>Jul 24 23:29 — <br />
+The contest for us begean a day before the actual start of the competition. My keen eye spotted the two-colour background of the official website, here it is:</p>
+
+<p><img src="http://nn.lv/t94q" alt="Original Background" /></p>
+
+<p>We have filled it with a different colour to discover the image I post later on. I have used GIMP for it — Color -> Colors -> Map -> Color Exchange. So here goe the filled results (first by <a href="http://popoffka.ru">Mr. Popov</a>, second by me):</p>
+
+<p><img src="http://f.nn.lv/n9/7w/hf/bkg.png" alt="Filled Version by Popov" />
+<img src="http://f.nn.lv/n9/7w/hx/bkg-filled.png" alt="Filled Version by yours truly" /></p>
+
+<p>It turned out that the 53x53 square has a pixel-wide border that hints what are the next cells, making it possible to deduce 55x55 square.</p>
+
+<p>Nonetheless, we have proceeded to basic numerical analysis (done by Popov), cellural automata analysis (done by me) and trying to make a 57x57 QR code (done by Popov). </p>
+
+<p>A sidenote: <br />
+Notice how we picked a diferent colour to be "white" and double-checked each other by doing the same thing twice. In the group-contest environment, it's a really great thing to do. In this particular example it's extremely easy to concentrate on 0x1a1a1a being 0s and 0x1b1b1b being 1s forgetting to test both cases.</p>
+
+<p>Results of analysis were desperately pointless. Game of life didn't yield any hints during runs till the terminal state:</p>
+
+<p><img src="http://f.nn.lv/n9/80/6f/53-end.png" alt="53² Version" />
+<img src="http://f.nn.lv/n9/80/fi/55-end.png" alt="55² Version" /></p>
+
+<p>Inversed versions of the squares didn't yield anything interesting when run against rules of Game of Life.</p>
+
+<p>Numerical analysis didn't get us far as well, nonsensial series of 55 bit numbers don't help; QR coding failed.</p>
+
+<p>Vlad proceeded to xorring the background with chess board, with itself shifted a little bit and reshaped the image by vast variety of different factors. Nothing. Noise.</p>
+
+<p>While we were doing dirty things to the image, a tweet was posted by organizers:</p>
+
+<pre><code>%    =     \...o.....
+</code></pre>
+
+<p>Which made me think about different sorts of grammars and I ended up reading this disseration: <a href='http://www.let.rug.nl/~vannoord/papers/diss/diss/node51.html'>http://www.let.rug.nl/~vannoord/papers/diss/diss/node51.html</a></p>
+
+<p>Worked a little bit and went to sleep around midnight. Tomorrow will be a huge day!</p>
+1407036040713|<p>This is a very schematic post about the competition itself. As ususal, during the competition we don't have enough time to take notes, after the competition there's just no way to gather enough force to make an effort in summarizing what happened in the past three awesome days. Ergo, the post is written post-factum and is more for myself to remember the chain of the events than for the dear reader of mine.</p>
+
+<p>Please, PLEASE, PLEASE, no matter what do you think about competitive programming, <em>do</em> try to participate in ICFPC next year, it is three days of peace and coding. So awesome and inspiring, no words can describe it.</p>
+
+<h3 id="day1">Day 1</h3>
+
+<p>The problem was to program a pacman called "lambdaman" in a SECD assembly. <br />
+So, during the first day, some guys were implementing the game engine, yole was starting to think about the programming language to be compiled into SECD assembly and I was interfacing reference implementation with python. Two and a half rewrites later and after ten hours of coding (now it'd take me an hour for the same problem because now I know the tools at hand) I have managed to build a library that's callable from our code and compare the output of reference implementation to the output of our game implementation. It was fast enough™, and will be imporved into a generic wrapper around the reference implementations for future use during ICFP contests. <br />
+The day ended with a call to people living in UTC+"A lot" to push our code base to get any stupid lambdaman programmed in SECD assembly and submit it as the lightning submission.</p>
+
+<h3 id="day2">Day 2</h3>
+
+<p>We have failed to submit anything within boundaries of lightning round and after a good rest concentrated on building our game implementations and a compiler from a subset of  python to SECD assembly. By the end of the day we had a working compiler and a plan to make a wave-based lambda man and then port it to the python subset in question. As I woke up after some rest, turned out that Vlad made some sort of a cool lambda man AI, python version of which performs better than python version of an AI that sends waves.</p>
+
+<h3 id="day3">Day 3</h3>
+
+<p>Vlad was porting his AI to the python subset, several language features were added to the subset we were using, I helped with writing and debugging ghost AI that got submitted in the end. By the end of day 3 I fell asleep twice and actually missed the submission moment.</p>
+
+<p>We'll see the results in September, but I sincerely hope that we'll make top 20.</p>
+
+<p>Here's the code: <a href='https://github.com/Vlad-Shcherbina/icfpc2014-tbd'>https://github.com/Vlad-Shcherbina/icfpc2014-tbd</a></p>
+1407036601085|<p>Посмотрел "Постоянный Отпуск" Джармуша в одиночестве.
+Джармуша вообще всегда смотришь в одиночестве, даже когда с кем-то.
+Звуки этого фильма волшебно хороши, особенно начало последнего этюда.
+И чайки.</p>
+1407396422580|<pre><code>&gt; Го в субботу в broodwar?
+&lt; Ну не  
+&lt; Я во второй пытался  
+&lt; Уровень стресса даже выше чем  
+&lt; Когда пытаешься с девушкой которая тебе нравится общаться  
+</code></pre>
+1408124518766|<pre><code>One should not consider police to be a force of crime prevention.  
+Not even crime investigation.  
+Police is merely a force of crime control.  
+</code></pre>
