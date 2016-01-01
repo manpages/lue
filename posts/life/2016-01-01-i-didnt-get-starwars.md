@@ -295,7 +295,7 @@ The fact that he is a skilled and talented trooper also explains the
 fact that, not minding his low self-esteem, he managed to pick shooting
 on-board weapons of a TIE fighter fast enough.
 
-Poe giving a name to Finn is also cute. Stor
+Poe giving a name to Finn is also cute.
 
 ## Rey Meets BB-8
 
