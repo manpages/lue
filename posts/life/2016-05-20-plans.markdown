@@ -1,0 +1,51 @@
+---
+title: Catch Me if You Can
+tags: life, ongoing, quotes
+---
+
+
+What a nice trip to Estonia it was...
+
+It really got me.
+
+I'm definitely going to live in Tallinn for at least three
+months either in 2016 Autumn or 2017 Summer.  Listening to the anthem of the
+trip over, and over, and over again:
+
+<img src="http://i.imgur.com/Z0PFeP2.png" width="100%" />
+
+Right now I'm going to Croatia (arrive on May 22nd, depart — May
+25th) through Austria (arrive on May 21st) now to see my man Reslav Hollós and
+some of the great friends I have there — Domagoj and Saša, Rena, of course.
+After a couple of days in Zagreb, I'm going to Trieste (arrive on May 25th,
+depart in the night on May 26th) to take a long ferry ride to Igoumenitsa.
+
+From Igoumenitsa it is trivial to get to my final destination — the island of
+Corfu, where Bitcoin summer school is held.
+
+Bitcoin summer school is, basically, a cryptographic conference with an
+emphasis on blockchain technologies. A word has been out that SPECTRE, a
+successor to GHOST[1][2] will be announced there, so it has a potential to be a
+real breakthrough in the theory of blockchain building.
+
+On Jun 3rd, joint Serokell / IOHK team will hold a presentation on our
+proceedings with RSCoin and Scorex projects, I think it's going to be something
+like a three-hour panel and I'm really looking forward to meeting some of the
+scientists who are interested in our ambitious experiments.
+
+Afterwards, I'm going back to Rīga, Latvia (arrive on Jun 9th) through
+Igoumenitsa, Venice, Trieste, Zagreb (only one full day there instead of a week
+I planned before!), Vienna, Krakow.
+
+On Jun 23rd I go to St.Petersburg with Kirils Skrabe to play some music at the
+Engineering Castle stairs and, of course, meet my esteemed colleagues from
+ITMO. On Jun 30th, I'm back to Rīga and possibly will go to Tallinn again to
+have a cup of tea... Or three.
+
+---
+
+References:
+
+[1]: [GHOST 101 Presentation](https://www.youtube.com/watch?v=iSq-emtyx5g)
+
+[2]: [GHOST Paper](https://eprint.iacr.org/2013/881.pdf)
